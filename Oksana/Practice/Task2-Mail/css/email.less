@@ -1,0 +1,60 @@
+/*Email content section*/
+.email-content {
+  @media @iphone6Portrait, @iphone6Landscape {
+    position: absolute;
+    right: -50em;
+    background-color: @white;
+    height: 100%;
+    width: 100%;
+  }
+  .flex-columns;
+  justify-content: flex-start;
+  flex: 7 7 280em;
+  /*Header for email with addresser data*/
+  .message-block{
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+  }
+  .email-header {
+    .flex-rows;
+    padding: 0.7em 1em;
+    .border(0, 0, 1px, 0);
+    .addresser-data {
+      display: inline-block;
+      .user-email {
+        font-size: 0.95em;
+        display: block;
+      }
+    }
+    .email-details {
+      font-size: 0.8em;
+      color: @darkGrey;
+      text-align: right;
+      .attachments, .email-time, .email-date{
+        display: block;
+      }
+    }
+  }
+  /*Email content*/
+  .letter {
+    padding: 0.7em 1.5em;
+    flex: 1 1 auto;
+    height: auto;
+    overflow-y: scroll;
+    .letter-actions {
+      .flex-rows;
+      justify-content: center;
+      font-size: 1.4em;
+      margin-bottom: 0.7em;
+      color: @letterActionsColor;
+      li {
+        padding: 0 0.2em;
+      }
+    }
+    .img {
+      padding: 1em 0;
+    }
+  }
+}

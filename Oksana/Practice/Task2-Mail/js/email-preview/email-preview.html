@@ -1,0 +1,26 @@
+{{#inbox}}
+<li class="email" data-id="{{id}}" tabindex="0">
+    <div class="email-actions">
+        <span class="{{status}} icon_circle-slelected"></span>
+    </div>
+    <div class="preview-content">
+        <div>
+            <div class="user-icon">
+                <img src="img/users/{{adresserIcon}}" alt="{{adresserName}}" title="{{adresserName}}">
+            </div>
+            <div class="details">
+                <span class="user-name">{{adresserName}}</span>
+                <time class="email-time">{{time}}</time>
+            </div>
+        </div>
+        <div>
+            <h2 class="email-tittle">{{topic}}</h2>
+            <p>{{description}}</p>
+        </div>
+    </div>
+    <div class="markers">
+        <span class="mark icon green icon_box-empty"></span>
+        <span class="favorite icon_star"></span>
+    </div>
+</li>
+{{/inbox}}

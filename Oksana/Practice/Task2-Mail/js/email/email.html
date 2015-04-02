@@ -1,0 +1,28 @@
+<header class="email-header">
+    <div class="addresser">
+        <div class="user-icon">
+            <img src="img/users/{{adresserIcon}}">
+        </div>
+        <div class="addresser-data">
+            <span class="user-name">{{adresserName}}</span>
+            <span class="user-email">{{adresserEmail}}</span>
+        </div>
+    </div>
+    <div class="email-details">
+        <a href="#" class="attachments icon_paperclip"></a>
+        <time class="email-time">{{time}}</time>
+        <time class="email-date">{{date}}</time>
+    </div>
+</header>
+<div class="letter">
+    <ul class="letter-actions">
+        <li><span role="button" class="delete icon_trash_alt"></span></li>
+        <li><span role="button" class="reply icon_mail_alt"></span></li>
+        <li><span role="button" class="reply-all icon_chat_alt"></span></li>
+        <li><span role="button" class="foward arrow_right"></span></li>
+    </ul>
+    <div class="message-content">
+        <p>{{message}}</p>
+        <img src="img/attachments/{{#attached}}{{img}}{{/attached}}" class="full-width center img">
+    </div>
+</div>

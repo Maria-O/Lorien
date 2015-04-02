@@ -1,0 +1,27 @@
+.grid-50-50 .column {
+  width: 50%;
+  display: inline-block;
+  margin-left: -5px;
+  vertical-align: top;
+}
+.grid-50-50 .column:nth-child(2) {
+  padding-left: 1em;
+  box-sizing: border-box;
+}
+.grid-25 .column {
+  width: 25%;
+  display: table-cell;
+  padding: 0 0.8em;
+  box-sizing: border-box;
+}
+.grid-75-25 .column-75 {
+  width: 75%;
+  display: inline-block;
+  vertical-align: top;
+}
+.grid-75-25 .column-25 {
+  width: 25%;
+  display: inline-block;
+  margin-left: -5px;
+  vertical-align: top;
+}

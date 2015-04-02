@@ -1,0 +1,133 @@
+/*Main section*/
+#main {
+  .flex-rows;
+  flex: 1 1 auto;
+  position: relative;
+  font-size: 2.5em;
+}
+
+/*Aside menu*/
+.aside-menu {
+  .flex-columns;
+  flex: 1 0 13em;
+  background-color: @asideBackground;
+  color: @white;
+  @media @iphone6Portrait {
+    flex: 1 0 auto;
+  }
+}
+
+.menu-holder {
+  overflow: auto;
+}
+/*Menu section*/
+.menu-header {
+  .flex-rows;
+  .cells-padding;
+  background-color: @topPanelColor;
+  text-transform: uppercase;
+  @media @iphone6Portrait {
+    .menu-title, .arrow {
+      display: none;
+    }
+    .icon {
+      padding-left: 0.3em;
+    }
+  }
+}
+
+.menu-items {
+  .box-sizing(border-box);
+  .link {
+    .flex-rows;
+    .cells-padding;
+    justify-content: flex-start;
+    .icon {
+      flex: 1 1 auto;
+    }
+    .item {
+      flex: 8 8 auto;
+      @media @iphone6Portrait {
+        display: none;
+      }
+    }
+    .new {
+      .border-radius(1em);
+      flex: 1 1 auto;
+      text-align: center;
+      background-color: @newEmailsBackground;
+      width: 2em;
+      @media @iphone6Portrait {
+        display: none;
+      }
+    }
+    //Hide when no new message
+    .hidden {
+      visibility: hidden;
+    }
+    //Markers
+    .mark {
+      .border-radius(0.2em);
+      display: block;
+      width: 1.4em;
+      height: 1.4em;
+    }
+    //Hover menu item
+    &:hover {
+      background-color: darken(@grey, 3%);
+      .new {
+        background: darken(@newEmailsBackground, 3%);
+      }
+    }
+    //Active menu item
+    &.active {
+      background-color: @lightBlue;
+      .new {
+        background-color: darken(@lightBlue, 15%);
+      }
+    }
+  }
+}
+
+.settings-box {
+  background-color: @topPanelColor;
+  .cells-padding;
+  .box-sizing;
+  padding-right: 3em;
+  @media @iphone6Portrait{
+    padding: 1em;
+  }
+  .status {
+    margin-bottom: 2.1em;
+    text-align: center;
+    .status-title {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+    @media @iphone6Portrait {
+      display: none;
+    }
+  }
+  .progress {
+    position: relative;
+    height: 0.8em;
+    width: 100%;
+    .track {
+      .border-radius(1em);
+      background: @white;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .loaded {
+      .border-radius(1em);
+      background: @blue;
+      position: absolute;
+      left: 0;
+      width: 50%;
+      height: 100%;
+
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.flex-columns {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.flex-rows {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.cells-padding {
+  padding: 0.8em 0.6em 0.8em 1em;
+}

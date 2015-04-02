@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <title>Mail App</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <header id="header">
+        <div class="actions">
+            <span class="close-btn"></span>
+            <span class="min-btn"></span>
+            <span class="max-btn"></span>
+        </div>
+        <form class="search-box" role="search">
+            <input type="search" name="search" id="search">
+            <label for="search"><span class="icon_search"></span></label>
+        </form>
+    </header>
+
+    <main id="main" role="main">
+        <!--Aside menu-->
+        <aside class="aside-menu">
+            <div class="menu-holder" role="menu">
+                <section class="menu-section">
+                    <header class="menu-header">
+                        <span class="menu-title">Mailboxes</span>
+                        <span role='button' class="icon icon_refresh"></span>
+                    </header>
+                    <ul class="menu-items" role="menubar">
+                        <li role="menuitem">
+                            <a href="#" class="link active" title="Inbox">
+                                <span class="icon icon_drawer_alt"></span>
+                                <span class="item">Inbox</span>
+                                <span class='new'>22</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="link" title="Favourited">
+                                <span class="icon icon_star"></span>
+                                <span class="item">Favourited</span>
+                                <span class="new">2</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="link" title="Drafts">
+                                <span class="icon icon_documents"></span>
+                                <span class="item">Drafts</span>
+                                <span class="new">16</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="link" title="Sent">
+                                <span class="icon icon_upload"></span>
+                                <span class="item">Sent</span>
+                                <span class="new hidden"></span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="link" title="Trash">
+                                <span class="icon icon_trash_alt"></span>
+                                <span class="item">Trash</span>
+                                <span class="new hidden"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="menu-section">
+                    <header class="menu-header">
+                        <span class="menu-title">Smartboxes</span>
+                        <span role='button' class="icon arrow arrow_carrot-down"></span>
+                    </header>
+                    <ul class="menu-items" role="menubar">
+                        <li role="menuitem">
+                            <a href="#" class="link" title="Inquiries">
+                                <span class="icon icon_document"></span>
+                                <span class="item">Inquiries</span>
+                                <span class="new hidden"></span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="link" title="Receipts">
+                                <span class="icon icon_archive"></span>
+                                <span class="item">Receipts</span>
+                                <span class="new">3</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="link" title="Forms">
+                                <span class="icon icon_pencil_alt"></span>
+                                <span class="item">Forms</span>
+                                <span class="new">31</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="menu-section">
+                    <header class="menu-header">
+                        <span class="menu-title">Marked</span>
+                        <span role="button" class="icon arrow arrow_carrot-down"></span>
+                    </header>
+                    <ul class="menu-items" role="menubar">
+                        <li role="menuitem">
+                            <a href="#" class="link" title="Important">
+                               <span class="icon">
+                                    <span class="blue mark"></span>
+                               </span>
+                               <span class="item">Important</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="link" title="Business">
+                                <span class="icon">
+                                    <span class="green mark"></span>
+                                </span>
+                                <span class="item">Business</span>
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="link" title="Business">
+                            <span class="icon">
+                                <span class="orange mark"></span>
+                             </span>
+                                <span class="item">School</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <section class="settings-box">
+                <div class="status">
+                    <span class="status-title">
+                        <span>Sending...</span>
+                        <span class="status-load">3 of 4</span>
+                    </span>
+                    <div class="progress">
+                        <span class="track"></span>
+                        <span class="loaded"></span>
+                    </div>
+                </div>
+                <div class="settings">
+                    <span role="button" class="icon_plus" title="Add"></span>
+                    <span role="button" class="icon_cog" title="Settings"></span>
+                </div>
+            </section>
+        </aside>
+
+        <!--Emails preview-->
+        <section class="emails-preview">
+            <section class="top-panel">
+                <span role="button" class="icon_menu menu" title="menu"></span>
+                <div class="filter-by">
+                    <ul class="filters" role="list">
+                        <li class="active" role="listitem">
+                            <span>Date Received</span>
+                        </li>
+                    </ul>
+                    <span role="button" class="arrow_carrot-down"></span>
+                </div>
+            </section>
+            <header class="preview-header">
+                <span>Inbox</span>
+            </header>
+            <section class="preview-box">
+                <ul class="preview-list" aria-live="polite">
+                    <!--List filled by template-->
+                </ul>
+            </section>
+        </section>
+
+        <!--Email content-->
+        <section class="email-content">
+            <section class="top-panel">
+                <div class="back">
+                    <span role="button" class="arrow_carrot-left" title="back"></span>
+                </div>
+                <div class="email-actions">
+                    <div class="favourite">
+                        <span>Favourite</span>
+                        <span role="button" class="icon favorite icon_star"></span>
+                    </div>
+                    <div class="mark-message">
+                        <span>Mark Message</span>
+                        <span role="button" class="icon  check icon_box-checked"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="message-block" aria-live="polite">
+                <!--Filled by template-->
+            </section>
+        </section>
+    </main>
+
+</div>
+</body>
+<script data-main="js/main" src="js/libs/require.js"></script>
+</html>

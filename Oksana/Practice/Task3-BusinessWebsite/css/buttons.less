@@ -1,0 +1,28 @@
+.button {
+  .font-size(18,15);
+  white-space: nowrap;
+  padding: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid rgb(42, 172, 200);
+  .buttons-gradient;
+  .border-radius;
+
+  // Button icons
+  .icon {
+    color: @white;
+    margin-right: 0.5em;
+    .font-size(13);
+  }
+
+  // Hover style
+  &:hover {
+    .buttons-hover-gradient;
+  }
+
+  // Media queries
+  @media @screenWidth-768 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,111 @@
+// Wrapper
+.wrapper {
+  width: 100%;
+  min-width: 780px;
+  position: relative;
+  box-sizing: border-box;
+  .font-size(15);
+}
+
+// Main holder
+.page-width {
+  width: 65%;
+  margin: 0 auto;
+  padding: 1em;
+  @media @screenWidth-1024 {
+    width: 75%;
+  }
+  @media @screenWidth-960 {
+    width: 100%;
+  }
+  @media @screenWidth-768{
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+// Headings
+.heading {
+  padding: 1em 0;
+  .icon {
+    color: @darkenCyan;
+    .font-size(25, 15);
+    margin-right: 0.5em;
+  }
+}
+
+// Pictures figures
+.figure{
+  position: relative;
+  display: inline-block;
+  .figcaption {
+    background: @darkenCyan;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .font-size(30, 15);
+    text-align: center;
+    cursor: pointer;
+    padding: 0.5em;
+    visibility: hidden;
+  }
+  &:hover{
+    .figcaption {
+      visibility: visible;
+    }
+  }
+  a {
+    color: @white;
+  }
+  img {
+    width: 100%;
+  }
+  @media @screenWidth-768 {
+    width: 47%;
+  }
+}
+
+// Social icons
+.social {
+  .columns(3);
+  .icon {
+    font-size: 0;
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: url("../img/contacts/icons.png");
+    background-size: cover;
+  }
+  .facebook {
+    background-position: 0 0;
+  }
+  .dribble {
+    background-position: -54px 0;
+  }
+  .pin {
+    background-position: -108px 0;
+  }
+  .link {
+    background-position: -162px 0;
+  }
+  .skype {
+    background-position: -216px 0;
+  }
+  .share {
+    background-position: -270px 0;
+  }
+}
+
+// Address block
+.addr {
+   margin-bottom: 1em;
+ }
+
+// Box styles
+.box {
+  border: 1px solid @cyan;
+  padding: 3.8em;
+  box-sizing: border-box;
+  overflow: auto;
+}

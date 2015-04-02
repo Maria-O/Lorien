@@ -1,0 +1,78 @@
+/*Preview section*/
+.emails-preview {
+  .flex-columns;
+  font-family: "Myriad Regular", Arial, Helvetica, sans-serif;
+  color: @textColor;
+  flex: 2 4 50em;
+  @media @ipadPortrait {
+    flex: 2 4 37em;
+  }
+  .preview-header {
+    padding: 0.8em 1.6em;
+    background-color: @green;
+    color: @white;
+  }
+  .preview-box {
+    flex: 1 1 auto;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .border(0, 1px, 0, 0);
+    /*Preview list*/
+    .preview-list {
+      /*List of emails*/
+      .email {
+        .flex-rows;
+        .box-sizing(border-box);
+        .border(0, 0 ,1px ,0);
+        padding: 1em 0.4em;
+        /*Email actions*/
+        .email-actions {
+          .online {
+            color: @blue;
+          }
+          .offline {
+            color: @lightGrey;
+          }
+        }
+        /*Email preview*/
+        .preview-content {
+          padding: 0 0.8em;
+          .details {
+            display: inline-block;
+            .user-name {
+              display: block;
+            }
+            .email-time {
+              font-size: 0.8em;
+            }
+          }
+          .email-tittle{
+            font-size: 1.2em;
+            line-height: 1.2em;
+          }
+        }
+
+        /*Markers for email*/
+        .markers {
+          font-size: 1.2em;
+          margin-right: 0.6em;
+          color: @lightGrey;
+          .icon {
+            background: none;
+            display: block;
+          }
+        }
+      }
+      .email.active {
+        background-color: @activeCells;
+        .favorite {
+          color: @orange;
+        }
+        .mark.green {
+          color: @green;
+        }
+      }
+    }
+  }
+}

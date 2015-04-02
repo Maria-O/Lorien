@@ -1,0 +1,29 @@
+.buttons-gradient{
+  background-image: -moz-linear-gradient( 90deg, rgb(42,172,200) 0%, rgb(96,206,222) 15%, rgb(114,218,230) 50%, rgb(129,228,237) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(42,172,200) 0%, rgb(96,206,222) 15%, rgb(114,218,230) 50%, rgb(129,228,237) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(42,172,200) 0%, rgb(96,206,222) 15%, rgb(114,218,230) 50%, rgb(129,228,237) 100%);
+  box-shadow: 1px 1.732px 3px 0 rgba(0, 0, 0, 0.078), inset 1px 1.732px 1px 0 rgba(255, 255, 255, 0.039);
+}
+.buttons-hover-gradient {
+  background-image: -moz-linear-gradient( 270deg, rgb(42,172,200) 0%, rgb(96,206,222) 15%, rgb(114,218,230) 50%, rgb(129,228,237) 100%);
+  background-image: -webkit-linear-gradient( 270deg, rgb(42,172,200) 0%, rgb(96,206,222) 15%, rgb(114,218,230) 50%, rgb(129,228,237) 100%);
+  background-image: -ms-linear-gradient( 270deg, rgb(42,172,200) 0%, rgb(96,206,222) 15%, rgb(114,218,230) 50%, rgb(129,228,237) 100%);
+  box-shadow: 1px 1.732px 3px 0 rgba(0, 0, 0, 0.078), inset 1px 1.732px 1px 0 rgba(255, 255, 255, 0.039);
+}
+.border-radius(@radius:8px){
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -ms-border-radius: @radius;
+}
+.columns(@number){
+  -moz-column-count: @number;
+  -webkit-column-count: @number;
+  column-count: @number;
+}
+
+// Convert px to em
+.font-size(@value: @base-font-size, @context: @base-font-size) {
+  font-size: (@value / @context) + 0em;
+}
+

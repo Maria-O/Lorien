@@ -1,0 +1,28 @@
+body {
+    font-size: 62.5%;
+    background-color: #f0f0f0;
+}
+.user-icon img {
+     width: 80px;
+     height: 80px;
+     border-radius: 90px;
+ }
+article {
+    overflow: auto;
+    margin-bottom: 1em;
+}
+article p{
+    width: 53%;
+    float: right;
+}
+.video-holder {
+    width: 45%;
+    float: left;
+}
+.tab-menu {
+    width: 1024px;
+    margin: 0 auto;
+}
+.comments li .user-icon{
+    width: 90px;
+}

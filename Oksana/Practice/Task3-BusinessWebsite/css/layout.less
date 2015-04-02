@@ -1,0 +1,226 @@
+// HOME
+// Carousel
+.carousel{
+  background-color: @cyan;
+  .page-width {
+    padding: 2em 1em 1em 1em;
+  }
+}
+// Service section
+.services-section {
+  background-color: @lightGrey;
+  border-bottom: 1px solid @darkBorderColor;
+  .page-width {
+    padding: 5.5em 1em;
+  }
+  .services-list {
+    display: table;
+    width: 100%;
+  }
+  .services-list {
+    li{
+      height: 100%;
+      position: relative;
+      .caption {
+        margin-bottom: 1.3em;
+        white-space: nowrap;
+        .icon {
+          color: @white;
+          background-color: @darkenCyan;
+          padding: 0.5em;
+          margin-right: 0.5em;
+          border-radius: 1em;
+        }
+        .title {
+          display: inline;
+        }
+      }
+      .read-more {
+        color: @darkenCyan;
+        padding-top: 2em;
+        cursor: pointer;
+        position: absolute;
+        bottom: -1.5em;
+        .icon {
+          color: @black;
+        }
+      }
+    }
+  }
+  @media @screenWidth-960, @screenWidth-768 {
+    .services-list {
+      li {
+        height: auto;
+      }
+    }
+  }
+}
+// Latest work section
+.latest-work {
+  .latest-work-list {
+    border: 1px solid @borderColor;
+    border-width: 1px 0;
+    padding: 2em 0 4em 0;
+    @media @screenWidth-1024 {
+      .figure {
+        width: 100%;
+      }
+    }
+  }
+  .controls {
+    float: right;
+  }
+  .arrow-right, .arrow-left{
+    color: @cyan;
+    cursor: pointer;
+  }
+}
+// Clients section
+.client-info {
+  .testimonials {
+    .tags-cloud {
+      font-weight: 600;
+      font-style: italic;
+      margin-top: 3em;
+      li {
+        display: inline-block;
+      }
+      .tag:hover {
+        color: @darkenCyan;
+      }
+    }
+  }
+  .our-clients {
+    .clients-list {
+      text-align: center;
+      li {
+        display: inline-block;
+        margin-left: -5px;
+        margin-top: -5px;
+      }
+    }
+  }
+}
+// Download section
+.download-box {
+  margin: 4em 0;
+  .button {
+    float: right;
+  }
+  @media @screenWidth-768 {
+    .message {
+      display: none;
+    }
+    .button {
+      margin: 0 auto;
+      margin: 0 auto;
+      float: none;
+      display: block;
+    }
+    .page-width {
+      width: 95%;
+    }
+  }
+}
+// END HOME
+
+// PORTFOLIO
+.portfolio {
+  // Categories navigation
+  .portfolio-tabs {
+    padding: 2em 0;
+    border: 1px solid @borderColor;
+    border-width: 1px 0;
+    .tab {
+      padding: 0.5em 1em;
+      @media @screenWidth-768 {
+        padding: 0.5em;
+      }
+      &.active{
+        background: @cyan;
+      }
+    }
+  }
+  // Portfolio thumbs
+  .portfolio-thumbs {
+    width: 100%;
+    margin: 3em 0;
+    text-align: center;
+    .row {
+      display: inline;
+    }
+    .item {
+      display: inline;
+      margin: 2%;
+    }
+  }
+  // Page pagination
+  .pagination-box{
+    padding: 3em 0 5em 0;
+    border-top: 1px solid @borderColor;
+    .pagination {
+      text-align: center;
+      .page {
+        padding: 0.3em 0.6em;
+        &.active {
+          background: @cyan;
+        }
+      }
+      .last {
+        margin-left: 1em;
+      }
+      .next, .last {
+        background: @lightGrey;
+        color: @darkenCyan;
+      }
+    }
+  }
+}
+// END PORTFOLIO
+
+// CONTACT US
+.contact-us {
+  // Contact us heading
+  .heading {
+    border-bottom: 1px solid @borderColor;
+    padding-bottom: 0.2em;
+  }
+  // Block with form and map
+  .block {
+    overflow: auto;
+  }
+  // Google map box
+  .map-holder {
+    float: right;
+    padding: 4em 0;
+    .google-map {
+      width: 100%;
+    }
+    .map{
+      padding: 1.7em;
+      img {
+        border: 2px solid @white;
+      }
+    }
+  }
+  // Send feedback form
+  .form-box {
+    .email {
+      color: @darkenCyan;
+    }
+    p {
+      margin: 1em 0;
+    }
+  }
+  // Address box
+  .address-box {
+    margin: 4em 0;
+  }
+  // Media queries
+  @media @screenWidth-768{
+    .address-box {
+      margin-bottom: 0;
+    }
+  }
+}
+// END CONTACT

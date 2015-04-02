@@ -1,0 +1,30 @@
+.flex-columns {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.flex-rows {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.border-radius (@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+.box-sizing (@type: border-box) {
+  -webkit-box-sizing: @type;
+  -moz-box-sizing:    @type;
+  box-sizing:         @type;
+}
+.cells-padding {
+  padding: 0.8em 0.6em 0.8em 1em;
+}
+.border (@top, @right, @bottom, @left){
+  border-style: solid;
+  border-color: @greyBorder;
+  border-width: @top @right @bottom @left;
+}

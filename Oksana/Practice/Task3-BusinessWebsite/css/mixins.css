@@ -1,0 +1,12 @@
+.buttons-gradient {
+  background-image: -moz-linear-gradient(90deg, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
+  background-image: -webkit-linear-gradient(90deg, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
+  background-image: -ms-linear-gradient(90deg, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
+  box-shadow: 1px 1.732px 3px 0 rgba(0, 0, 0, 0.078), inset 1px 1.732px 1px 0 rgba(255, 255, 255, 0.039);
+}
+.buttons-hover-gradient {
+  background-image: -moz-linear-gradient(270deg, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
+  background-image: -webkit-linear-gradient(270deg, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
+  background-image: -ms-linear-gradient(270deg, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
+  box-shadow: 1px 1.732px 3px 0 rgba(0, 0, 0, 0.078), inset 1px 1.732px 1px 0 rgba(255, 255, 255, 0.039);
+}

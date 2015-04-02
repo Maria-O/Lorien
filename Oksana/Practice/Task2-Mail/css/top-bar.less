@@ -1,0 +1,106 @@
+/*Header style*/
+#header {
+  background-color: @darkGrey;
+  .flex-rows;
+  padding: 2em;
+
+  /*Exit, minimize, maximize buttons*/
+  .actions-btns{
+    .border-radius (2.5em);
+    display: inline-block;
+    margin: 0.4em;
+    width: 2em;
+    height: 2em;
+  }
+  .close-btn, {
+    .actions-btns;
+    background-color: @red;
+  }
+  .min-btn {
+    .actions-btns;
+    background-color: @yellow;
+  }
+  .max-btn {
+    .actions-btns;
+    background-color: @green;
+  }
+  /*Search field*/
+  .search-box {
+    position: relative;
+    #search{
+      .border-radius (4.2em);
+      .border(1px, 1px, 1px, 1px);
+      font-size: 3em;
+      min-width: 220px;
+      @media @ipadPortrait {
+        font-size: 3.5em;
+      }
+      @media @ipadLandscape {
+        font-size: 2em;
+      }
+    }
+    label {
+      position: absolute;
+      right: 0.3em;
+      top: 0.3em;
+      font-size: 2.5em;
+      @media @ipadLandscape {
+        right: 0.5em;
+        top: 0.5em;
+      }
+    }
+  }
+}
+
+.top-panel {
+  .flex-rows;
+  .cells-padding;
+  .box-sizing;
+  justify-content: space-between;
+  color: @white;
+  background-color: @grey;
+  .menu, .back {
+    visibility: hidden;
+  }
+  @media @iphone6Portrait, @iphone6Landscape {
+    .back {
+      visibility: visible;
+      font-size: 1.8em;
+      margin-bottom: -0.4em;
+      margin-top: -0.2em;
+    }
+  }
+  @media @iphone6Portrait{
+    .menu {
+      visibility: visible;
+      font-size: 1.8em;
+      margin-top: -0.1em;
+    }
+  }
+  .email-actions{
+    .favourite {
+      display: inline-block;
+      padding-right: 0.5em;
+      .icon {
+        color: @orange;
+      }
+    }
+    .mark-message {
+      display: inline-block;
+      margin-right: 1.5em;
+      .icon {
+        color: @green;
+      }
+    }
+  }
+  .filters {
+    display: inline-block;
+    position: relative;
+    li {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

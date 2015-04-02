@@ -1,0 +1,40 @@
+// Body styles
+body {
+  line-height: 1;
+  font: @font;
+  color: @textColor;
+}
+
+// Links
+a, a:hover{
+  text-decoration: none;
+  color: @linkColor;
+}
+a:focus, a:visited{
+  text-decoration: underline;
+}
+
+// Headings
+h3, h2, h4{
+  text-transform: uppercase;
+  color: @black;
+  font-weight: 600;
+  .font-size(15, 15);
+  margin-bottom: 1em;
+}
+h2 {
+  display: inline-block;
+}
+h6 {
+  font-weight: 600;
+  margin-bottom: 0.6em;
+}
+
+// Paragraphs
+p {
+  line-height: 1.4em;
+}
+
+
+
+

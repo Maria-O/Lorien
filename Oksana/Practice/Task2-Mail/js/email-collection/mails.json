@@ -1,0 +1,94 @@
+{
+  "inbox": [
+    {
+      "id": 1233,
+      "status": "online",
+      "adresserName": "Ryan Gosling",
+      "adresserEmail": "ryan_gosling@email.com",
+      "adresserIcon": "ryan-icon.jpg",
+      "topic": "Hey Girl :)",
+      "time": "8:19pm",
+      "date": "Friday July 7 2014",
+      "description": "Sed tristique nunc risus, vitae efficitur erat suscipit nec. Class aptent taciti sociosqu.",
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas luctus dictum. Praesent ultricies, libero quis interdum vulputate, nulla risus viverra metus, nec posuere dui sem vitae sem. Vivamus a viverra felis, quis lacinia mi. Duis maximus placerat diam eget feugiat. ",
+      "attached": {
+        "img": "img0.jpg"
+      }
+    },
+    {
+      "id": 2111,
+      "status": "offline",
+      "adresserName": "Justin Timberlake",
+      "adresserEmail": "justin_tim@email.com",
+      "adresserIcon": "justin-icon.jpg",
+      "topic": "Hello",
+      "time": "9:10pm",
+      "date":  "Friday July 7 2014",
+      "description": "Praesent vel dictum enim. Mauris in odio at arcu efficitur pharetra.",
+      "message": "Duis volutpat purus leo, sed placerat diam sollicitudin non. Curabitur rutrum libero sit amet purus volutpat, a maximus mauris mattis. Sed in lectus consequat, viverra ante sed, accumsan purus.",
+      "attached": {
+        "img": "img1.jpg"
+      }
+    },
+    {
+      "id": 2111,
+      "status": "offline",
+      "adresserName": "Avril Lavin",
+      "adresserEmail": "avril_lav@email.com",
+      "adresserIcon": "avril-icon.jpg",
+      "topic": "Hello",
+      "time": "10:10pm",
+      "date":  "Friday July 8 2014",
+      "description": "Etiam quis erat vitae turpis consequat faucibus quis in quam.",
+      "message": "Duis volutpat purus leo, sed placerat diam sollicitudin non. Curabitur rutrum libero sit amet purus volutpat, a maximus mauris mattis. Sed in lectus consequat, viverra ante sed, accumsan purus.",
+      "attached": {
+        "img": "img2.jpg"
+      }
+    },
+    {
+      "id": 2111,
+      "status": "online",
+      "adresserName": "John Timton",
+      "adresserEmail": "john_tim@email.com",
+      "adresserIcon": "john-icon.jpg",
+      "topic": "Hello",
+      "time": "11:10pm",
+      "date":  "Friday July 8 2014",
+      "description": "Mauris cursus sem in lorem imperdiet eleifend sed placerat.",
+      "message": "Duis volutpat purus leo, sed placerat diam sollicitudin non. Curabitur rutrum libero sit amet purus volutpat, a maximus mauris mattis. Sed in lectus consequat, viverra ante sed, accumsan purus.",
+      "attached": {
+        "img": "img3.jpg"
+      }
+    },
+    {
+      "id": 2111,
+      "status": "online",
+      "adresserName": "Justin Timberlake",
+      "adresserEmail": "justin_tim@email.com",
+      "adresserIcon": "justin-icon.jpg",
+      "topic": "Hello",
+      "time": "9:10pm",
+      "date":  "Friday July 7 2014",
+      "description": "Praesent vel dictum enim. Mauris in odio at arcu efficitur pharetra.",
+      "message": "Duis volutpat purus leo, sed placerat diam sollicitudin non. Curabitur rutrum libero sit amet purus volutpat, a maximus mauris mattis. Sed in lectus consequat, viverra ante sed, accumsan purus.",
+      "attached": {
+        "img": "img4.jpg"
+      }
+    },
+    {
+      "id": 2111,
+      "status": "online",
+      "adresserName": "Justin Timberlake",
+      "adresserEmail": "justin_tim@email.com",
+      "adresserIcon": "justin-icon.jpg",
+      "topic": "Hello",
+      "time": "9:10pm",
+      "date":  "Friday July 7 2014",
+      "description": "Praesent vel dictum enim. Mauris in odio at arcu efficitur pharetra.",
+      "message": "Duis volutpat purus leo, sed placerat diam sollicitudin non. Curabitur rutrum libero sit amet purus volutpat, a maximus mauris mattis. Sed in lectus consequat, viverra ante sed, accumsan purus.",
+      "attached": {
+        "img": "img1.jpg"
+      }
+    }
+  ]
+}

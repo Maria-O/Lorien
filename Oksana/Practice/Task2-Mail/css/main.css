@@ -1,0 +1,692 @@
+@import "fonts.css";
+@import "icons.css";
+@import "libs/jquery.mCustomScrollbar.css";
+.flex-columns {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.flex-rows {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.cells-padding {
+  padding: 0.8em 0.6em 0.8em 1em;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline-color: #9d9d9d;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1;
+  font-size: 40%;
+  font-family: 'Gill', Arial, Helvetica, sans-serif;
+  color: #454545;
+}
+@media (min-device-width : 768px) and (max-device-width : 1024px)  and (orientation : landscape) {
+  body {
+    font-size: 32%;
+  }
+}
+@media (min-device-width : 768px)  and (max-device-width : 1024px)   and (orientation : portrait) {
+  body {
+    font-size: 36%;
+  }
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+p {
+  color: #9d9d9d;
+  text-align: justify;
+}
+p::selection {
+  color: #ffffff;
+  background: #42c3ea;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+h2 {
+  font-family: "Myriad Bold", Arial, Helvetica, sans-serif;
+}
+span[role=button] {
+  cursor: pointer;
+}
+/*Style for images*/
+.full-width {
+  width: 100%;
+}
+.center {
+  text-align: center;
+}
+/*Common colors*/
+.blue {
+  background-color: #42c3ea;
+}
+.orange {
+  background-color: #ffac00;
+}
+.green {
+  background-color: #97ce68;
+}
+/*Wrapper style*/
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 100%;
+}
+@media (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape), (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+  .wrapper {
+    overflow-x: hidden;
+  }
+}
+/*Common style for emails-preview and email-content*/
+.user-icon {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.5em 0.3em 0;
+}
+.user-icon img {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  width: 3.3em;
+}
+.user-name {
+  font-family: "Myriad Bold", Arial, Helvetica, sans-serif;
+}
+/*Header style*/
+#header {
+  background-color: #454c57;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 2em;
+  /*Exit, minimize, maximize buttons*/
+  /*Search field*/
+}
+#header .actions-btns {
+  -webkit-border-radius: 2.5em;
+  -moz-border-radius: 2.5em;
+  border-radius: 2.5em;
+  display: inline-block;
+  margin: 0.4em;
+  width: 2em;
+  height: 2em;
+}
+#header .close-btn {
+  -webkit-border-radius: 2.5em;
+  -moz-border-radius: 2.5em;
+  border-radius: 2.5em;
+  display: inline-block;
+  margin: 0.4em;
+  width: 2em;
+  height: 2em;
+  background-color: #e13332;
+}
+#header .min-btn {
+  -webkit-border-radius: 2.5em;
+  -moz-border-radius: 2.5em;
+  border-radius: 2.5em;
+  display: inline-block;
+  margin: 0.4em;
+  width: 2em;
+  height: 2em;
+  background-color: #ffd200;
+}
+#header .max-btn {
+  -webkit-border-radius: 2.5em;
+  -moz-border-radius: 2.5em;
+  border-radius: 2.5em;
+  display: inline-block;
+  margin: 0.4em;
+  width: 2em;
+  height: 2em;
+  background-color: #97ce68;
+}
+#header .search-box {
+  position: relative;
+}
+#header .search-box #search {
+  -webkit-border-radius: 4.2em;
+  -moz-border-radius: 4.2em;
+  border-radius: 4.2em;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-width: 1px 1px 1px 1px;
+  font-size: 3em;
+  min-width: 220px;
+}
+@media (min-device-width : 768px)  and (max-device-width : 1024px)   and (orientation : portrait) {
+  #header .search-box #search {
+    font-size: 3.5em;
+  }
+}
+@media (min-device-width : 768px) and (max-device-width : 1024px)  and (orientation : landscape) {
+  #header .search-box #search {
+    font-size: 2em;
+  }
+}
+#header .search-box label {
+  position: absolute;
+  right: 0.3em;
+  top: 0.3em;
+  font-size: 2.5em;
+}
+@media (min-device-width : 768px) and (max-device-width : 1024px)  and (orientation : landscape) {
+  #header .search-box label {
+    right: 0.5em;
+    top: 0.5em;
+  }
+}
+.top-panel {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  padding: 0.8em 0.6em 0.8em 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  justify-content: space-between;
+  color: #ffffff;
+  background-color: #6f7783;
+}
+.top-panel .menu,
+.top-panel .back {
+  visibility: hidden;
+}
+@media (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait), (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
+  .top-panel .back {
+    visibility: visible;
+    font-size: 1.8em;
+    margin-bottom: -0.4em;
+    margin-top: -0.2em;
+  }
+}
+@media (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+  .top-panel .menu {
+    visibility: visible;
+    font-size: 1.8em;
+    margin-top: -0.1em;
+  }
+}
+.top-panel .email-actions .favourite {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+.top-panel .email-actions .favourite .icon {
+  color: #ffac00;
+}
+.top-panel .email-actions .mark-message {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+.top-panel .email-actions .mark-message .icon {
+  color: #97ce68;
+}
+.top-panel .filters {
+  display: inline-block;
+  position: relative;
+}
+.top-panel .filters li {
+  display: none;
+}
+.top-panel .filters li.active {
+  display: block;
+}
+/*Main section*/
+#main {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  position: relative;
+  font-size: 2.5em;
+}
+/*Aside menu*/
+.aside-menu {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  flex: 1 0 13em;
+  background-color: #6f7783;
+  color: #ffffff;
+}
+@media (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+  .aside-menu {
+    flex: 1 0 auto;
+  }
+}
+.menu-holder {
+  overflow: auto;
+}
+/*Menu section*/
+.menu-header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0.8em 0.6em 0.8em 1em;
+  background-color: #616975;
+  text-transform: uppercase;
+}
+@media (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+  .menu-header .menu-title,
+  .menu-header .arrow {
+    display: none;
+  }
+  .menu-header .icon {
+    padding-left: 0.3em;
+  }
+}
+.menu-items {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.menu-items .link {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0.8em 0.6em 0.8em 1em;
+  justify-content: flex-start;
+}
+.menu-items .link .icon {
+  flex: 1 1 auto;
+}
+.menu-items .link .item {
+  flex: 8 8 auto;
+}
+@media (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+  .menu-items .link .item {
+    display: none;
+  }
+}
+.menu-items .link .new {
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  flex: 1 1 auto;
+  text-align: center;
+  background-color: #535a65;
+  width: 2em;
+}
+@media (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+  .menu-items .link .new {
+    display: none;
+  }
+}
+.menu-items .link .hidden {
+  visibility: hidden;
+}
+.menu-items .link .mark {
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+}
+.menu-items .link:hover {
+  background-color: #686f7b;
+}
+.menu-items .link:hover .new {
+  background: #4c535d;
+}
+.menu-items .link.active {
+  background-color: #42c3ea;
+}
+.menu-items .link.active .new {
+  background-color: #16a0c9;
+}
+.settings-box {
+  background-color: #616975;
+  padding: 0.8em 0.6em 0.8em 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 3em;
+}
+@media (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+  .settings-box {
+    padding: 1em;
+  }
+}
+.settings-box .status {
+  margin-bottom: 2.1em;
+  text-align: center;
+}
+.settings-box .status .status-title {
+  display: block;
+  margin-bottom: 0.5em;
+}
+@media (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+  .settings-box .status {
+    display: none;
+  }
+}
+.settings-box .progress {
+  position: relative;
+  height: 0.8em;
+  width: 100%;
+}
+.settings-box .progress .track {
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.settings-box .progress .loaded {
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  background: #42c3ea;
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+/*Preview section*/
+.emails-preview {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  font-family: "Myriad Regular", Arial, Helvetica, sans-serif;
+  color: #454545;
+  flex: 2 4 50em;
+}
+@media (min-device-width : 768px)  and (max-device-width : 1024px)   and (orientation : portrait) {
+  .emails-preview {
+    flex: 2 4 37em;
+  }
+}
+.emails-preview .preview-header {
+  padding: 0.8em 1.6em;
+  background-color: #97ce68;
+  color: #ffffff;
+}
+.emails-preview .preview-box {
+  flex: 1 1 auto;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-width: 0 1px 0 0;
+  /*Preview list*/
+}
+.emails-preview .preview-box .preview-list {
+  /*List of emails*/
+}
+.emails-preview .preview-box .preview-list .email {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-width: 0 0 1px 0;
+  padding: 1em 0.4em;
+  /*Email actions*/
+  /*Email preview*/
+  /*Markers for email*/
+}
+.emails-preview .preview-box .preview-list .email .email-actions .online {
+  color: #42c3ea;
+}
+.emails-preview .preview-box .preview-list .email .email-actions .offline {
+  color: #9d9d9d;
+}
+.emails-preview .preview-box .preview-list .email .preview-content {
+  padding: 0 0.8em;
+}
+.emails-preview .preview-box .preview-list .email .preview-content .details {
+  display: inline-block;
+}
+.emails-preview .preview-box .preview-list .email .preview-content .details .user-name {
+  display: block;
+}
+.emails-preview .preview-box .preview-list .email .preview-content .details .email-time {
+  font-size: 0.8em;
+}
+.emails-preview .preview-box .preview-list .email .preview-content .email-tittle {
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+.emails-preview .preview-box .preview-list .email .markers {
+  font-size: 1.2em;
+  margin-right: 0.6em;
+  color: #9d9d9d;
+}
+.emails-preview .preview-box .preview-list .email .markers .icon {
+  background: none;
+  display: block;
+}
+.emails-preview .preview-box .preview-list .email.active {
+  background-color: #eaedf1;
+}
+.emails-preview .preview-box .preview-list .email.active .favorite {
+  color: #ffac00;
+}
+.emails-preview .preview-box .preview-list .email.active .mark.green {
+  color: #97ce68;
+}
+/*Email content section*/
+.email-content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  justify-content: flex-start;
+  flex: 7 7 280em;
+  /*Header for email with addresser data*/
+  /*Email content*/
+}
+@media (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait), (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
+  .email-content {
+    position: absolute;
+    right: -50em;
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+  }
+}
+.email-content .message-block {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+.email-content .email-header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0.7em 1em;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-width: 0 0 1px 0;
+}
+.email-content .email-header .addresser-data {
+  display: inline-block;
+}
+.email-content .email-header .addresser-data .user-email {
+  font-size: 0.95em;
+  display: block;
+}
+.email-content .email-header .email-details {
+  font-size: 0.8em;
+  color: #454c57;
+  text-align: right;
+}
+.email-content .email-header .email-details .attachments,
+.email-content .email-header .email-details .email-time,
+.email-content .email-header .email-details .email-date {
+  display: block;
+}
+.email-content .letter {
+  padding: 0.7em 1.5em;
+  flex: 1 1 auto;
+  height: auto;
+  overflow-y: scroll;
+}
+.email-content .letter .letter-actions {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  justify-content: center;
+  font-size: 1.4em;
+  margin-bottom: 0.7em;
+  color: #caced5;
+}
+.email-content .letter .letter-actions li {
+  padding: 0 0.2em;
+}
+.email-content .letter .img {
+  padding: 1em 0;
+}

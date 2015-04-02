@@ -1,0 +1,74 @@
+// Two columns 50% to 50% width
+.grid-50-50 {
+  .column {
+    width: 50%;
+    display: inline-block;
+    margin-left: -5px;
+    vertical-align: top;
+    &:nth-child(2){
+      padding-left: 1em;
+      box-sizing: border-box;
+    }
+  }
+  @media @screenWidth-1024 {
+    .column {
+      width: 100%;
+    }
+  }
+}
+
+// Four columns - 25% width
+.grid-25 {
+  .column {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0.8em;
+    box-sizing: border-box;
+  }
+  @media @screenWidth-960, @screenWidth-768 {
+    .column {
+      width: 50%;
+      margin-bottom: 3em;
+    }
+  }
+}
+
+// Two columns 75% to 25% width
+.grid-75-25 {
+  .column-75 {
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 1em;
+    box-sizing: border-box;
+  }
+  .column-25 {
+    width: 25%;
+    display: inline-block;
+    margin-left: -5px;
+    vertical-align: top;
+  }
+  @media @screenWidth-768 {
+    .column-75, .column-25 {
+      width: 100%;
+    }
+  }
+  @media @screenWidth-1024 {
+    .column-75{
+      width: 60%;
+    }
+    .column-25 {
+      width: 40%;
+    }
+  }
+}
+
+// Grid that based on the table properties
+.grid-table {
+  display: table;
+  .grid-cell {
+    display: table-cell;
+    padding: 0 1em;
+  }
+}

@@ -1,0 +1,32 @@
+/*Main */
+
+.main {
+    padding: 0;
+}
+
+.main-nav {
+    margin: 0 15.73%;
+    z-index: 1;
+}
+
+.map-frame {
+    width: 100%;
+    margin-top: -3.9em;
+    height: 600px; /*!!*/
+}
+
+.place-card.place-card-large {
+    display: none;
+}
+
+.gm-style .place-card-large {
+    display: none;
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 860px){
+    .main {
+        width: 100%;
+    }
+}

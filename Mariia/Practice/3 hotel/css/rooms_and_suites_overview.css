@@ -1,0 +1,126 @@
+/* Video block */
+
+.text-with-header .name {
+    text-transform: none;
+}
+
+.text-with-header .text {
+    font-size: 0.93em;
+    line-height: 1.3em;
+}
+
+.thumb {
+    font-size: 14px ;
+    width:29.4%;
+    height: auto;
+}
+
+.thumb .block-header {
+    line-height: normal;
+    margin-bottom: 0.1em;
+}
+
+.general-info {
+    border-right: 0;
+}
+
+.general-info .video {
+    height: 10.85em;
+    border: 1px solid #cdcdcd;
+    background: #fcfdff;
+    border-radius: 0.3em;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.additional-func {
+    border-left: 1px solid #cdcdcd;
+}
+
+.general-info .video:hover {
+    background: #323333;
+}
+
+.play-icon {
+    visibility: hidden;
+    position: absolute;
+    background-position: -101px -28px;
+    width: 40px;
+    height: 40px;
+    top:50%;
+    margin-top:-20px;
+    left:50%;
+    margin-left: -20px;
+}
+
+.general-info .video:hover .play-icon {
+    visibility: visible;
+}
+
+
+/* Aside list  */
+
+.features-list .text {
+    width: 80%;
+    display: inline-block;
+}
+.features-list li {
+    position: relative;
+}
+
+.feature-icon {
+    width:25px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top:-12px;
+}
+
+.wifi {
+    background-position: -96px -72px;
+}
+
+.spa {
+    background-position: -136px -72px;
+}
+
+.drop {
+    background-position: -164px -70px;
+}
+
+.service {
+    background-position: -189px -72px;
+}
+
+.star {
+    background-position: -217px -68px;
+}
+
+.dinner {
+    background-position: -252px -72px;
+}
+
+.features-list li:hover .wifi {
+    background-position: -96px -96px;
+}
+
+.features-list li:hover .spa {
+    background-position: -136px -96px;
+}
+
+.features-list li:hover .drop {
+    background-position: -164px -96px;
+}
+
+.features-list li:hover .service {
+    background-position: -189px -96px;
+}
+
+.features-list li:hover .star {
+    background-position: -217px -96px;
+}
+
+.features-list li:hover .dinner {
+    background-position: -252px -96px;
+}

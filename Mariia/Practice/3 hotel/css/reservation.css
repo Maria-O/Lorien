@@ -1,0 +1,104 @@
+/* Main-nav */
+.main {
+    padding: 0 15.73% 12.6875em;
+}
+.main-nav {
+    padding: 1.1em 0;
+}
+
+.nav-item .name {
+    font-family: "Open Sans Ligth", "Helvetica Nueue", Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.step {
+    display: inline-block;
+    font-size: 0.93em;
+    width: 1em;
+    color: #d4d3d2;
+    border: 1px solid;
+    border-radius: 1.1em;
+    padding: 0.2em;
+    margin-right: 0.2em;
+    background: #fcfaf9;
+}
+
+.step.active {
+    background: #32a2e3;
+    color:#fff;
+    border: 1px solid #32a2e3;
+}
+
+/* Basic info*/
+
+.basic-info {
+    padding: 0 19.3%;
+}
+
+.btn-holder {
+    margin-bottom: 2em;
+}
+
+.btn-holder .item-wrapper {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.text-with-header .item-wrapper:last-child {
+    margin-right: 0%;
+}
+
+.item-wrapper .name {
+    margin-bottom: 0.5em;
+    font-size: 0.85em;
+}
+
+.reservation-btn {
+    width: 95% ;
+}
+
+.selections-holder {
+    overflow: hidden;
+}
+
+.selections-holder .item-wrapper {
+    float: left;
+    width: 22.4%;
+    margin-right: 3.4%;
+    letter-spacing: -0.8px;
+}
+
+.selection-wrapper {
+    margin-bottom: 0;
+}
+
+.selection-wrapper .aside-form {
+    width: 100%;
+}
+
+.basic-info .field-btn {
+    width: 37%;
+    margin: 0 auto;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1020px) {
+    .selections-holder .item-wrapper {
+        letter-spacing: -1.3px;
+ }
+}
+
+@media screen and (max-width: 780px)  {
+    .selections-holder .item-wrapper {
+        float:none;
+        width: 48%;
+        margin: 0 0 1em;
+        letter-spacing: normal;
+    }
+
+    .selections-holder .item-wrapper:last-child {
+        margin: 0em;
+    }
+}

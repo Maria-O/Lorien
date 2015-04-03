@@ -1,0 +1,232 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+        margin: 0;
+        background: linear-gradient(to bottom, #4f7a95 0%,#4a7d98 12%,#45839d 25%,#597592 39%,#615e83 54%,#765a7e 72%,#865a83 87%,#9e597e 100%) no-repeat fixed; /* W3C */
+    }
+
+    header {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .dropdown {
+        display:none;
+    }
+
+    .control-panel {
+        padding:3%;
+        color: white;
+        font-size: 1em;
+        display: table;
+        width:94%;
+    }
+
+    .control-panel >* {
+        display: inline-block;
+    }
+
+    .control-panel span[data-text] {
+        font-size: 2em;
+        width:10%;
+    }
+
+    .control-panel h1 {
+        font-size: 1.3em;
+        font-family: serif;
+        width:80%;
+        text-align:center;
+    }
+
+
+    .control-panel span[class^='entypo']:first-child {
+        text-align:left;
+    }
+
+    .control-panel span[class^='entypo']:last-child {
+        text-align:right;
+    }
+
+
+    .search-holder {
+        width:94%;
+        padding:3%;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        color:white;
+    }
+
+    .search-holder .search {
+        display: table;
+        width:92%;
+        border-radius: 1em;
+        background: #3a687f;
+        border: none;
+        padding: 2% 4%;
+       
+    }
+
+    .search input[type="search"] {
+        display: table-cell;
+        border-radius: 1em;
+        border: none; 
+        outline: none; 
+        background: #3a687f;
+        vertical-align: middle;
+        color:white;
+        font-family: sans-serif;
+    }
+
+    .search span {
+        display:table-cell;
+        text-align:right;
+    }
+
+    .btn-holder {
+        display: table;
+        width:94%;
+        padding: 3%;
+    }
+
+    .btn-holder button {
+        display: table-cell;
+        width:32%;
+        border: 1px solid rgba(255,255,255,0.2);
+        background: none;
+        color:white;
+        border-radius: 1.5em;
+        padding: 0.5em 2.1%;
+        margin-right: 2%;
+        outline:none;
+    }
+
+    .btn-holder button:last-child {
+        margin-right:0;
+    }
+
+    button.active {
+        background: #6a8da9;
+    }
+
+    main {
+        color: white;
+    }
+
+
+    .songs-list {
+        display:table;
+        width:100%;
+        transition: all 1s ease;
+    }
+
+    .song{
+        display: table;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding: 4%;
+    }
+
+
+    .album {
+        display: table-cell;
+        width:20%;
+    }
+
+    .about-song {
+        width:60%;
+        padding: 0 4%;
+    }
+
+    .ctrl-btn {
+        background: #36384c;
+        opacity: 0;
+        transition: all 1s ease;
+        padding: 7%;
+        font-size: 2.1em;
+        text-align: center;
+
+    }
+
+    .ctrl-btn>* {
+        margin-right:20%;
+    }
+
+    .ctrl-btn span:last-child {
+         margin-right:0;
+    }
+    .info {
+       padding-bottom: 0.3em;
+       border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+ 
+    .song>* {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .running {
+        background: rgba(0,0,0,0.3);
+    }
+
+    .estimates-list>* {
+        display: inline-block;
+        margin-right:3%;
+        padding: 1% 0;
+    }
+
+    .estimates-list li:last-child {
+        margin-right:0;
+    }
+
+    .status {
+      border: 1px solid white;
+      border-radius: 2.1em;
+      font-size: 1.6em;
+      padding: 0em 0.3em;
+      transition: all 1s ease;
+    }
+
+    .rotate {
+        transform: rotate(180deg);
+    }
+
+    .paused {
+        color:rgb(173, 225, 220);
+    }
+
+    .liked {
+        color:rgb(233, 121, 121);
+    }
+
+    .downloaded {
+        color:rgb(210, 211, 129);
+    }
+
+    .queue {
+        background: rgba(119, 119, 119, 0.61);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        padding: 8% 5%;
+        text-align: center;
+    }
+
+    .queue-text {
+        display:inline-block;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/css-reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="wrapper">
+    <div id="videoContainer" class="video-holder">
+        <video id="video" class="content" controls preload="metadata" loop poster="image/tom-and-jerry.jpg">
+            <source src="video/TomAndJerry.mp4" type="video/mp4">
+            <source src="video/TomAndJerry.webm" type="video/webm">
+            <object type="application/x-shockwave-flash" data="flash-player.swf?videoUrl=video/TomAndJerry.mp4">
+                <param name="movie" value="flash-player.swf?videoUrl=video/tears-of-steel-battle-clip-medium.mp4" />
+                <param name="allowfullscreen" value="true" />
+                <param name="wmode" value="transparent" />
+                <param name="flashvars" value="controlbar=over&amp;image=img/poster.jpg&amp;file=flash-player.swf?videoUrl=video/TomAndJerry.mp4" />
+                <img alt="Tears of Steel poster image" src="image/tom-and-jerry.jpg" title="No video playback possible, please download the video from the link below" />
+            </object>
+            <track label="EN" kind="subtitles" srclang="en" src="subtitles/subs.vtt" default>
+            <track label="FR" kind="subtitles" srclang="fr" src="subtitles/subs2.vtt">
+        </video>
+        <ul id="video-controls" class="controls">
+            <li id="playpause" class="entypo-play active btn play-pause-btn" data-text="play"></li>
+            <li id="stop" class="entypo-stop active btn stop-btn" data-text="stop"></li>
+            <li id="mute" class=" entypo-sound active btn mute-btn" data-text="sound"></li>
+            <li id="volinc" class="entypo-plus active btn voice-inc-btn" data-text="plus"></li>
+            <li id="voldec" class="entypo-minus active btn voice-dec-btn" data-text="minus"></li>
+            <li id="fs" class="entypo-resize-full active btn fullscreen-btn" data-text="resize-full"></li>
+            <li id ="captions" class="captions-holder entypo-cc active btn subtitle-btn" data-state="captions" data-text="cc"></li>
+        </ul>
+        <div class="progress" id="progress-holder">
+            <progress id="progress" value="0" min="0">
+                <span id="progress-bar"></span>
+            </progress>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/playerSetUp.js"></script>
+</body>
+</html>

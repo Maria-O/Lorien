@@ -1,0 +1,172 @@
+body {
+  background-color: #e3e5e5;
+  font-size: 62.5%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* BUTTON STYLE */
+.next {
+  text-indent: -9999px;
+  display: block;
+  width: 15px;
+  height: 11px;
+  background-image: url('../img/scroll-arrow-down.png');
+  margin-left: 145px;
+  margin-bottom: -20px;
+}
+.next:hover {
+  background-position-y: 11px;
+}
+.wrapper {
+  position: relative;
+  font-size: 1.5em;
+  /* START HEADING STYLE */
+  /* END HEADING STYLE */
+  /* START CONTENT STYLE */
+  /* END CONTENT STYLE */
+  /* START LAYERS STYLE */
+  /* END LAYERS STYLE */
+}
+.wrapper .heading {
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 1em;
+  z-index: 1;
+}
+.wrapper .heading h1 {
+  color: #21a97e;
+  font-size: 1.5em;
+  width: 960px;
+  margin: 0 auto;
+}
+.wrapper .content {
+  position: relative;
+  width: 940px;
+  left: 50%;
+  margin-left: -470px;
+  z-index: 3;
+}
+.wrapper .content .text {
+  width: 300px;
+  margin-top: 3em;
+  line-height: 1.6em;
+  border-bottom: 4px double #1c1c1c;
+}
+.wrapper .content .text h2 {
+  color: #21a97e;
+  font-size: 3em;
+  line-height: 1.2em;
+}
+.wrapper .content .flights,
+.wrapper .content .parachute,
+.wrapper .content .channele,
+.wrapper .content .about {
+  position: absolute;
+}
+.wrapper .content .flights {
+  top: 100px;
+}
+.wrapper .content .parachute {
+  top: 1020px;
+  right: 0;
+}
+.wrapper .content .channele {
+  top: 1920px;
+}
+.wrapper .content .about {
+  top: 2700px;
+  margin-bottom: 530px;
+}
+.wrapper .layer-0,
+.wrapper .layer-1,
+.wrapper .layer-2 {
+  position: fixed;
+  width: 940px;
+  left: 50%;
+  margin-left: -470px;
+  z-index: 2;
+}
+.wrapper .layer-0,
+.wrapper .layer-1 {
+  width: 1200px;
+  margin-left: -600px;
+}
+.wrapper .layer-0 .cloud-1,
+.wrapper .layer-1 .cloud-1,
+.wrapper .layer-0 .cloud-2,
+.wrapper .layer-1 .cloud-2,
+.wrapper .layer-0 .cloud-3,
+.wrapper .layer-1 .cloud-3,
+.wrapper .layer-0 .cloud-4,
+.wrapper .layer-1 .cloud-4,
+.wrapper .layer-0 .cloud-5,
+.wrapper .layer-1 .cloud-5 {
+  position: absolute;
+}
+.wrapper .layer-0 .cloud-1 {
+  left: -220px;
+  top: 10px;
+}
+.wrapper .layer-0 .cloud-2 {
+  left: 950px;
+  top: 500px;
+}
+.wrapper .layer-0 .cloud-3 {
+  top: 640px;
+  left: 210px;
+}
+.wrapper .layer-0 .cloud-4 {
+  left: 760px;
+  top: 230px;
+}
+.wrapper .layer-0 .cloud-5 {
+  left: 940px;
+  top: 1110px;
+}
+.wrapper .layer-1 {
+  z-index: 0;
+}
+.wrapper .layer-1 .cloud-1 {
+  left: 290px;
+  top: 310px;
+}
+.wrapper .layer-1 .cloud-2 {
+  left: 580px;
+  top: 1070px;
+}
+.wrapper .layer-1 .cloud-3 {
+  top: 1610px;
+  left: -30px;
+}
+.wrapper .layer-1 .cloud-4 {
+  left: 800px;
+  top: -60px;
+}
+.wrapper .layer-1 .cloud-5 {
+  left: -220px;
+  top: 1020px;
+}
+.wrapper .layer-2 .balloon,
+.wrapper .layer-2 .balloon2,
+.wrapper .layer-2 .balloon3,
+.wrapper .layer-2 .ground {
+  position: absolute;
+  margin-top: 1em;
+}
+.wrapper .layer-2 .balloon {
+  left: 455px;
+  top: -60px;
+}
+.wrapper .layer-2 .balloon2 {
+  top: 790px;
+  left: 0;
+}
+.wrapper .layer-2 .balloon3 {
+  top: 1450px;
+  left: 455px;
+}
+.wrapper .layer-2 .ground {
+  top: 2220px;
+  left: 0;
+}

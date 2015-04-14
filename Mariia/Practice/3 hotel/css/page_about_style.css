@@ -1,0 +1,148 @@
+/*Generel info*/
+
+.general-info {
+    width: 69.54%;
+    padding-right:6.46%;
+    border-right: 1px solid #cdcdcd;
+    line-height: 1.5em;
+    float: left;
+}
+
+.general-info .name {
+    text-transform: uppercase;
+}
+
+.text-with-header:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+/* Illustrated-info */
+
+.illustrated-info h3 {
+    font-size: 1.25em;
+    margin-bottom: 1.3em;
+}
+
+.illustrated-list li {
+    overflow: hidden;
+    margin-bottom: 2.18em;
+}
+
+.illustrated-list li:last-child {
+    margin-bottom: 0;
+}
+
+.illustrated-info img {
+    float: left;
+    margin-right: 1.5em;
+    width: 9.06em;
+    height: 5.94em;
+    background: #fff;
+    border-radius: 0.3em;
+}
+
+/*Aside*/
+
+.additional-func {
+    width: 20.8%;
+    float: right;
+    padding-left:3%;
+}
+
+/*Search*/
+
+.aside-form-holder {
+    margin-bottom: 2.5em;
+}
+
+.aside-form input[type="text"] {
+    border: none;
+    outline: none;
+    width: 89%;
+}
+
+.search-holder .aside-form {
+    width: 92%;
+}
+
+/* Reservation */
+
+.room-selection {
+    width: 100%;
+}
+
+
+/* Contacts */
+
+.contacts-list li {
+    border-bottom:1px solid #cdcdcd;
+    padding: 0.875em 0;
+}
+
+.contacts-list li:last-child {
+    border-bottom: none;
+}
+
+.contacts-list .sprite {
+    float: right;
+}
+
+.phone {
+    width: 16px;
+    height: 21px;
+    background-position: 0 -11px;
+}
+
+.chat {
+    width:24px;
+    height:17px;
+    background-position: 0 -34px;
+}
+
+.email {
+    width:22px;
+    height:14px;
+    background-position: -17px -18px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 860px) {
+    .general-info {
+        width: 100%;
+        border-right:none;
+        padding:0 0 2.375em;
+    }
+
+    .additional-func {
+        width: 100%;
+        float: none;
+        overflow: hidden;
+        padding-left: 0;
+    }
+
+    .reservation-wrapper {
+        float: left;
+        width: 44%;
+    }
+
+    .contacts {
+        float: right;
+        width:44%;
+    }
+
+    .search-holder {
+        margin: 0 auto;
+        width: 50%;
+        margin: 0 auto 4em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aside-form-holder {
+        width: 55%;
+        margin: 0 auto 4em;
+        float:none;
+    }
+}

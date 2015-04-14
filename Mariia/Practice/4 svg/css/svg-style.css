@@ -1,0 +1,136 @@
+body, html {
+    height:100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background: #ECE7DD;
+}
+
+.house-container {
+    align-self:center;
+    width: 20%;
+}
+
+.icon {
+    display: none;
+    fill: #E55C3C;
+    transition: all 0.5s ease;
+}
+
+.wall:hover{
+    fill: #909090;
+}
+
+.icon:hover {
+    fill:#A6A194;
+    stroke: #f5bca5;
+    stroke-width: 2px;
+}
+
+.wall {
+    fill: #E98158;
+    transition: all 1s ease
+}
+
+.home_icon_0 {
+    display: block;
+}
+
+@media screen and (min-width: 400px) {
+    .home_icon_0 {
+        display: none;
+    }
+    .home_icon_1 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .home_icon_1 {
+        display: none;
+    }
+    .home_icon_2 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .home_icon_1 {
+        display: none;
+    }
+    .home_icon_2 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .home_icon_2 {
+        display: none;
+    }
+    .home_icon_3 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .home_icon_3 {
+        display: none;
+    }
+    .home_icon_4 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .home_icon_4 {
+        display: none;
+    }
+    .home_icon_5 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .home_icon_5 {
+        display: none;
+    }
+    .home_icon_6 {
+        display: block;
+        width:2.42rem;
+        height:0.625rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .home_icon_6 {
+        display: none;
+    }
+    .home_icon_7 {
+        display: block;
+        width:2.625rem;
+        height:0.6875rem;
+    }
+
+    .home_icon_7 .highlighted {
+        fill:#CB4741;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .home_icon_7 {
+        display: none;
+    }
+    .home_icon_8 {
+        display: block;
+    }
+
+    .home_icon_8 .top {
+        fill:#E55C3C;
+    }
+
+    .home_icon_8 .shadow {
+        fill:#B8492E;
+    }
+}

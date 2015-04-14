@@ -1,0 +1,26 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+
+@font-face {
+    font-family: "DaxCondensed Ligth";
+    src: url(../fonts/DaxCondensedLight.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans Ligth";
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family:"Open Sans Regular";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Open Sans Bold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+}

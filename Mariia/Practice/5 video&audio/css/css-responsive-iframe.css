@@ -1,0 +1,32 @@
+body, html {
+    height:100%;
+    background: #000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 80%;
+    align-self: center;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    align-self: center;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

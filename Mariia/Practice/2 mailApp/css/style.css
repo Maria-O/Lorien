@@ -1,0 +1,320 @@
+/*	Fonts --BEGIN--	 */
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+/*	Fonts --END--	 */
+
+/*	General css --BEGIN--	 */
+
+body, html {
+	height:100%;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color:#fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.status-icon:after {
+	position: absolute;
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 2rem;
+	border: 0.2rem solid;
+}
+
+header > * {
+	padding: 0.7%;
+	display: flex;
+	align-items: center;
+}
+
+.user-info figure,.control-btn li  {
+	margin-right:1em;
+}
+
+.control-btn li:last-child  {
+	margin-right:0;
+}
+
+.ellipsis {
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+.hidden:after, .chatbox .user-info figure:after {
+	display:none;
+}
+
+
+.highlighted {
+	color:#f9fafb;
+}
+
+.answered {
+	background: #f9fafb;
+}
+
+.selected {
+	color:#fff;
+}
+
+/*	General css --END--	 */
+
+/*	Header --BEGIN--	 */
+header {
+	display: flex;
+	background: #0988ea;
+}
+
+.wrapper {
+	flex-grow: 1;
+	justify-content: space-between;
+	padding: 0 3%;
+}
+
+.logo a {
+	color:white;
+	font-size:2.5em;
+}
+
+.control-panel {
+	display: flex;
+	align-self: center;
+}
+
+.control-panel span {
+	height: 1.2em;
+	width: 1.2em;
+	border-radius:2em;
+	background: #0868b2;
+	margin-right:0.625em;
+}
+
+.second {
+	opacity:0.5;
+} 
+
+.control-panel span:last-child {
+	opacity: 0.3;
+}
+
+.user-info {
+	display: flex;
+	align-items: center;
+}
+
+.user-info img{
+	width: 2.3em;
+	height:auto;
+}
+
+.user-info figure, .activity span{
+	position:relative;
+}
+
+
+.user-info figure:after {
+	bottom: 0;
+	right: 0;
+	color:#0988ea;
+}
+
+.user-info span {
+	font-size: 1.1em;
+}
+
+.activity {
+	padding: 1.5%;
+	font-size: 1.7em;
+	background: #0D76C6;
+}
+
+.activity span:after {
+	content: "3";
+	background: #fff;
+	top: -0.8em;
+	right: -0.7em;
+	color: #0D76C6;
+	font-size: 0.4em;
+	text-indent: 0.22em;
+	font-weight: bold;
+}
+/*	Header --END--	 */
+
+
+/*	Main   --BEGIN--	 */
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+/*header in main --BEGIN-- */
+main header {
+	background: rgb(49,59,68);
+	justify-content: space-between;
+	padding: 1% 0;
+}
+
+main h1 {
+	font-size: 1.5em;
+}
+
+.control-btn li {
+	padding: 0.4em 0.7em;
+	border: 1px solid;
+	border-radius: 1em;
+}
+/*header in main --END-- */
+
+/*aside in main --BEGIN-- */
+
+aside {
+	background:#22282d;
+	flex-grow:1;
+	flex-basis: 1em;
+}
+
+.options-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10% 0;
+	color: #939ca3;
+}
+
+.options-list li {
+	font-size: 2.5em;
+	padding: 20.1%;
+}
+
+/*aside in main --END-- */
+
+main .holder {
+	display:flex;
+	flex-grow: 1;
+} 
+
+/* dialogs-list --BEGIN--*/
+
+
+.dialogs-list {
+	display: flex;
+	flex-direction: column;
+	background: #e9eff1;
+	flex-grow:4;
+	flex-basis: 2em;
+}
+
+.dialogs-list li {
+	padding:2%;
+	border:1px solid rgb(217,226,232);
+	flex-grow: 1;
+	display: flex;
+
+}
+
+.dialogs-list .status-icon {
+	flex-grow: 1;
+	flex-basis: 5em;
+}
+
+.user-info .message {
+	flex-grow: 3;
+	margin: 0 4%;
+}
+
+.dialogs-list figure:after {
+	color:#e9eff1;
+}
+
+.attached {
+	color:#aebdc8;
+	flex-basis: 3em;
+	padding: 2%;
+}
+
+
+.busy:after  {
+	background: #e75b7f;
+}
+
+.available:after {
+	background:#3cc35a;
+}
+
+.away:after {
+	background:#f29c22;
+}
+
+.message span {
+	color:rgb(96,111,125);
+}
+
+.message p {
+	color:#98a5b2;
+}
+
+
+/* dialogs-list --END--*/
+
+.conversation {
+	background: #eef3f5;
+	display:flex;
+	flex-direction:column;
+	flex-grow:7;
+	font-size:1em;
+	color:#6e7882;
+	flex-basis: 1em;
+}
+
+.conversation h1 {
+	font-size: 1.2em;
+	padding: 5% 0 0 5%;
+}
+.chatbox {
+	display: flex;
+	flex-direction: column;
+	padding: 5%;
+}
+
+.chatbox .message{
+	border-radius: 0.5em;
+	box-shadow: 0px 3px 17px -1px;
+	padding: 1.5%;
+}
+
+.chatbox li {
+	margin-bottom: 2%;
+}
+
+.received {
+	background: #f3fcff ;
+}
+
+.sent {
+	background: #fff;
+}
+
+.reverse  {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+

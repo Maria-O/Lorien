@@ -1,0 +1,97 @@
+/* gallery */
+.title {
+    padding: 0;
+    position: relative;
+}
+
+.ribbon {
+    position: absolute;
+}
+
+.active-picture {
+    height: 25.75em;
+    border:none;
+    box-shadow:none ;
+    margin-bottom: 0;
+}
+
+.thumb-wrapper  {
+    position: absolute;
+    width: 34%;
+    left:33%;
+    bottom: 1.3em;
+}
+
+.thumb {
+    height:4.5625em;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background: #d8d8d8;
+    box-shadow: 0px 1px 5px 0px rgba(255, 236, 236, 0.27);
+}
+
+.thumb:hover {
+    background: #ebebeb;
+    box-shadow: 0px 1px 19px 5px rgba(0, 0, 0, 0.27);
+
+}
+
+/* main */
+body {
+    color:#6d6b6b;
+}
+
+.text {
+    line-height: 1.7em;
+}
+
+/* aside */
+
+.cards-list {
+    overflow: hidden;
+}
+
+.cards-list .sprite {
+    width: 32px;
+    height: 23px;
+    float: left;
+    margin: 1em 0.33em 0 0;
+}
+
+.cards-list .sprite:last-child {
+    margin-right: 0;
+}
+
+/* sprite cards */
+.visa {
+    background-position: -134px 0;
+}
+
+.american-express {
+    background-position: -171px 0;
+}
+
+.paypal {
+    background-position: -208px 0;
+}
+
+.master-card {
+    background-position: -245px 0;
+}
+
+/* media queries */
+
+@media screen and (max-width: 860px) {
+    .field-btn {
+        width: 30%;
+        margin: 0 auto;
+    }
+    .features-list {
+        width: 40%;
+    }
+
+    .field-btn {
+        margin-bottom:2em;
+    }
+}
+

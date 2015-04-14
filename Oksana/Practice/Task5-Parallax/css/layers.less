@@ -1,0 +1,177 @@
+body {
+  background-color: #e3e5e5;
+  font-size: 62.5%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* BUTTON STYLE */
+.next {
+  text-indent: -9999px;
+  display: block;
+  width: 15px;
+  height: 11px;
+  background-image: url('../img/scroll-arrow-down.png');
+  margin-left: 145px;
+  margin-bottom: -20px;
+  &:hover{
+    background-position-y: 11px;
+  }
+}
+.wrapper {
+  position: relative;
+  font-size: 1.5em;
+
+  /* START HEADING STYLE */
+  .heading{
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 1em;
+    z-index: 1;
+    h1 {
+      color: #21a97e;
+      font-size: 1.5em;
+      width: 960px;
+      margin: 0 auto;
+    }
+  }
+  /* END HEADING STYLE */
+
+  /* START CONTENT STYLE */
+  .content {
+    position: relative;
+    width: 940px;
+    left: 50%;
+    margin-left: -470px;
+    z-index: 3;
+    .text {
+      width: 300px;
+      margin-top: 3em;
+      line-height: 1.6em;
+      border-bottom: 4px double #1c1c1c;
+      h2 {
+        color: #21a97e;
+        font-size: 3em;
+        line-height: 1.2em;
+      }
+    }
+    .flights,
+    .parachute,
+    .channele,
+    .about{
+      position: absolute;
+    }
+    .flights{
+      top: 100px;
+    }
+    .parachute {
+      top: 1020px;
+      right: 0;
+    }
+    .channele{
+      top: 1920px;
+    }
+    .about {
+      top: 2700px;
+      margin-bottom: 530px;
+    }
+  }
+  /* END CONTENT STYLE */
+
+  /* START LAYERS STYLE */
+  .layer-0,
+  .layer-1,
+  .layer-2 {
+    position: fixed;
+    width: 940px;
+    left: 50%;
+    margin-left: -470px;
+    z-index: 2;
+  }
+  // Styles for clouds
+  .layer-0,
+  .layer-1 {
+    width: 1200px;
+    margin-left: -600px;
+    .cloud-1,
+    .cloud-2,
+    .cloud-3,
+    .cloud-4,
+    .cloud-5 {
+      position: absolute;
+    }
+  }
+  .layer-0{
+    .cloud-1{
+      left: -220px;
+      top: 10px;
+    }
+    .cloud-2{
+      left: 950px;
+      top: 500px;
+    }
+    .cloud-3{
+      top: 640px;
+      left: 210px;
+    }
+    .cloud-4{
+      left: 760px;
+      top: 230px;
+    }
+    .cloud-5{
+      left: 940px;
+      top: 1110px;
+    }
+  }
+  .layer-1{
+    z-index: 0;
+    .cloud-1{
+      left: 290px;
+      top: 310px;
+    }
+    .cloud-2{
+      left: 580px;
+      top: 1070px;
+    }
+    .cloud-3{
+      top: 1610px;
+      left: -30px;
+    }
+    .cloud-4{
+      left: 800px;
+      top: -60px;
+    }
+    .cloud-5{
+      left: -220px;
+      top: 1020px;
+    }
+  }
+
+  // Styles for balloons
+  .layer-2{
+    .balloon,
+    .balloon2,
+    .balloon3,
+    .ground{
+      position: absolute;
+      margin-top: 1em;
+    }
+    .balloon {
+      left: 455px;
+      top: -60px;
+    }
+    .balloon2 {
+      top: 790px;
+      left: 0;
+    }
+    .balloon3 {
+      top: 1450px;
+      left: 455px;
+    }
+    .ground {
+      top: 2220px;
+      left: 0;
+    }
+  }
+  /* END LAYERS STYLE */
+}

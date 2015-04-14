@@ -1,0 +1,88 @@
+body, html {
+    height:100%;
+}
+
+.header, h2, h3 {
+    font-family: "Open Sans Ligth", "Helvetica Nueue", Arial, sans-serif;
+    color:#373535;
+}
+
+body , input, select {
+    color: #868585;
+    font-family: "Open Sans Regular", "Helvetica Nueue", Arial, sans-serif;
+}
+
+a {
+color:#fff;
+}
+
+/*a:hover, a:visited, a:active
+p
+все базовые элементы
+*/
+
+select {
+    -webkit-appearance: none;
+}
+
+.text {
+    font-size:0.8125em;
+    line-height: 2em;
+    margin-bottom: 1.875em;
+}
+
+.text:last-child {
+    margin-bottom: 0;
+}
+
+.sprite {
+    display: inline-block;
+    background: url(../images/sprite.png);
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.marked {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.name {
+    color:#373535;
+    font-family: "Open Sans Bold", "Helvetica Nueue", Arial, sans-serif;
+}
+
+.block-header {
+    font-size:1.5625em;
+    margin-bottom: 0.8em;
+}
+
+.aside-form {
+    display: inline-block;
+    width: 88.4%;
+    font-size: 0.8125em;
+    padding: 0.8125em 3.8%;
+    border: 1px solid #dbd9d9;
+    border-radius: 0.5em;
+    background: #fff;
+}
+
+.field-btn {
+    background: #32a2e3;
+    color: #fff;
+    text-align: center;
+    padding: 0.75em 0;
+    font-size: 0.875em;
+    width: 100%;
+    margin-bottom: 2.625em;
+}
+
+.text-area {
+    resize: none;
+}
+
+

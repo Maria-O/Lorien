@@ -1,0 +1,98 @@
+body, html {
+	height: 100%;
+	min-height: 100%;
+}
+
+main {
+	overflow-x: hidden;
+}
+
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+
+/* Slide 1 */
+
+#slide-1 .bcg {
+    background-image:url('../img/first-slide.png');
+}
+
+
+#slide-1 .hsContainer1 {
+    background: url('../img/cloud_PNG61.png') no-repeat;
+    width:50%;
+    height: 500px;
+}
+
+#slide-1 .first {
+    float:left;
+    background-position: 575px 100%;
+}
+
+#slide-1 .second {
+    float:right;
+    background-position: 21px 52px;
+}
+
+/* Slide 2 */
+
+#slide-2 .bcg {
+    height: 40px;
+}
+
+/* Slide 3 */
+
+#slide-3 .bcg {
+    background-image: url(../img/second-slide.png);
+}
+
+#slide-3 .hsContainer3 {
+    background: url(../img/star2.png) no-repeat;
+}
+
+.hsContainer3.first {
+    float:left;
+    width: 30%;
+}
+
+.hsContainer3.second {
+    float:right;
+    width: 50%;
+}
+
+.hsContainer3.third {
+    float:right;
+    width: 20%;
+}
+
+/* Slide 4 */
+
+
+#slide-4 {
+    height: 30px;
+}
+
+/* Slide 5 */
+#slide-5 {
+    position: relative;
+}
+
+#slide-5 .bcg {
+    background-image:url('../img/last-slide-a.png')
+}
+
+#slide-5 .bcg2 {
+    background-image:url('../img/last-slide.png');
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1
+}
+

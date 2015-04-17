@@ -1,0 +1,101 @@
+@bg: #282828;
+@formBg: #f1f1f1;
+@borderColor: #499dc9;
+@buttonBg: #3599cd;
+@buttonTextColor: #fff;
+
+body {
+  background-color: @bg;
+  font: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+  font-size: 62.5%;
+}
+.back-btn{
+  position: absolute;
+  background-color: lighten(@bg, 25%);
+  color: @bg;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 0.7em;
+  left: 0;
+  top: 0;
+}
+.wrapper {
+  font-size: 1.6em;
+  width: 400px;
+  min-height: 200px;
+  position: absolute;
+  margin-left: -200px;
+  margin-top: -120px;
+  left: 50%;
+  top: 50%;
+  .hello{
+    color: lighten(@buttonBg, 1%);
+  }
+  #authorization,
+  #change{
+    background-color: @formBg;
+    padding: 1em 1.5em;
+    overflow: auto;
+    box-shadow: 2px 2px 0 darken(@bg, 2%);
+    .form-group{
+      text-align: center;
+      label{
+        display: none;
+      }
+      input:not([type=submit]) {
+        width: 100%;
+        font-size: 1.2em;
+        font-weight: normal;
+        margin: 0.3em 0;
+        padding: 0.4em 0.3em;
+        box-sizing: border-box;
+        border: 1px solid darken(@formBg, 5%);
+      }
+    }
+    .submit-group{
+      margin-top: 1.5em;
+      input[type=submit]{
+        width: 100%;
+        padding: 0.7em 0;
+        background-color: @buttonBg;
+        border-width: 0;
+        color: @buttonTextColor;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+      }
+    }
+    #change-password{
+      color: lighten(@bg, 15%);
+      &:hover{
+        color: @buttonBg;
+      }
+    }
+  }
+  .success-box {
+    margin-top: -130px;
+    input{
+      border: 0;
+      background-color: @buttonBg;
+      font-size: 2.5em;
+      padding: 0.5em;
+      color: @buttonTextColor;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    margin-top: 1em;
+  }
+  .video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

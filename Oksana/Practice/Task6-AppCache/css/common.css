@@ -1,0 +1,102 @@
+body {
+  background-color: #282828;
+  font: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+  font-size: 62.5%;
+}
+.back-btn {
+  position: absolute;
+  background-color: #686868;
+  color: #282828;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 0.7em;
+  left: 0;
+  top: 0;
+}
+.wrapper {
+  font-size: 1.6em;
+  width: 400px;
+  min-height: 200px;
+  position: absolute;
+  margin-left: -200px;
+  margin-top: -120px;
+  left: 50%;
+  top: 50%;
+}
+.wrapper .hello {
+  color: #399bce;
+}
+.wrapper #authorization,
+.wrapper #change {
+  background-color: #f1f1f1;
+  padding: 1em 1.5em;
+  overflow: auto;
+  box-shadow: 2px 2px 0 #232323;
+}
+.wrapper #authorization .form-group,
+.wrapper #change .form-group {
+  text-align: center;
+}
+.wrapper #authorization .form-group label,
+.wrapper #change .form-group label {
+  display: none;
+}
+.wrapper #authorization .form-group input:not([type=submit]),
+.wrapper #change .form-group input:not([type=submit]) {
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 0.3em 0;
+  padding: 0.4em 0.3em;
+  box-sizing: border-box;
+  border: 1px solid #e4e4e4;
+}
+.wrapper #authorization .submit-group,
+.wrapper #change .submit-group {
+  margin-top: 1.5em;
+}
+.wrapper #authorization .submit-group input[type=submit],
+.wrapper #change .submit-group input[type=submit] {
+  width: 100%;
+  padding: 0.7em 0;
+  background-color: #3599cd;
+  border-width: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.wrapper #authorization #change-password,
+.wrapper #change #change-password {
+  color: #4e4e4e;
+}
+.wrapper #authorization #change-password:hover,
+.wrapper #change #change-password:hover {
+  color: #3599cd;
+}
+.wrapper .success-box {
+  margin-top: -130px;
+}
+.wrapper .success-box input {
+  border: 0;
+  background-color: #3599cd;
+  font-size: 2.5em;
+  padding: 0.5em;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+.wrapper .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+  margin-top: 1em;
+}
+.wrapper .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

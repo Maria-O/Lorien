@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# v2
+# First manifest ^_^
+
+CACHE:
+index.html
+change-password.html
+css/common.css
+js/main.js
+
+NETWORK:
+success-signin.html
+
+FALLBACK:
+success-signin.html fallback/404.html

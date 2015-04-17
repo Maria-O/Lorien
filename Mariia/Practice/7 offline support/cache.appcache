@@ -1,0 +1,13 @@
+CACHE MANIFEST
+#appCashe-v1
+
+CACHE:
+css/style.css
+css/main.css
+css/nozmalize.css
+css/secret-page.css
+img/129.gif
+
+NETWORK:
+index.html
+

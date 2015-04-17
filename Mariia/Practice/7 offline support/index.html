@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href="css/css-reset.css" rel="stylesheet"/>
+    <link href="css/normalize.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<form method="#" target="#" class="login-form">
+    <fieldset class="text-inputs-wrapper">
+        <div class="form-item">
+            <label for="login" class="label">Login</label>
+            <input id="login" type="text" class="field"/>
+        </div>
+        <div class="form-item">
+            <label for="password" class="label">Password</label>
+            <input id="password" type="password" class="field"/>
+        </div>
+    </fieldset>
+    <span class="help btn" id="help-btn">?</span>
+    <input class="form-item btn sign-in" id="sign-btn" type="button" value="Sign in"/>
+    <input class="form-item btn login-btn" id="login-btn" type="button" value="Log in"/>
+</form>
+<section class="help-info">
+    <div class="stor local-stor">
+        <p class="title">Currently in local storage:</p>
+        <div class="content"></div>
+    </div>
+    <div class="stor session-stor">
+        <p class="title">Currently in session storage:</p>
+        <div class="content"></div>
+    </div>
+</section>
+<a href="secret_page.html" title="secret link" class="secret-link">Follow this secret link</a>
+<footer class="fixed">
+    <p class="text">Press '?' to see current records in Local storage and Session Storage.</p>
+    <p class="text">Once some data inputted into login field it is saved in Session Storage. If you refresh your page, Login data will be filled on load with the latest inputted data.</p>
+    <p class="text">If you press Sign in, your data will be saved in Local Storage.</p>
+    <p class="text">If you press Log in, your data will be validated with Local Storage records.</p>
+</footer>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/offlineSupport.js"></script>
+</body>
+</html>

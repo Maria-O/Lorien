@@ -1,15 +1,16 @@
 CACHE MANIFEST
-# v2
+# v1.3
 # First manifest ^_^
 
 CACHE:
 index.html
 change-password.html
+bower_components/normalize.css/normalize.css
 css/common.css
+bower_components/jquery/dist/jquery.min.js
 js/main.js
 
 NETWORK:
-success-signin.html
 
 FALLBACK:
-success-signin.html fallback/404.html
+success-signin.html 404.html

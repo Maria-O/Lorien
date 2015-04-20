@@ -1,0 +1,22 @@
+.background {
+    background-image: url('../img/3.jpg');
+}
+
+.foreground {
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    left:0;
+    color:white;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.icons {
+    width:240px;
+    height: 70px;
+    background: url(../img/icons.png) no-repeat;
+    position: fixed;
+    top: 2em;
+    left: 1.5em;
+}

@@ -1,13 +1,18 @@
 CACHE MANIFEST
-#appCashe-v1
+#appCashe-1
 
 CACHE:
-css/style.css
+css/css-reset.css
 css/main.css
-css/nozmalize.css
+css/normalize.css
 css/secret-page.css
 img/129.gif
+vendor/jquery-1.11.2.min.js
+js/offlineSupport.js
 
 NETWORK:
 index.html
+
+FALLBACK:
+secret_page.html offline.html
 

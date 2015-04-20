@@ -6,10 +6,10 @@ body {
     display: flex;
     justify-content: center;
     background: #eaffee;
-    font-family: 'Lora', serif;
-    /*flex-direction: column;*/
     min-width: 600px;
 }
+
+/*Login form*/
 
 .login-form {
     width: 15em;
@@ -89,6 +89,8 @@ body {
     top: 7%;
     left: 3%;
 }
+
+/* Help Info */
 
 .stor {
     padding:1em;

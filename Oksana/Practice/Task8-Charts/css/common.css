@@ -1,0 +1,52 @@
+body {
+  background-color: #2a3c57;
+  font: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+  font-size: 62.5%;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.wrapper .caption {
+  font-size: 3.5em;
+  color: #74a6f0;
+}
+.wrapper .examples {
+  background-color: #ffffff;
+  border: 1px solid #3b5479;
+  padding: 1em 2em;
+  box-sizing: border-box;
+}
+.wrapper .examples .chart {
+  margin-bottom: 5em;
+}
+.wrapper .examples .chart svg {
+  margin: 0 auto;
+  display: block;
+}
+.wrapper .examples .chart-type {
+  font-size: 1.5em;
+  background-color: #f2f2f2;
+  padding: 1em;
+  color: #4b6b9c;
+  text-transform: uppercase;
+  border-radius: 0.2em;
+}
+.d3-charts .bilevel-chart svg {
+  font-size: 1.5em;
+}
+.d3-charts .bilevel-chart circle,
+.d3-charts .bilevel-chart path {
+  cursor: pointer;
+}
+.d3-charts .bilevel-chart circle {
+  fill: none;
+  pointer-events: all;
+}
+.d3-charts .bilevel-chart #tooltip {
+  background-color: white;
+  padding: 3px 5px;
+  border: 1px solid black;
+  text-align: center;
+}

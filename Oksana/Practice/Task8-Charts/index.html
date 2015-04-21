@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Charts</title>
+    <link href="bower_components/normalize.css/normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<main class="wrapper">
+    <section class="d3-charts">
+        <h1 class="caption"># D3 charts</h1>
+        <div class="examples">
+            <div class="bubbles-chart chart">
+                <h2 class="chart-type">Bubbles Chart</h2>
+            </div>
+            <div class="bilevel-chart chart">
+                <h2 class="chart-type">BilevelLabel</h2>
+            </div>
+            <div class="liquid-chart chart">
+                <h2 class="chart-type">Liquid Fill</h2>
+                <svg id="fillgauge1" width="97%" height="250"></svg>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+<script src="bower_components/d3/d3.js" type="text/javascript"></script>
+<script src="js/lib/liquidFillGauge.js" type="text/javascript"></script>
+<script src="js/bubbles-chart.js" type="text/javascript"></script>
+<script src="js/bilevel-chart.js" type="text/javascript"></script>
+<script src="js/liquid-chart.js" type="text/javascript"></script>
+</html>

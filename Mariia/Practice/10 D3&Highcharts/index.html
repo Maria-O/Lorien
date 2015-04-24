@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/css-reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<main class="wrapper">
+    <header class="header">
+        <button type="button" class="menu-btn">
+            <span class="menu-icon icon"></span>
+        </button>
+        <div class="header-holder">
+            <a href="#" title="Company logo">
+                <img src="img/logo.png" class="logo" alt="Company logo">
+            </a>
+            <div class="inputs">
+                <div class="search-holder header-holder-item">
+                    <span class="search-icon icon"></span>
+                    <input type="search" placeholder="SEARCH" class="field"/>
+                </div>
+                <div class="select-holder header-holder-item">
+                    <span class="user-icon icon"></span>
+                    <select class="field select">
+                        <option>qwerty1</option>
+                        <option>qwerty2</option>
+                    </select>
+                    <span class="arrow-icon icon"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="flex-holder">
+        <nav class="aside-nav">
+            <ul class="nav-list ">
+                <li class="active">
+                    <a href="#" title="Home" class="menu-btn">
+                        <span class="home icon"></span>
+                        <span class="name">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Explore Data" class="menu-btn">
+                        <span class="explore-data icon"></span>
+                        <span class="name">Explore Data</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Dashboards" class="menu-btn">
+                        <span class="dashboards icon"></span>
+                        <span class="name">Dashboards</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Schedule" class="menu-btn">
+                        <span class="schedule  icon"></span>
+                        <span class="name">Schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="User objects" class="menu-btn">
+                        <span class="user-objects icon"></span>
+                        <span class="name">User objects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Help" class="menu-btn">
+                        <span class="help icon"></span>
+                        <span class="name">Help</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="graphics">
+            <div id="container1" class="highcharts"></div>
+            <div id="container2" class="highcharts"></div>
+            <div id="container3" class="highcharts"></div>
+        </section>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/highcharts-more.js"></script>
+<script src="js/highcharts.js"></script>
+</body>
+</html>

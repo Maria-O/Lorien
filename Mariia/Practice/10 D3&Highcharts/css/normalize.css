@@ -273,7 +273,9 @@ select {
 
 button {
     overflow: visible;
+    border: none;
 }
+
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.

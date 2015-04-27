@@ -6,6 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/css-reset.css" rel="stylesheet">
+    <link href="css/zoomable.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
@@ -24,18 +25,14 @@
                     <span class="search-icon icon"></span>
                     <input type="search" placeholder="SEARCH" class="field"/>
                 </div>
-                <div class="select-holder header-holder-item flex-holder-row">
-                    <span class="user-icon icon"></span>
-                    <select class="field select">
-                        <option>qwertywsaddasad1</option>
-                        <option>qwerty2</option>
-                    </select>
-                    <span class="arrow-icon icon"></span>
-                </div>
+                <select class="field select select-holder header-holder-item">
+                    <option>qwerty1</option>
+                    <option>qwerty2</option>
+                </select>
             </div>
         </div>
     </header>
-    <div class="wide-flex flex-holder-row main">
+    <div class="wide-flex flex-holder-row">
         <nav class="aside-nav flex-holder-column" id="aside-nav">
             <ul class="aside-nav-list">
                 <li class="active">
@@ -80,28 +77,28 @@
             <nav class="top-nav flex-holder-row">
                 <ul class="top-nav-list flex-holder-row wide-flex">
                     <li>
-                        <a href="#" title="Drill down" class="">
-                            <span class="icon drill-down active"></span>
+                        <a href="#" title="Drill down">
+                            <span class="icon drill-down active top-nav-item"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Default" class="">
-                            <span class="icon default"></span>
+                        <a href="#" title="Default">
+                            <span class="icon default top-nav-item"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Comparing" class="">
-                            <span class="icon comparing"></span>
+                        <a href="#" title="Comparing">
+                            <span class="icon comparing top-nav-item"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Errors" class="">
-                            <span class="icon errors"></span>
+                        <a href="#" title="Errors">
+                            <span class="icon errors top-nav-item"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Long dashboard" class="">
-                            <span class="icon long-dashboard"></span>
+                        <a href="#" title="Long dashboard">
+                            <span class="icon long-dashboard top-nav-item"></span>
                         </a>
                     </li>
                 </ul>
@@ -121,14 +118,18 @@
                     </li>
                 </ul>
             </nav>
-            <ul class="highchart graphics flex-holder-row wide-flex">
-                <li id="container1" class="graphic"></li>
-                <li id="container2" class="graphic"></li>
-                <li id="container3" class="graphic"></li>
-             </ul>
-            <ul class="d3 graphics flex-holder-row wide-flex">
-                <li id="container4" class="graphic"></li>
-            </ul>
+            <section class="flex-holder-column wide-flex">
+                <ul class="highchart graphics flex-holder-row wide-flex">
+                    <li id="container1" class="graphic"></li>
+                    <li id="container2" class="graphic"></li>
+                    <li id="container3" class="graphic"></li>
+                </ul>
+                <ul class="d3 graphics flex-holder-row wide-flex">
+                    <li id="container4" class="graphic"></li>
+                    <li id="container5" class="graphic"></li>
+                    <li id="container6" class="graphic"></li>
+                </ul>
+            </section>
         </div>
     </div>
 </main>
@@ -136,11 +137,13 @@
 <script src="http://code.highcharts.com/highcharts.js"></script>
 <script src="http://code.highcharts.com/modules/exporting.js"></script>
 <script src="http://code.highcharts.com/highcharts-more.js"></script>
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="js/highchartMonthlyTemp.js"></script>
-<script src="js/highchartJulyTemp.js"></script>
-<script src="js/highchartDonutChart.js"></script>
-<script src="js/bubble.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="js/Highcharts/highchartMonthlyTemp.js"></script>
+<script src="js/Highcharts/highchartJulyTemp.js"></script>
+<script src="js/Highcharts/highchartDonutChart.js"></script>
+<script src="js/d3/D3Zoomable.js"></script>
+<script src="js/d3/D3Diverging.js"></script>
+<script src="js/d3/D3Transition.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

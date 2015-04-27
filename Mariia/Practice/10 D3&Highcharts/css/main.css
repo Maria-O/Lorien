@@ -1,9 +1,5 @@
-body, html, .wrapper {
+body, html{
     height: 100%;
-}
-
-.wrapper {
-    min-width: 990px;
 }
 
 /*Header*/
@@ -84,13 +80,11 @@ body, html, .wrapper {
 }
 
 .select {
-    margin-right: 0.37em;
+    padding: 0.4em 1.04em 0.4em 2.2em;
+    background: #4b5253 url(../img/sprite.png) -131px -38px;
 }
 
 /* Aside navigation */
-.main {
-    min-width: 66.5em;
-}
 
 .aside-nav {
     width: 7.4em;
@@ -172,7 +166,6 @@ body, html, .wrapper {
     justify-content: space-between;
     padding: 0.6em;
     position: relative;
-    /*min-width: 66.5em ;*/
 }
 
 .top-nav-list:after {
@@ -192,7 +185,7 @@ body, html, .wrapper {
 }
 
 .top-nav-list .icon {
-    width: 196px;
+    width: 197px;
     height: 61px;
 }
 
@@ -210,7 +203,7 @@ body, html, .wrapper {
     background-position: -201px -107px;;
 }
 
-.default:hover {
+.default:hover, .default.active {
     background-position: -201px -170px;
 }
 
@@ -218,23 +211,23 @@ body, html, .wrapper {
     background-position-y: -236px;
 }
 
-.comparing:hover {
+.comparing:hover, .comparing.active {
     background-position-y: -300px;
 }
 
 .errors {
-    background-position: -201px -237px;
+    background-position: -200px -235px;;
 }
 
-.errors:hover {
-    background-position: -201px -301px;
+.errors:hover, .errors.active  {
+    background-position: -200px -299px;
 }
 
 .long-dashboard {
     background-position-y: -364px;
 }
 
-.long-dashboard:hover {
+.long-dashboard:hover, .long-dashboard.active {
     background-position-y: -428px;
 }
 
@@ -255,7 +248,7 @@ body, html, .wrapper {
     background-position: -37px -72px;
 }
 
-/*Controls*/
+/*Dashboard Controls*/
 
 .controls {
     min-width: 44px;
@@ -286,7 +279,7 @@ body, html, .wrapper {
 .view-btn {
     width: 22px ;
     height: 21px ;
-    background-position: -78px -72px ;
+    background-position: -94px -68px; ;
 }
 
 /*Graphics*/
@@ -297,11 +290,43 @@ body, html, .wrapper {
     padding: 4em;
 }
 
-.highchart .graphic {
+.graphic {
     height:18em ;
     width: 30%;
+    justify-content: center;
+    display: flex;
 }
 
-.d3 {
-    justify-content: flex-start;
+
+@media only screen
+and (max-width : 66.5em) {
+
+    .wrapper {
+        min-width: 58.2em;
+    }
+
+    .errors {
+        display: none;
+    }
+
+    .graphics {
+        flex-direction: column;
+        align-items: center;
+        padding:0;
+    }
+
+    .graphic {
+        margin-bottom: 2em;
+    }
+
+    .highchart .graphic {
+        padding-top: 4em ;
+    }
+
+    .d3 .graphic {
+        margin-right: 0;
+    }
+
 }
+
+

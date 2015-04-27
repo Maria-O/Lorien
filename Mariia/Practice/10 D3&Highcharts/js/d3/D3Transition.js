@@ -1,7 +1,7 @@
 $(function() {
 
-var width = 300,
-    height = 300,
+var width = 250,
+    height = 250,
     outerRadius = Math.min(width, height) * .5 - 10,
     innerRadius = outerRadius * .6;
 

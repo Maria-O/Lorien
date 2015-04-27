@@ -1,7 +1,7 @@
 $(function() {
 
 var margin = 20,
-    diameter = 300;
+    diameter = 250;
 
 var color = d3.scale.linear()
     .domain([-1, 5])
@@ -43,9 +43,9 @@ d3.json("flare_zoomable.json", function(error, root) {
 
   var node = svg.selectAll("circle,text");
 
-  d3.select("body")
-      .style("background", color(-1))
-      .on("click", function() { zoom(root); });
+  //d3.select("body")
+  //    .style("background", color(-1))
+  //    .on("click", function() { zoom(root); });
 
   zoomTo([root.x, root.y, root.r * 2 + margin]);
 
@@ -74,4 +74,4 @@ d3.json("flare_zoomable.json", function(error, root) {
 });
 
 d3.select(self.frameElement).style("height", diameter + "px");
-})
+});

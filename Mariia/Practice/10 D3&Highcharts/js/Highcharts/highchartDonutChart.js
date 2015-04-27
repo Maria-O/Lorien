@@ -3,6 +3,9 @@
  */
 $(function() {
     var chart = new Highcharts.Chart({
+            title: {
+                text: 'Browser Usage'
+            },
             chart: {
                 renderTo: 'container3',
                 type: 'pie'
@@ -18,9 +21,8 @@ $(function() {
                 data: [
                     ['Chrome', 44.2],
                     ['IE11', 26.6],
-                    ['IE8', 20],
+                    ['Safari', 20],
                     ['Firefox', 3.1],
-                    ['Other', 5.4]
                 ]}]
         },
         // using

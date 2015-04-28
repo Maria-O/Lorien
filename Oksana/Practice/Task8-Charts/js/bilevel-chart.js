@@ -1,5 +1,5 @@
 var bilevelChart = function () {
-    var margin = {top: 300, right: 300, bottom: 300, left: 300},
+    var margin = {top: 150, right: 150, bottom:150, left: 150},
         radius = Math.min(margin.top, margin.right, margin.bottom, margin.left) - 10;
 
     function filter_min_arc_size_text(d, i) {

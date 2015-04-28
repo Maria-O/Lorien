@@ -1,5 +1,5 @@
 var BublesChart = function () {
-    var diameter = 500,
+    var diameter = 300,
         format = d3.format(",d"),
         color = d3.scale.category20c();
 

@@ -1,0 +1,175 @@
+@pageBg: #f5f5f5;
+@panelBg: #2b2b2b;
+@topPanelBg: #393939;
+@activeTab: #585858;
+@inputColor: #4b5253;
+@inputBorder: #282828;
+@inputShadow: #5c6263;
+@lightGrey: #e2e2e2;
+@logoColor: #e6da07;
+@textColor: #444040;
+
+@white: #fff;
+@black: #000;
+
+body {
+  background-color: @pageBg;
+  font: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+  font-size: 62.5%;
+  color: @textColor
+}
+.wrapper {
+  font-size: 1.5em;
+  .top-panel {
+    background-color: @topPanelBg;
+    overflow: hidden;
+    .menu-btn {
+      font-size: 2em;
+      padding: 0.4em 0.8em;
+      background-color: @panelBg;
+      color: @white;
+      float: left;
+    }
+    .logo{
+      padding: 0.8em;
+      font-size: 1.3em;
+      color: @logoColor;
+      text-transform: uppercase;
+      float: left;
+    }
+    #search-form{
+      float: right;
+      padding: 0.8em;
+      .input-group{
+        border: 1px solid @inputBorder;
+        background-color: @inputColor;
+        border-radius: 0.5em;
+        padding: 0 0.3em;
+        position: relative;
+        overflow: hidden;
+        color: @white;
+        display: inline-block;
+        &:before{
+          content: "";
+          height: 2px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          background-color: @inputShadow;
+        }
+      }
+      input, select {
+        background-color: @inputColor;
+        border: 0;
+        font-weight: normal;
+        padding: 0.3em;
+        outline: none;
+      }
+    }
+  }
+  .content-holder {
+    position: relative;
+    height: 100%;
+    .side-menu {
+      background-color: @panelBg;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      .menu-list {
+        color: @white;
+        .icon{
+          display: block;
+          font-size: 2.7em;
+          text-align: center;
+        }
+        .menu-item{
+          padding: 1em;
+          display: block;
+          &.active{
+            background-color: @activeTab;
+          }
+        }
+      }
+    }
+    .charts-holder {
+      margin-left: 6.8em;
+      .examples {
+        text-align: center;
+      }
+      .caption{
+        margin-left: 0.4em;
+      }
+      .chart {
+        background-color: @white;
+        display: inline-block;
+        padding: 0.7em;
+        height: 300px;
+        width: 30%;
+        vertical-align: middle;
+        margin: 0.3em;
+        overflow: hidden;
+        text-align: left;
+        .box-shadow(0, 2px, 2px, 0.2);
+        .border-radius;
+        svg {
+          margin: 0 auto;
+          display: block;
+        }
+        .chart-type {
+          margin: 0;
+        }
+        svg.bubble{
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+}
+
+.actions-list {
+  padding: 0.5em;
+  background-color: @lightGrey;
+  li{
+    display: inline-block;
+    margin-right: 1em;
+    width: 15%;
+  }
+  .btn {
+    padding: 1em 1.5em;
+    color: @white;
+    border: 0;
+    text-transform: uppercase;
+    opacity: 0.5;
+    width: 100%;
+    .border-radius;
+    .icon{
+      font-size: 2em;
+      vertical-align: sub;
+    }
+    &.active{
+      opacity: 1;
+      .box-shadow(0, 2px, 2px, 0.4);
+    }
+  }
+}
+
+// Bar chart styles
+.bar {
+  fill: steelblue;
+}
+.bar:hover {
+  fill: brown;
+}
+.axis {
+  font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis path {
+  display: none;
+}

@@ -67,7 +67,7 @@ $(function() {
 
         svg.append("g")
             .attr("class", "y axis")
-            .call(yAxis)
+            .call(yAxis);
 
         var vakken = svg.selectAll(".question")
             .data(data)

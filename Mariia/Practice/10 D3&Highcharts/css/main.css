@@ -2,6 +2,20 @@ body, html{
     height: 100%;
 }
 
+body{
+    background: #f5f5f5;;
+}
+/* Wrapper */
+
+.flex-holder-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*.wrapper {*/
+    /*height: 100%;*/
+/*}*/
+
 /*Header*/
 
 .header {
@@ -10,16 +24,18 @@ body, html{
     background: #393939;
 }
 
+.flex-holder-row {
+    display: flex;
+}
+
 .header .menu-btn {
     background: #2b2b2b;
     padding:1.25em;
 }
 
-.header-holder {
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding:0 0.75em 0 1.5em;
+.icon {
+    display: inline-block;
+    background: url(../img/sprite.png) no-repeat;
 }
 
 .menu-btn .menu-icon {
@@ -28,7 +44,14 @@ body, html{
     height: 1.25em;
 }
 
-.header-holder .logo {
+.header-container {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 0.75em 0 1.5em;
+}
+
+.header-container .logo {
     display:block;
     width:160px;
     height:30px;
@@ -85,6 +108,14 @@ body, html{
 }
 
 /* Aside navigation */
+
+.wide-flex {
+    flex-grow: 1;
+}
+
+.hide {
+    display: none;
+}
 
 .aside-nav {
     width: 7.4em;
@@ -285,7 +316,6 @@ body, html{
 /*Graphics*/
 
 .graphics {
-    background: #f5f5f5;
     justify-content: space-around;
     padding: 4em;
 }

@@ -1,12 +1,47 @@
-.yellow {
-  .vertical-gradient(#fdc931, #d8a40c);
+.menu-btn {
+  width: 60px;
+  height: 60px;
+  float: left;
+  background-color: @darkGrey;
+  cursor: pointer;
+  &::after{
+    content: "";
+    height: 60px;
+    display: block;
+  }
 }
-.green {
-  .vertical-gradient(#85c665, #74934a);
+.options-btn{
+  border: 1px solid @borderColor;
+  .vertical-gradient(#fff, #f6f6f6);
+  .border-radius(2px);
+  &:hover{
+    .vertical-gradient(#f6f6f6, #fff);
+  }
+  &.icon::after{
+    width: 30px;
+    height: 30px;
+  }
 }
-.blue{
-  .vertical-gradient(#66a0c5, #366c8f);
+
+.btn {
+  font-size: 1.2em;
+  color: @white;
+  border: 0;
+  text-transform: uppercase;
+  opacity: 0.5;
+  display: block;
+  padding: 4px 15px;
+  cursor: pointer;
+  .border-radius;
+  .icon{
+    font-size: 4em;
+    vertical-align: middle;
+    margin-right: 15px;
+    display: inline-block;
+  }
+  &:hover, &.active{
+    opacity: 1;
+    .box-shadow(0, 2px, 2px, 0.4);
+  }
 }
-.red{
-  .vertical-gradient(#d24444, #a93232);
-}
+

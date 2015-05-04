@@ -98,4 +98,22 @@ body {
     width: 100%;
     height: 100%;
   }
+  &.error-holder {
+    width: 570px;
+    color: @buttonTextColor;
+    margin-left: -295px;
+    border: 1px solid @borderColor;
+    background-color: lighten(@bg, 5%);
+    padding: 3em;
+    box-sizing: border-box;
+    border-radius: 2em;
+    margin-top: -295px;
+    .error-caption {
+      color: lighten(@buttonBg, 1%);
+      font-size: 4em;
+    }
+    p {
+      font-size: 2.5em;
+    }
+  }
 }

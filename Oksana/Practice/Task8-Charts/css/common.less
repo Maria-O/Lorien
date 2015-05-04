@@ -1,0 +1,163 @@
+body {
+  background-color: @pageBg;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-size: 62.5%;
+  color: @textColor;
+}
+.wrapper {
+  .top-panel {
+    background-color: @topPanelBg;
+    overflow: hidden;
+    max-height: 60px;
+    .logo::after{
+      background-position: -60px 0;
+      width: 170px;
+      height: 60px;
+      float: left;
+    }
+  }
+  .content-holder {
+    position: relative;
+    height: 100%;
+    .side-menu {
+      background-color: @panelBg;
+      width: 120px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      transition: 0.5s left;
+      z-index: 1;
+      &.hiddenMenu{
+        left: -120px;
+        transition: 0.5s left;
+      }
+      .menu-list {
+        color: @white;
+        font-size: 1.5em;
+        text-align: center;
+        .menu-item{
+          padding: 1em;
+          display: block;
+          &.active{
+            background-color: @activeTab;
+          }
+        }
+        .icon::after{
+          display: block;
+          width: 60px;
+          height: 60px;
+          margin: 0 auto;
+        }
+      }
+    }
+    .charts-holder {
+      height: 100%;
+      .content{
+        padding: 1em;
+        .examples{
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: stretch;
+        }
+        .chart {
+          background-color: @white;
+          margin: 1em;
+          flex: 1 1 auto;
+          padding: 1em;
+          .chart-type{
+            float: left;
+          }
+          .box-shadow(0, 2px, 2px, 0.2);
+          .border-radius;
+          .options-btn{
+            float: right;
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+.top-bar{
+  overflow: hidden;
+  border-bottom: 1px solid @borderColor;
+  position: relative;
+  .filter-list {
+    padding: 0.5em;
+    background-color: @filterPanelBg;
+    width: 9999px;
+    li{
+      display: inline-block;
+      margin-right: 1em;
+      width: 195px;
+    }
+    .icon{
+      height: 60px;
+      display: inline-block;
+    }
+    .icon::after{
+      display: block;
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .next{
+    position: absolute;
+    right: 50px;
+    top: 22px;
+    font-size: 2.5em;
+  }
+  .actions{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: -1px;
+    font-size: 2.4em;
+    background-color: @filterPanelBg;
+    border: 1px solid @borderColor;
+    .icon:first-child{
+      border-bottom: 1px solid @borderColor;
+    }
+    .icon{
+      padding: 3px 10px;
+      display: block;
+    }
+    .icon::after{
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+    .overlay{
+      width: 60px;
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 51px;
+    }
+  }
+}
+
+
+// Bar chart styles
+.bar {
+  fill: steelblue;
+}
+.bar:hover {
+  fill: brown;
+}
+.axis {
+  font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis path {
+  display: none;
+}

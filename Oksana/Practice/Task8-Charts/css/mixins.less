@@ -1,0 +1,41 @@
+.vertical-gradient (@from, @to){
+  background: @from; /* Old browsers */
+  background: -moz-linear-gradient(top,  @from 0%, @to 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@from), color-stop(100%,@to)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  @from 0%,@to 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  @from 0%,@to 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  @from 0%,@to 100%); /* IE10+ */
+  background: linear-gradient(to bottom, @from 0%,@to 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@from, endColorstr=@to,GradientType=0 ); /* IE6-9 */
+}
+
+.horizontal-gradient (@from, @to){
+  background: -moz-linear-gradient(left,   @from 0%, @to 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,@from), color-stop(100%,@to)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  @from 0%,@to 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  @from 0%,@to 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  @from 0%,@to 100%); /* IE10+ */
+  background: linear-gradient(to right,  @from 0%,@to 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@from, endColorstr=@to,GradientType=0 ); /* IE6-9 */
+
+}
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  border-radius:         @radius;
+
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
+}
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+  -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+.placeholderColor(@color: @white){
+  &::-webkit-input-placeholder {color:@color;}
+  &::-moz-placeholder          {color:@color;}/* Firefox 19+ */
+  &:-moz-placeholder           {color:@color;}/* Firefox 18- */
+  &:-ms-input-placeholder      {color:@color;}
+}

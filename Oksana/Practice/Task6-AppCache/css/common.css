@@ -100,3 +100,21 @@ body {
   width: 100%;
   height: 100%;
 }
+.wrapper.error-holder {
+  width: 570px;
+  color: #ffffff;
+  margin-left: -295px;
+  border: 1px solid #499dc9;
+  background-color: #353535;
+  padding: 3em;
+  box-sizing: border-box;
+  border-radius: 2em;
+  margin-top: -295px;
+}
+.wrapper.error-holder .error-caption {
+  color: #399bce;
+  font-size: 4em;
+}
+.wrapper.error-holder p {
+  font-size: 2.5em;
+}

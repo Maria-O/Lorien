@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WebWorker&WebSocket</title>
+    <link rel="stylesheet" href="css/css-reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="wrapper" id="page-wrapper">
+    <div id="status" class="status">Connecting...</div>
+    <ul id="messages" class="message-list"></ul>
+    <form id="message-form" action="#" method="post" class="submit-form">
+        <textarea class="textarea" id="message" placeholder="Write your message here..." required></textarea>
+        <button type="submit" class="btn submit-btn">Send Message</button>
+        <button type="button" id="close" class="btn close-btn">Close Connection</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

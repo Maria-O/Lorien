@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Parallax</title>
+    <link href="bower_components/normalize.css/normalize.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+</head>
+<body>
+<main>
+    <div id="slides-container">
+        <div id="slides"
+             data-0="transform:translate(0%,0%);"
+             data-150p="transform:translate(0%,-50%);"
+             data-200p=""
+             data-300p="transform:translate(-50%,-50%);"
+             data-350p=""
+             data-400p="transform:translate(-50%,0%);"
+                >
+            <div id="slide-1" class="slide">
+                <div class="caption"
+                     data-40p="opacity: 1; transform:translate(0px,0px);"
+                     data-70p="opacity: 0; transform:translate(0px,-100%);"
+                        >
+                    <h1>Lets play golf!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div id="slide-2" class="slide">
+                <div class="caption"
+                     data-130p="opacity: 0; transform:translate(0px,-200%);"
+                     data-180p="opacity: 1; transform:translate(0px,0px);"
+                     data-250p=""
+                     data-280p="opacity: 0; transform:translate(-100px,0px);"
+                        >
+                    <h1>The right way...</h1>
+                    <p>Nullam feugiat nisi arcu, sit amet ullamcorper ex sollicitudin at</p>
+                </div>
+            </div>
+            <div id="slide-3" class="slide">
+                <div class="caption"
+                     data-250p="opacity: 0; transform:translate(300px,0px);"
+                     data-300p="opacity: 1; transform:translate(0px,0px);"
+                        >
+                    <h1>Gamble</h1>
+                    <p>Nunc feugiat tristique faucibus.</p>
+                </div>
+            </div>
+            <div id="slide-4" class="slide">
+                <div class="caption"
+                     data-430p="opacity: 0;"
+                     data-450p="opacity: 1;"
+                        >
+                    <h1>Coffee time</h1>
+                    <p>Etiam nec enim eu erat euismod rutrum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/skrollr/dist/skrollr.min.js"></script>
+<script>
+    var s = skrollr.init();
+</script>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+    <link href="css/css-reset.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/zoomable.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<main class="wrapper flex-holder-column">
+    <header class="header flex-holder-row">
+        <button type="button" class="menu-btn" id="menu-btn">
+            <span class="menu-icon icon"></span>
+        </button>
+        <div class="header-container flex-holder-row">
+            <a href="#" title="Company logo">
+                <img src="img/logo.png" class="logo" alt="Company logo">
+            </a>
+            <div class="flex-holder-row">
+                <div class="search-holder header-holder-item flex-holder-row">
+                    <span class="search-icon icon"></span>
+                    <input type="search" placeholder="SEARCH" class="field"/>
+                </div>
+                <select class="field select select-holder header-holder-item">
+                    <option>qwerty1</option>
+                    <option>qwerty2</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <section class="wide-flex flex-holder-row">
+        <aside class="aside-nav flex-holder-column" id="aside-nav">
+            <ul class="aside-nav-list">
+                <li class="active">
+                    <a href="#" title="Home" class="menu-btn flex-holder-column">
+                        <span class="home icon"></span>
+                        <span class="name">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Explore Data" class="menu-btn flex-holder-column">
+                        <span class="explore-data icon"></span>
+                        <span class="name">Explore Data</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Dashboards" class="menu-btn flex-holder-column">
+                        <span class="dashboards icon"></span>
+                        <span class="name">Dashboards</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Schedule" class="menu-btn flex-holder-column">
+                        <span class="schedule  icon"></span>
+                        <span class="name">Schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="User objects" class="menu-btn flex-holder-column">
+                        <span class="user-objects icon"></span>
+                        <span class="name">User objects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Help" class="menu-btn flex-holder-column">
+                        <span class="help icon"></span>
+                        <span class="name">Help</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="flex-holder-column wide-flex">
+            <div class="top-nav flex-holder-row">
+                <ul class="top-nav-list flex-holder-row wide-flex">
+                    <li>
+                        <a href="#" title="Drill down">
+                            <span class="icon drill-down active top-nav-item"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Default">
+                            <span class="icon default top-nav-item"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Comparing">
+                            <span class="icon comparing top-nav-item"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Errors">
+                            <span class="icon errors top-nav-item"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Long dashboard">
+                            <span class="icon long-dashboard top-nav-item"></span>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="nav-btn flex-holder-row">
+                    <span class="arrow-btn icon"></span>
+                </button>
+                <ul class="controls flex-holder-column">
+                    <li>
+                        <button type="button" class="btn">
+                            <span class="add-btn icon"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn">
+                            <span class="view-btn icon"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <section class="flex-holder-column wide-flex">
+                <ul class="highchart graphics flex-holder-row wide-flex">
+                    <li id="container1" class="graphic"></li>
+                    <li id="container2" class="graphic"></li>
+                    <li id="container3" class="graphic"></li>
+                </ul>
+                <ul class="d3 graphics flex-holder-row wide-flex">
+                    <li id="container4" class="graphic"></li>
+                    <li id="container5" class="graphic"></li>
+                    <li id="container6" class="graphic"></li>
+                </ul>
+            </section>
+        </div>
+    </section>
+</main>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/highcharts-more.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="js/Highcharts/highchartMonthlyTemp.js"></script>
+<script src="js/Highcharts/highchartJulyTemp.js"></script>
+<script src="js/Highcharts/highchartDonutChart.js"></script>
+<script src="js/d3/D3Zoomable.js"></script>
+<script src="js/d3/D3Diverging.js"></script>
+<script src="js/d3/D3Transition.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

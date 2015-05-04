@@ -1,0 +1,71 @@
+{
+  "name": "flare",
+  "children": [
+    {
+      "name": "analytics",
+      "description": "analytics",
+      "children": [
+        {
+          "name": "cluster",
+          "description": "cluster",
+          "children": [
+            {"name": "Agglomera", "size": 3938},
+            {"name": "Community", "size": 3812},
+            {"name": "Hierarchical", "size": 6714},
+            {"name": "MergeEdge", "size": 743}
+          ]
+        },
+        {
+          "name": "graph",
+          "description": "graph",
+          "children": [
+            {"name": "Betweenn", "size": 3534},
+            {"name": "LinkDis", "size": 5731},
+            {"name": "MaxFlo", "size": 7840},
+            {"name": "Shortes", "size": 5914},
+            {"name": "Spannin", "size": 3416}
+          ]
+        },
+        {
+          "name": "optimization",
+          "description": "optimization",
+          "children": [
+            {"name": "AspectRat", "size": 7074}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "animate",
+      "description": "animate",
+      "children": [
+        {"name": "Easing", "size": 17010},
+        {"name": "Functio", "size": 5842},
+        {
+          "name": "interpolate",
+          "description": "interpolate",
+          "children": [
+            {"name": "ArrayInte", "size": 1983},
+            {"name": "ColorInte", "size": 2047},
+            {"name": "DateInte", "size": 1375},
+            {"name": "Interpol", "size": 8746},
+            {"name": "MatrixIn", "size": 2202},
+            {"name": "NumberInt", "size": 1382},
+            {"name": "ObjectInt", "size": 1629},
+            {"name": "PointInte", "size": 1675},
+            {"name": "Rectangle", "size": 2042}
+          ]
+        },
+        {"name": "ISchedul", "size": 1041},
+        {"name": "Parallel", "size": 5176},
+        {"name": "Pause", "size": 449},
+        {"name": "Sched", "size": 5593},
+        {"name": "Sequence", "size": 5534},
+        {"name": "Transi", "size": 9201},
+        {"name": "Transi", "size": 19975},
+        {"name": "Transi", "size": 1116},
+        {"name": "Tween", "size": 6006}
+      ]
+    }
+  ]
+}

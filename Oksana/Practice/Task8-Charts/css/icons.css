@@ -1,0 +1,71 @@
+.icon::after,
+.logo::after,
+.menu-btn::after {
+  content: "";
+  display: block;
+  background: url("../img/spritesheet.png");
+}
+/*Menu icons*/
+.home-icon::after {
+  background-position: 0 -60px;
+}
+.explore-data-icon::after {
+  background-position: -60px -60px;
+}
+.dashboards-icon::after {
+  background-position: -120px -60px;
+}
+.widget-icon::after {
+  background-position: -180px -60px;
+}
+.schedule-icon::after {
+  background-position: -240px -60px;
+}
+.settings-icon::after {
+  background-position: -300px -60px;
+}
+.help-icon::after {
+  background-position: -360px -60px;
+}
+/*Buttons icons*/
+.icon.drill-icon::after {
+  background-position: 0 -180px;
+}
+.icon.default-icon::after {
+  background-position: -60px -180px;
+}
+.icon.comparing-icon::after {
+  background-position: -120px -180px;
+}
+.icon.errors-icon::after {
+  background-position: -180px -180px;
+}
+.icon.similar-icon::after {
+  background-position: -240px -180px;
+}
+/*Form icons*/
+.search-icon::after {
+  background-position: -240px 0;
+}
+.user-icon::after {
+  background-position: -240px -30px;
+}
+/*Actions icons*/
+.add-icon::after {
+  background-position: -300px 0;
+}
+.add-icon:hover::after {
+  background-position: -300px -30px;
+}
+.window-icon::after {
+  background-position: -270px 0;
+}
+.window-icon:hover::after {
+  background-position: -270px -30px;
+}
+.next-icon::after {
+  background-position: -330px 0;
+}
+.list-icon::after {
+  background-position: -330px -30px;
+}

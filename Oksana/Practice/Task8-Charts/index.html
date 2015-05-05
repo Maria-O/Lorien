@@ -9,89 +9,191 @@
 <body>
 <main class="wrapper">
     <header class="top-panel">
-        <i class="fi-list menu-btn"></i>
-        <span class="logo">Charts</span>
+        <span class="menu-btn"></span>
+        <span class="logo">Kantar media</span>
+
         <form id="search-form">
             <div class="input-group">
-                <label for="search-input">
-                    <i class="fi-magnifying-glass"></i>
-                </label>
                 <input type="search" id="search-input" placeholder="Search">
+                <label for="search-input">
+                    <span class="search-icon icon"></span>
+                </label>
             </div>
             <div class="input-group">
-                <select>
+                <select id="user-options">
                     <option>UserName1</option>
                     <option>UserName2</option>
                 </select>
+                <label for="user-options">
+                    <span class="user-icon icon"></span>
+                </label>
             </div>
         </form>
     </header>
     <div class="content-holder">
-        <aside class="side-menu">
+        <aside class="side-menu hiddenMenu">
             <ul class="menu-list">
                 <li>
                     <a href="#" class="menu-item active">
-                        <i class="icon fi-graph-pie"></i>
-                        D3 charts
+                        <span class="home-icon icon"></span>
+                        Home
                     </a>
                 </li>
                 <li>
                     <a href="#" class="menu-item">
-                        <i class="icon fi-graph-bar"></i>
-                        Highcharts
+                        <span class="explore-data-icon icon"></span>
+                        Explore data
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <span class="dashboards-icon icon"></span>
+                        Dashboards
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <span class="widget-icon icon"></span>
+                        Widget library
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <span class="schedule-icon icon"></span>
+                        Schedule
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <span class="settings-icon icon"></span>
+                        User objects
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <span class="help-icon icon"></span>
+                        Help
                     </a>
                 </li>
             </ul>
         </aside>
         <section class="charts-holder">
             <section class="top-bar">
-                <ul class="actions-list">
+                <ul class="filter-list">
                     <li>
-                        <button class="yellow btn active">
-                            <i class="fi-home icon"></i>
+                        <a href="#" class="yellow-gradient btn active">
+                            <span class="drill-icon icon"></span>
                             Drill down
-                        </button>
+                        </a>
                     </li>
                     <li>
-                        <button class="green btn">
-                            <i class="fi-shopping-cart icon"></i>
+                        <a href="#"  class="green-gradient btn">
+                            <span class="default-icon icon"></span>
                             Default
-                        </button>
+                        </a>
                     </li>
                     <li>
-                        <button class="blue btn">
-                            <i class="fi-torsos-all-female icon"></i>
+                        <a href="#" class="cyan-gradient btn">
+                            <span class="comparing-icon icon"></span>
                             Comparing
-                        </button>
+                        </a>
                     </li>
                     <li>
-                        <button class="red btn">
-                            <i class="fi-info icon"></i>
-                            Error
-                        </button>
+                        <a href="#" class="red-gradient btn">
+                            <span class="errors-icon icon"></span>
+                            Errors
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="blue-gradient btn">
+                            <span class="similar-icon icon"></span>
+                            Similar
+                        </a>
                     </li>
                 </ul>
+                <div class="actions">
+                    <span class="add-icon action-btn icon"></span>
+                    <span class="window-icon action-btn icon"></span>
+                    <span class="overlay light-gradient"></span>
+                    <span class="next next-icon icon"></span>
+                </div>
+
             </section>
-            <h1 class="caption">D3 charts</h1>
-            <div class="examples">
-                <div class="bubbles-chart chart">
-                    <h2 class="chart-type">Bubbles Chart</h2>
+
+            <section class="content">
+                <div class="content-item">
+                    <h1 class="caption">D3 charts</h1>
+                    <div class="examples">
+                        <div class="bubbles-chart chart">
+                            <div class="chart-heading">
+                                <h2 class="chart-type">Bubbles Chart</h2>
+                                <a href="#" class="options-btn list-icon icon"></a>
+                            </div>
+                        </div>
+                        <div class="bar-chart chart">
+                            <div class="chart-heading">
+                                <h2 class="chart-type">Bar Chart</h2>
+                                <a href="#" class="options-btn list-icon icon"></a>
+                            </div>
+                        </div>
+                        <div class="liquid-chart chart">
+                            <div class="chart-heading">
+                                <h2 class="chart-type">Liquid Fill</h2>
+                                <a href="#" class="options-btn list-icon icon"></a>
+                            </div>
+                            <svg id="fillgauge1" width="97%" height="250"></svg>
+                        </div>
+                    </div>
                 </div>
-                <div class="bar-chart chart">
-                    <h2 class="chart-type">Bar Chart</h2>
+                <div class="content-item">
+                    <h1 class="caption">Highcharts</h1>
+                    <div class="examples">
+                        <div class="bubbles-chart chart">
+                            <div class="chart-heading">
+                                <h2 class="chart-type">Basic line</h2>
+                                <a href="#" class="options-btn list-icon icon"></a>
+                            </div>
+                            <div id="basic-line"></div>
+                        </div>
+                        <div class="bar-chart chart">
+                            <div class="chart-heading">
+                                <h2 class="chart-type">Bar with negative stack</h2>
+                                <a href="#" class="options-btn list-icon icon"></a>
+                            </div>
+                            <div id="bar-with-stack"></div>
+                        </div>
+                        <div class="liquid-chart chart">
+                            <div class="chart-heading">
+                                <h2 class="chart-type">Pie</h2>
+                                <a href="#" class="options-btn list-icon icon"></a>
+                            </div>
+                            <div id="pie-chart"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="liquid-chart chart">
-                    <h2 class="chart-type">Liquid Fill</h2>
-                    <svg id="fillgauge1" width="97%" height="250"></svg>
-                </div>
-            </div>
+            </section>
+
         </section>
     </div>
 </main>
 </body>
+<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+
+<!--Include D3 framework-->
 <script src="bower_components/d3/d3.js" type="text/javascript"></script>
 <script src="js/lib/liquidFillGauge.js" type="text/javascript"></script>
-<script src="js/bubbles-chart.js" type="text/javascript"></script>
-<script src="js/bar-chart.js" type="text/javascript"></script>
-<script src="js/liquid-chart.js" type="text/javascript"></script>
+<!--Include D3 charts-->
+<script src="js/d3/bubbles-chart.js" type="text/javascript"></script>
+<script src="js/d3/bar-chart.js" type="text/javascript"></script>
+<script src="js/d3/liquid-chart.js" type="text/javascript"></script>
+
+<!--Include Highcharts library-->
+<script src="bower_components/highcharts/highcharts.js" type="text/javascript"></script>
+<script src="bower_components/highcharts/modules/exporting.js" type="text/javascript"></script>
+<!--Include Highcharts charts-->
+<script src="js/highchart/basic-line.js" type="text/javascript"></script>
+<script src="js/highchart/bar-with-stack.js" type="text/javascript"></script>
+<script src="js/highchart/pie.js" type="text/javascript"></script>
+
+<script src="js/main.js" type="text/javascript"></script>
 </html>

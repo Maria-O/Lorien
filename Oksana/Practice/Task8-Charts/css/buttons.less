@@ -1,12 +1,73 @@
-.yellow {
-  .vertical-gradient(#fdc931, #d8a40c);
+/* Menu button */
+.menu-btn {
+  width: 60px;
+  height: 60px;
+  float: left;
+  background-color: @darkGrey;
+  cursor: pointer;
+  &::after{
+    content: "";
+    height: 60px;
+    display: block;
+  }
 }
-.green {
-  .vertical-gradient(#85c665, #74934a);
+
+/* Options button for each chart */
+.options-btn{
+  border: 1px solid @borderColor;
+  .vertical-gradient(#fff, #f6f6f6);
+  .border-radius(2px);
+  &:hover,
+  &:active,
+  &:focus{
+    .vertical-gradient(#f6f6f6, #fff);
+  }
+  &.icon::after{
+    width: 30px;
+    height: 30px;
+  }
 }
-.blue{
-  .vertical-gradient(#66a0c5, #366c8f);
+
+/* Action buttons style */
+.action-btn{
+  border: 1px solid @borderColor;
+  padding: 4px 9px;
+  display: block;
+  cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: @darkGrey;
+    transition: 0.5s  background-color;
+  }
+  &:first-child{
+    border-bottom: 0;
+  }
 }
-.red{
-  .vertical-gradient(#d24444, #a93232);
+
+/* Custom button style */
+.btn {
+  font-size: 1.2em;
+  color: @white;
+  border: 0;
+  text-transform: uppercase;
+  opacity: 0.5;
+  display: block;
+  padding: 4px 15px;
+  cursor: pointer;
+  .border-radius;
+  .icon{
+    font-size: 4em;
+    vertical-align: middle;
+    margin-right: 15px;
+    display: inline-block;
+  }
+  &:hover,
+  &.active,
+  &:focus{
+    opacity: 1;
+    .box-shadow(0, 2px, 2px, 0.4);
+    transition: 0.5s  opacity;
+  }
 }
+

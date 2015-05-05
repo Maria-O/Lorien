@@ -13,7 +13,7 @@
 <body>
 <main class="wrapper flex-holder-column">
     <header class="header flex-holder-row">
-        <button type="button" class="menu-btn" id="menu-btn">
+        <button type="button" class="menu-btn highlighted" id="menu-btn">
             <span class="fontawesome-reorder active font-icon" data-text="reorder"></span>
         </button>
         <div class="header-container flex-holder-row">
@@ -25,47 +25,51 @@
                     <span class="fontawesome-search active font-icon" data-text="search"></span>
                     <input type="search" placeholder="SEARCH" class="field"/>
                 </div>
-                <select class="field select select-holder header-holder-item">
-                    <option>qwerty1</option>
-                    <option>qwerty2</option>
-                </select>
+                <div class="select-wrapper">
+                    <span class="icon user"></span>
+                    <select class="field select select-holder header-holder-item">
+                        <option>qwerty1</option>
+                        <option>qwerty2</option>
+                    </select>
+                    <span class="icon arrow"></span>
+                </div>
             </div>
         </div>
     </header>
-    <section class="wide-flex flex-holder-row">
-        <aside class="aside-nav flex-holder-column" id="aside-nav">
+    <section class="wide-flex flex-holder-row content-holder">
+        <aside class="aside-nav flex-holder-column hidden" id="aside-nav">
             <ul class="aside-nav-list">
-                <li class="active">
+                <li class="active highlighted">
                     <a href="#" title="Home" class="menu-btn flex-holder-column">
                         <span class="home icon"></span>
                         <span class="name">Home</span>
                     </a>
                 </li>
-                <li>
+                <li class="highlighted">
                     <a href="#" title="Explore Data" class="menu-btn flex-holder-column">
                         <span class="explore-data icon"></span>
                         <span class="name">Explore Data</span>
                     </a>
                 </li>
-                <li>
+                <li class="highlighted">
                     <a href="#" title="Dashboards" class="menu-btn flex-holder-column">
                         <span class="dashboards icon"></span>
                         <span class="name">Dashboards</span>
                     </a>
                 </li>
-                <li>
+                <li class="highlighted">
                     <a href="#" title="Schedule" class="menu-btn flex-holder-column">
                         <span class="schedule  icon"></span>
                         <span class="name">Schedule</span>
                     </a>
                 </li>
-                <li>
+                <li class="highlighted">
                     <a href="#" title="User objects" class="menu-btn flex-holder-column">
                         <span class="user-objects icon"></span>
                         <span class="name">User objects</span>
                     </a>
                 </li>
-                <li>
+                <li class="highlighted">
                     <a href="#" title="Help" class="menu-btn flex-holder-column">
                         <span class="help icon"></span>
                         <span class="name">Help</span>
@@ -78,31 +82,31 @@
                 <ul class="top-nav-list flex-holder-row wide-flex">
                     <li>
                         <a href="#" title="Drill down" class="drill-down btn active">
-                            <span class="icon"></span>
+                            <span class="icon dashboard"></span>
                             <span class="btn-text">Drill down</span>
                         </a>
                     </li>
                     <li>
                         <a href="#" title="Default" class="default btn">
-                            <span class="icon"></span>
+                            <span class="icon dashboard"></span>
                             <span class="btn-text">Default</span>
                         </a>
                     </li>
                     <li>
                         <a href="#" title="Comparing" class="comparing btn">
-                            <span class="icon"></span>
+                            <span class="icon dashboard"></span>
                             <span class="btn-text">Comparing#2</span>
                         </a>
                     </li>
                     <li>
                         <a href="#" title="Errors" class="errors btn">
-                            <span class="icon"></span>
+                            <span class="icon dashboard"></span>
                             <span class="btn-text">Errors</span>
                         </a>
                     </li>
                     <li>
                         <a href="#" title="Long dashboard" class="long-dashboard btn">
-                            <span class="icon"></span>
+                            <span class="icon dashboard"></span>
                             <span class="btn-text">Long dashboard</span>
                         </a>
                     </li>
@@ -112,18 +116,24 @@
                 </button>
                 <ul class="controls flex-holder-column">
                     <li>
-                        <button type="button" class="btn">
+                        <button type="button" class="btn highlighted">
                             <span class="fontawesome-plus active font-icon" data-text="plus"></span>
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="btn">
+                        <button type="button" class="btn highlighted">
                             <span class="view-btn icon"></span>
                         </button>
                     </li>
                 </ul>
             </div>
             <section class="flex-holder-column wide-flex">
+                <header class="content-header">
+                    <h1 class="title">
+                        <span class="icon drill-down dashboard"></span>
+                        Drill down
+                    </h1>
+                </header>
                 <ul class="highchart graphics flex-holder-row wide-flex">
                     <li id="container1" class="graphic"></li>
                     <li id="container2" class="graphic"></li>

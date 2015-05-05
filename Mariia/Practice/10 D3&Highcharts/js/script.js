@@ -7,7 +7,7 @@ var menuBtn = $("#menu-btn"),
     topNavItem = $(".top-nav-list").find('.btn');
 
 menuBtn.on('click', function(){
-    asideNav.toggleClass('move');
+    asideNav.toggleClass('hidden');
 
 });
 

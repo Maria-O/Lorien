@@ -1,3 +1,4 @@
+/* Menu button */
 .menu-btn {
   width: 60px;
   height: 60px;
@@ -10,11 +11,15 @@
     display: block;
   }
 }
+
+/* Options button for each chart */
 .options-btn{
   border: 1px solid @borderColor;
   .vertical-gradient(#fff, #f6f6f6);
   .border-radius(2px);
-  &:hover{
+  &:hover,
+  &:active,
+  &:focus{
     .vertical-gradient(#f6f6f6, #fff);
   }
   &.icon::after{
@@ -23,6 +28,24 @@
   }
 }
 
+/* Action buttons style */
+.action-btn{
+  border: 1px solid @borderColor;
+  padding: 4px 9px;
+  display: block;
+  cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: @darkGrey;
+    transition: 0.5s  background-color;
+  }
+  &:first-child{
+    border-bottom: 0;
+  }
+}
+
+/* Custom button style */
 .btn {
   font-size: 1.2em;
   color: @white;
@@ -39,9 +62,12 @@
     margin-right: 15px;
     display: inline-block;
   }
-  &:hover, &.active{
+  &:hover,
+  &.active,
+  &:focus{
     opacity: 1;
     .box-shadow(0, 2px, 2px, 0.4);
+    transition: 0.5s  opacity;
   }
 }
 

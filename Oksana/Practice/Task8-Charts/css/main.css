@@ -183,6 +183,24 @@
 .list-icon::after {
   background-position: -330px -30px;
 }
+.bar {
+  fill: steelblue;
+}
+.bar:hover {
+  fill: brown;
+}
+.axis {
+  font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis path {
+  display: none;
+}
 #search-form {
   float: right;
   font-size: 1.6em;
@@ -245,8 +263,9 @@
   border: 1px solid #353535;
 }
 #search-form #search-input:focus {
-  background-color: #636c6e;
+  background-color: #6f7a7b;
 }
+/* Menu button */
 .menu-btn {
   width: 60px;
   height: 60px;
@@ -259,6 +278,7 @@
   height: 60px;
   display: block;
 }
+/* Options button for each chart */
 .options-btn {
   border: 1px solid #c5c6c6;
   background: #ffffff;
@@ -284,7 +304,9 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.options-btn:hover {
+.options-btn:hover,
+.options-btn:active,
+.options-btn:focus {
   background: #f6f6f6;
   /* Old browsers */
   background: -moz-linear-gradient(top, #f6f6f6 0%, #ffffff 100%);
@@ -306,6 +328,23 @@
   width: 30px;
   height: 30px;
 }
+/* Action buttons style */
+.action-btn {
+  border: 1px solid #c5c6c6;
+  padding: 4px 9px;
+  display: block;
+  cursor: pointer;
+}
+.action-btn:hover,
+.action-btn:focus,
+.action-btn:active {
+  background-color: #2b2b2b;
+  transition: 0.5s background-color;
+}
+.action-btn:first-child {
+  border-bottom: 0;
+}
+/* Custom button style */
 .btn {
   font-size: 1.2em;
   color: #ffffff;
@@ -329,11 +368,13 @@
   display: inline-block;
 }
 .btn:hover,
-.btn.active {
+.btn.active,
+.btn:focus {
   opacity: 1;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.5s  opacity;
 }
 body {
   background-color: #f5f5f5;
@@ -341,66 +382,36 @@ body {
   font-size: 62.5%;
   color: #444040;
 }
-.wrapper .top-panel {
+/* Top panel styles */
+.top-panel {
   background-color: #393939;
   overflow: hidden;
   max-height: 60px;
 }
-.wrapper .top-panel .logo::after {
+.top-panel .logo::after {
   background-position: -60px 0;
   width: 170px;
   height: 60px;
   float: left;
 }
-.wrapper .content-holder {
+/* Content */
+.content-holder {
   position: relative;
   height: 100%;
 }
-.wrapper .content-holder .side-menu {
-  background-color: #2b2b2b;
-  width: 120px;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  transition: 0.5s left;
-  z-index: 1;
-}
-.wrapper .content-holder .side-menu.hiddenMenu {
-  left: -120px;
-  transition: 0.5s left;
-}
-.wrapper .content-holder .side-menu .menu-list {
-  color: #ffffff;
-  font-size: 1.5em;
-  text-align: center;
-}
-.wrapper .content-holder .side-menu .menu-list .menu-item {
-  padding: 1em;
-  display: block;
-}
-.wrapper .content-holder .side-menu .menu-list .menu-item.active {
-  background-color: #585858;
-}
-.wrapper .content-holder .side-menu .menu-list .icon::after {
-  display: block;
-  width: 60px;
-  height: 60px;
-  margin: 0 auto;
-}
-.wrapper .content-holder .charts-holder {
+.content-holder .charts-holder {
   height: 100%;
 }
-.wrapper .content-holder .charts-holder .content {
+.content-holder .charts-holder .content {
   padding: 1em;
 }
-.wrapper .content-holder .charts-holder .content .examples {
+.content-holder .charts-holder .content .examples {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: stretch;
 }
-.wrapper .content-holder .charts-holder .content .chart {
+.content-holder .charts-holder .content .chart {
   background-color: #ffffff;
   margin: 1em;
   flex: 1 1 auto;
@@ -415,14 +426,22 @@ body {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.wrapper .content-holder .charts-holder .content .chart .chart-type {
+.content-holder .charts-holder .content .chart .chart-heading {
+  overflow: auto;
+}
+.content-holder .charts-holder .content .chart .chart-type {
   float: left;
 }
-.wrapper .content-holder .charts-holder .content .chart .options-btn {
+.content-holder .charts-holder .content .chart .options-btn {
   float: right;
   width: 30px;
   height: 30px;
 }
+.content-holder .charts-holder .content .chart svg {
+  display: block;
+  margin: 0 auto;
+}
+/* Top bar styles */
 .top-bar {
   overflow: hidden;
   border-bottom: 1px solid #c5c6c6;
@@ -460,14 +479,6 @@ body {
   bottom: -1px;
   font-size: 2.4em;
   background-color: #e3e3e3;
-  border: 1px solid #c5c6c6;
-}
-.top-bar .actions .icon:first-child {
-  border-bottom: 1px solid #c5c6c6;
-}
-.top-bar .actions .icon {
-  padding: 3px 10px;
-  display: block;
 }
 .top-bar .actions .icon::after {
   display: block;
@@ -482,21 +493,42 @@ body {
   bottom: 0;
   right: 51px;
 }
-.bar {
-  fill: steelblue;
+/* Side menu styles */
+.side-menu {
+  background-color: #2b2b2b;
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: 0.5s left;
+  z-index: 1;
 }
-.bar:hover {
-  fill: brown;
+.side-menu.hiddenMenu {
+  left: -120px;
+  transition: 0.5s left;
 }
-.axis {
-  font: 10px sans-serif;
+.side-menu .menu-list {
+  color: #ffffff;
+  font-size: 1.5em;
+  text-align: center;
 }
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
+.side-menu .menu-list .menu-item {
+  padding: 1em;
+  display: block;
 }
-.x.axis path {
-  display: none;
+.side-menu .menu-list .menu-item.active,
+.side-menu .menu-list .menu-item:active {
+  background-color: #585858;
+}
+.side-menu .menu-list .menu-item:hover,
+.side-menu .menu-list .menu-item:focus {
+  background-color: #3e3e3e;
+  transition: 0.5s background-color;
+}
+.side-menu .menu-list .icon::after {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
 }

@@ -4,18 +4,19 @@
 var menuBtn = $("#menu-btn"),
     asideNav = $("#aside-nav"),
     asideNavItem = asideNav.find('.aside-nav-list').find('li'),
-    topNavItem =$(".top-nav-item");
+    topNavItem = $(".top-nav-list").find('.btn');
 
-menuBtn.on('click', function () {
-    asideNav.toggleClass('hide');
+menuBtn.on('click', function(){
+    asideNav.toggleClass('move');
+
 });
 
 asideNavItem.on('click', function() {
-    asideNavItem.removeClass('active');
+    asideNavItem.filter('.active').removeClass('active');
     $(this).addClass('active');
 });
 
 topNavItem.on('click', function(){
-    topNavItem.removeClass('active');
+    topNavItem.filter('.active').removeClass('active');
     $(this).addClass('active');
 });

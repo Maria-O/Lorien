@@ -3,7 +3,8 @@ body, html{
 }
 
 body{
-    background: #f5f5f5;;
+    background: #f5f5f5;
+    font-family: "Open Sans", "Helvetica Nueue", Arial, sans-serif;
 }
 /* Wrapper */
 
@@ -35,13 +36,12 @@ body{
 
 .icon {
     display: inline-block;
-    background: url(../img/sprite.png) no-repeat;
+    background: url(../img/sprite-new.png) no-repeat;
 }
 
-.menu-btn .menu-icon {
-    display: block;
-    width: 1.25em;
-    height: 1.25em;
+.menu-btn .font-icon {
+    font-size: 1.125em ;
+    color: #f8f8f8;
 }
 
 .header-container {
@@ -76,10 +76,8 @@ body{
     margin-right: 1em;
 }
 
-.search-holder .search-icon {
-    width: 20px;
-    height: 20px;
-    background-position-y: -21px;
+.search-holder .font-icon {
+    color: #cdd5d9;
     margin-right: 0.7em;
 }
 
@@ -113,24 +111,36 @@ body{
     flex-grow: 1;
 }
 
-.hide {
-    display: none;
-}
-
 .aside-nav {
     width: 7.4em;
     min-height: 38.4em;
     background: #2b2b2b;
+    position: relative;
+    left:0;
+    transition: all 0.5s ease;
+}
+
+.move {
+    left:-7.4em;
+    /*position: absolute;*/
+    /*height: 100%;*/
+}
+
+.hide {
+    display: none;
 }
 
 .aside-nav-list li {
     height: 5.8em;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.aside-nav-list .active {
+.aside-nav-list li {
+    background: #2b2b2b;
+    transition: background 0.3s ease-in;
+}
+
+.aside-nav-list li.active, .aside-nav-list li:hover  {
     background: #585858;
 }
 
@@ -138,46 +148,76 @@ body{
     margin-bottom: 0.625em;
 }
 
+.aside-nav-list .menu-btn {
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-size: 0.8125em;
+}
+
 .home {
     width: 29px;
     height: 29px;
-    background-position-x: -34px ;
+    background-position: -16px -136px ;
+}
+
+.menu-btn:hover .home {
+    background-position: -16px -196px;
 }
 
 .explore-data {
-    width: 31px;
+    width: 33px;
     height: 31px;
-    background-position-x: -67px ;
+    background-position: -74px -135px;
+}
+
+.menu-btn:hover .explore-data {
+    background-position: -74px -195px;
 }
 
 .dashboards {
     width: 31px;
-    height: 31px;
-    background-position: -22px -33px;
+    height: 32px;
+    background-position: -134px -135px;
 }
+
+.menu-btn:hover .dashboards {
+    background-position: -134px -195px;
+}
+
 
 .schedule {
     width: 25px;
     height: 31px;
-    background-position: -59px -34px;
+    background-position: -198px -135px;
+}
+
+.menu-btn:hover .schedule {
+    background-position: -198px -195px;
 }
 
 .user-objects {
     width: 33px;
     height: 33px;
-    background-position: -91px -34px;
+    background-position: -255px -136px;
+}
+
+
+.menu-btn:hover .user-objects {
+    background-position: -255px -196px;
 }
 
 .help {
-    width: 32px;
-    height: 31px;
-    background-position-y: -68px;
+    width: 34px;
+    height: 34px;
+    background-position: -312px -133px;
 }
 
-.aside-nav-list .menu-btn {
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
+.menu-btn:hover .help {
+    background-position: -313px -193px;
 }
 
 /*Long Dashboard*/
@@ -190,6 +230,7 @@ body{
     -webkit-box-shadow: inset 0px 0px 7px 1px #ABABAB;
     -moz-box-shadow: inset 0px 0px 7px 1px #ABABAB;
     -o-box-shadow: inset 0px 0px 7px 1px #ABABAB;
+    position: relative;
 }
 
 .top-nav-list {
@@ -197,6 +238,9 @@ body{
     justify-content: space-between;
     padding: 0.6em;
     position: relative;
+    text-transform: uppercase;
+    font-family: "Open Sans Bold";
+
 }
 
 .top-nav-list:after {
@@ -215,52 +259,130 @@ body{
     right: 0em;
 }
 
+.top-nav-list li {
+    width: 12.25em;
+    height: 3.875em;
+
+}
+
+.top-nav-list a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 0.8125em;
+}
+
+
 .top-nav-list .icon {
-    width: 197px;
-    height: 61px;
+    width: 50px;
+    height: 48px;
+
 }
 
 /* Dashboard buttons */
-
 .drill-down {
-    background-position-y: -107px ;
+    background: rgb(251,199,47); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(251,199,47,1) 0%, rgba(216,164,12,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(251,199,47,1)), color-stop(100%,rgba(216,164,12,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(251,199,47,1) 0%,rgba(216,164,12,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(251,199,47,1) 0%,rgba(216,164,12,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(251,199,47,1) 0%,rgba(216,164,12,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(251,199,47,1) 0%,rgba(216,164,12,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbc72f', endColorstr='#d8a40c',GradientType=0 ); /* IE6-9 */
 }
 
-.drill-down:hover, .drill-down.active {
-    background-position-y: -171px ;
+.drill-down .icon{
+    background-position: -8px -67px;
 }
 
+.btn {
+    border-radius: 0.5em;
+    opacity: 0.6;
+}
+
+.btn.active, .btn:hover{
+    opacity: 1;
+}
+
+.btn .icon {
+    margin: 0 0.94em;
+}
 .default {
-    background-position: -201px -107px;;
+    background: rgb(110,160,45); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(110,160,45,1) 0%, rgba(93,135,39,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(110,160,45,1)), color-stop(100%,rgba(93,135,39,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(110,160,45,1) 0%,rgba(93,135,39,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(110,160,45,1) 0%,rgba(93,135,39,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(110,160,45,1) 0%,rgba(93,135,39,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(110,160,45,1) 0%,rgba(93,135,39,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ea02d', endColorstr='#5d8727',GradientType=0 ); /* IE6-9 */
 }
 
-.default:hover, .default.active {
-    background-position: -201px -170px;
+.default .icon {
+    background-position: -66px -70px;;
 }
+
+/*.default:hover, .default.active {*/
+    /*background-position: -201px -170px;*/
+/*}*/
 
 .comparing {
-    background-position-y: -236px;
+    background: rgb(56,153,215); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(56,153,215,1) 0%, rgba(42,103,153,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(56,153,215,1)), color-stop(100%,rgba(42,103,153,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(56,153,215,1) 0%,rgba(42,103,153,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(56,153,215,1) 0%,rgba(42,103,153,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(56,153,215,1) 0%,rgba(42,103,153,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(56,153,215,1) 0%,rgba(42,103,153,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3899d7', endColorstr='#2a6799',GradientType=0 ); /* IE6-9 */
 }
 
-.comparing:hover, .comparing.active {
-    background-position-y: -300px;
+.comparing .icon {
+    background-position: -126px -65px;
 }
+
+/*.comparing:hover, .comparing.active {*/
+    /*background-position-y: -300px;*/
+/*}*/
 
 .errors {
-    background-position: -200px -235px;;
+    background: rgb(190,0,0); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(190,0,0,1) 0%, rgba(140,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(190,0,0,1)), color-stop(100%,rgba(140,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(190,0,0,1) 0%,rgba(140,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(190,0,0,1) 0%,rgba(140,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(190,0,0,1) 0%,rgba(140,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(190,0,0,1) 0%,rgba(140,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#be0000', endColorstr='#8c0000',GradientType=0 ); /* IE6-9 */
 }
 
-.errors:hover, .errors.active  {
-    background-position: -200px -299px;
+.errors .icon {
+    background-position: -186px -70px;;
 }
+
+/*.errors:hover, .errors.active  {*/
+    /*background-position: -200px -299px;*/
+/*}*/
 
 .long-dashboard {
-    background-position-y: -364px;
+    background: rgb(7,90,143); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(7,90,143,1) 0%, rgba(4,30,84,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(7,90,143,1)), color-stop(100%,rgba(4,30,84,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(7,90,143,1) 0%,rgba(4,30,84,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(7,90,143,1) 0%,rgba(4,30,84,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(7,90,143,1) 0%,rgba(4,30,84,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(7,90,143,1) 0%,rgba(4,30,84,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#075a8f', endColorstr='#041e54',GradientType=0 ); /* IE6-9 */
 }
 
-.long-dashboard:hover, .long-dashboard.active {
-    background-position-y: -428px;
+.long-dashboard .icon {
+    background-position: -8px -67px;
 }
+
+/*.long-dashboard:hover, .long-dashboard.active {*/
+    /*background-position-y: -428px;*/
+/*}*/
 
 @media (max-width: 1200px) {
     .long-dashboard {
@@ -273,10 +395,8 @@ body{
     padding: 0.8em;
 }
 
-.arrow-btn {
-    width: 12px;
-    height: 17px;
-    background-position: -37px -72px;
+.nav-btn .font-icon {
+    color:#626566;
 }
 
 /*Dashboard Controls*/
@@ -301,16 +421,16 @@ body{
 .controls .btn {
     background: #eaeded;
 }
-.add-btn {
-    width: 16px;
-    height: 16px;
-    background-position: -57px -72px ;
+
+.controls .font-icon {
+    color:#636869;
+    font-size: 1.4em;
 }
 
 .view-btn {
     width: 22px ;
     height: 21px ;
-    background-position: -94px -68px; ;
+    background-position: -17px -19px; ;
 }
 
 /*Graphics*/

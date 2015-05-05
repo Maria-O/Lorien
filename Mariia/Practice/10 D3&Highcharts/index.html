@@ -6,6 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
     <link href="css/css-reset.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
     <link href="css/zoomable.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
@@ -13,7 +14,7 @@
 <main class="wrapper flex-holder-column">
     <header class="header flex-holder-row">
         <button type="button" class="menu-btn" id="menu-btn">
-            <span class="menu-icon icon"></span>
+            <span class="fontawesome-reorder active font-icon" data-text="reorder"></span>
         </button>
         <div class="header-container flex-holder-row">
             <a href="#" title="Company logo">
@@ -21,7 +22,7 @@
             </a>
             <div class="flex-holder-row">
                 <div class="search-holder header-holder-item flex-holder-row">
-                    <span class="search-icon icon"></span>
+                    <span class="fontawesome-search active font-icon" data-text="search"></span>
                     <input type="search" placeholder="SEARCH" class="field"/>
                 </div>
                 <select class="field select select-holder header-holder-item">
@@ -76,38 +77,43 @@
             <div class="top-nav flex-holder-row">
                 <ul class="top-nav-list flex-holder-row wide-flex">
                     <li>
-                        <a href="#" title="Drill down">
-                            <span class="icon drill-down active top-nav-item"></span>
+                        <a href="#" title="Drill down" class="drill-down btn active">
+                            <span class="icon"></span>
+                            <span class="btn-text">Drill down</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Default">
-                            <span class="icon default top-nav-item"></span>
+                        <a href="#" title="Default" class="default btn">
+                            <span class="icon"></span>
+                            <span class="btn-text">Default</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Comparing">
-                            <span class="icon comparing top-nav-item"></span>
+                        <a href="#" title="Comparing" class="comparing btn">
+                            <span class="icon"></span>
+                            <span class="btn-text">Comparing#2</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Errors">
-                            <span class="icon errors top-nav-item"></span>
+                        <a href="#" title="Errors" class="errors btn">
+                            <span class="icon"></span>
+                            <span class="btn-text">Errors</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Long dashboard">
-                            <span class="icon long-dashboard top-nav-item"></span>
+                        <a href="#" title="Long dashboard" class="long-dashboard btn">
+                            <span class="icon"></span>
+                            <span class="btn-text">Long dashboard</span>
                         </a>
                     </li>
                 </ul>
                 <button type="button" class="nav-btn flex-holder-row">
-                    <span class="arrow-btn icon"></span>
+                    <span class="fontawesome-chevron-right active font-icon" data-text="chevron-right"></span>
                 </button>
                 <ul class="controls flex-holder-column">
                     <li>
                         <button type="button" class="btn">
-                            <span class="add-btn icon"></span>
+                            <span class="fontawesome-plus active font-icon" data-text="plus"></span>
                         </button>
                     </li>
                     <li>

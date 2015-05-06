@@ -3,7 +3,6 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
     <link href="css/css-reset.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
@@ -16,22 +15,22 @@
         <button type="button" class="menu-btn highlighted" id="menu-btn">
             <span class="fontawesome-reorder active font-icon" data-text="reorder"></span>
         </button>
-        <div class="header-container flex-holder-row">
+        <div class="header-content flex-holder-row">
             <a href="#" title="Company logo">
-                <img src="img/logo.png" class="logo" alt="Company logo">
+                <h1 class="logo icon">Kantar Media</h1>
             </a>
             <div class="flex-holder-row">
-                <div class="search-holder header-holder-item flex-holder-row">
+                <div class="header-holder-item search-holder flex-holder-row">
                     <span class="fontawesome-search active font-icon" data-text="search"></span>
                     <input type="search" placeholder="SEARCH" class="field"/>
+                    <button type="button" class="find-btn">Find</button>
                 </div>
-                <div class="select-wrapper">
+                <div class="select-wrapper flex-holder-row header-holder-item">
                     <span class="icon user"></span>
-                    <select class="field select select-holder header-holder-item">
-                        <option>qwerty1</option>
-                        <option>qwerty2</option>
+                    <select class="field select">
+                        <option class="option">qwerty1</option>
+                        <option class="option">qwerty2</option>
                     </select>
-                    <span class="icon arrow"></span>
                 </div>
             </div>
         </div>
@@ -80,31 +79,31 @@
         <div class="flex-holder-column wide-flex">
             <div class="top-nav flex-holder-row">
                 <ul class="top-nav-list flex-holder-row wide-flex">
-                    <li>
+                    <li class="dashboard-item drill-down-item">
                         <a href="#" title="Drill down" class="drill-down btn active">
                             <span class="icon dashboard"></span>
                             <span class="btn-text">Drill down</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="default-item">
                         <a href="#" title="Default" class="default btn">
                             <span class="icon dashboard"></span>
                             <span class="btn-text">Default</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="comparing-item">
                         <a href="#" title="Comparing" class="comparing btn">
                             <span class="icon dashboard"></span>
                             <span class="btn-text">Comparing#2</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="errors-item">
                         <a href="#" title="Errors" class="errors btn">
                             <span class="icon dashboard"></span>
                             <span class="btn-text">Errors</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="long-dashboard-item">
                         <a href="#" title="Long dashboard" class="long-dashboard btn">
                             <span class="icon dashboard"></span>
                             <span class="btn-text">Long dashboard</span>
@@ -127,23 +126,53 @@
                     </li>
                 </ul>
             </div>
-            <section class="flex-holder-column wide-flex">
-                <header class="content-header">
+            <section class="flex-holder-column wide-flex content">
+                <header class="content-header flex-holder-row">
                     <h1 class="title">
-                        <span class="icon drill-down dashboard"></span>
+                        <span class="icon drill-down icon dashboard"></span>
                         Drill down
                     </h1>
+                    <ul class="controls flex-holder-row">
+                        <li class="control-item">
+                            <button type="button" class="btn highlighted">
+                                <span class="fontawesome-plus active font-icon" data-text="plus"></span>
+                            </button>
+                        </li>
+                        <li class="control-item">
+                            <button type="button" class="btn highlighted">
+                                <span class="entypo-info-circled active font-icon" data-text="info-circled"></span>
+                            </button>
+                        </li>
+                        <li class="control-item">
+                            <button type="button" class="btn highlighted">
+                                <span class="fontawesome-refresh active font-icon" data-text="refresh"></span>
+                            </button>
+                        </li>
+                    </ul>
                 </header>
-                <ul class="highchart graphics flex-holder-row wide-flex">
-                    <li id="container1" class="graphic"></li>
-                    <li id="container2" class="graphic"></li>
-                    <li id="container3" class="graphic"></li>
-                </ul>
-                <ul class="d3 graphics flex-holder-row wide-flex">
-                    <li id="container4" class="graphic"></li>
-                    <li id="container5" class="graphic"></li>
-                    <li id="container6" class="graphic"></li>
-                </ul>
+                <section class="highchart graphics flex-holder-row wide-flex">
+                    <div id="container1" class="graphic"></div>
+                    <div id="container2" class="graphic"></div>
+                    <div id="container3" class="graphic"></div>
+                    <div id="container4" class="graphic flex-holder-column">
+                        <div class="flex-holder-row graph-title">
+                            <h3 class="title">Zoomable</h3>
+                            <span class="fontawesome-reorder active" data-text="reorder"></span>
+                        </div>
+                    </div>
+                    <div id="container5" class="graphic flex-holder-column">
+                        <div class="flex-holder-row graph-title">
+                            <h3 class="title">Transition</h3>
+                            <span class="fontawesome-reorder active" data-text="reorder"></span>
+                        </div>
+                    </div>
+                    <div id="container6" class="graphic flex-holder-column">
+                        <div class="flex-holder-row graph-title">
+                            <h3 class="title">Diverging</h3>
+                            <span class="fontawesome-reorder active" data-text="reorder"></span>
+                        </div>
+                    </div>
+                </section>
             </section>
         </div>
     </section>

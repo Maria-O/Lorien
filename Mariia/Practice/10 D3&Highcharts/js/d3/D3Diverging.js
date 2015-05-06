@@ -2,9 +2,9 @@
  * Created by Mariia_Obizna on 4/27/2015.
  */
 $(function() {
-    var margin = {top: 50, right: 15, bottom: 60, left: 90},
-        width = 300 - margin.left - margin.right,
-        height = 300 - margin.top - margin.bottom;
+    var margin = {top: 50, right: 15, bottom: 20, left: 90},
+        width = 230 - margin.left - margin.right,
+        height = 230 - margin.top - margin.bottom;
 
     var y = d3.scale.ordinal()
         .rangeRoundBands([0, height], .3);

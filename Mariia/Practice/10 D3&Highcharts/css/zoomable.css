@@ -24,3 +24,7 @@
 .node--leaf {
   pointer-events: none;
 }
+
+text {
+    font-size: 0.8em;
+}

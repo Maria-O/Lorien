@@ -1,7 +1,7 @@
 $(function() {
 
-var margin = 20,
-    diameter = 250;
+var margin = 10,
+    diameter = 230;
 
 var color = d3.scale.linear()
     .domain([-1, 5])

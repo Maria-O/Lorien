@@ -23,12 +23,12 @@ topNavItem.on('click', function(){
     $(this).addClass('active');
 });
 
-field.on('focus', function(){
-    $(this).parent().addClass('focused-holder');
-    findBtn.show();
-});
-
-field.on('blur', function(){
-    $(this).parent().removeClass('focused-holder');
-    findBtn.hide();
-});
+//field.on('focus', function(){
+//    $(this).parent().addClass('focused-holder');
+//    findBtn.show();
+//});
+//
+//field.on('blur', function(){
+//    $(this).parent().removeClass('focused-holder');
+//    findBtn.hide();
+//});

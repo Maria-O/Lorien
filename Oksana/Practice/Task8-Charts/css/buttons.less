@@ -1,73 +1,99 @@
-/* Menu button */
+// --------- BUTTONS --------- //
+
+// Menu button
 .menu-btn {
-  width: 60px;
-  height: 60px;
   float: left;
-  background-color: @darkGrey;
   cursor: pointer;
+  width: @btn-m-size;
+  height: @btn-m-size;
+  background-color: @dark-grey;
+  // Menu btn icon styles
   &::after{
-    content: "";
-    height: 60px;
-    display: block;
+    width: @btn-m-size;
+    height: @btn-m-size;
   }
 }
 
-/* Options button for each chart */
+// Options button for each chart
 .options-btn{
-  border: 1px solid @borderColor;
-  .vertical-gradient(#fff, #f6f6f6);
-  .border-radius(2px);
+  width: @btn-s-size;
+  height: @btn-xs-size;
+  border: @btn-border;
+  .border-radius(@btn-border-radius);
+  .vertical-gradient(@btn-lightgrey-light, @btn-lightgrey-dark);
+
   &:hover,
   &:active,
   &:focus{
-    .vertical-gradient(#f6f6f6, #fff);
+    .vertical-gradient(@btn-lightgrey-dark, @btn-lightgrey-light);
   }
+  // Icon size
   &.icon::after{
-    width: 30px;
-    height: 30px;
+    width: @btn-xs-size;
+    height: @btn-xs-size;
   }
 }
 
-/* Action buttons style */
+// Action buttons style
 .action-btn{
-  border: 1px solid @borderColor;
-  padding: 4px 9px;
   display: block;
   cursor: pointer;
-  &:hover,
-  &:focus,
+  padding: 4px 9px;
+  border: @btn-border;
+  background-color: @btn-action;
+
+  &:hover, &:focus{
+    background-color: @btn-action-hover;
+    transition: 0.5s background-color;
+  }
+
   &:active{
-    background-color: @darkGrey;
-    transition: 0.5s  background-color;
+//    .vertical-gradient();
   }
   &:first-child{
     border-bottom: 0;
   }
-}
 
-/* Custom button style */
-.btn {
-  font-size: 1.2em;
-  color: @white;
-  border: 0;
-  text-transform: uppercase;
-  opacity: 0.5;
-  display: block;
-  padding: 4px 15px;
+  &.icon::after {
+    width: @btn-xs-size;
+    height: @btn-xs-size;
+  }
+}
+.next-btn{
   cursor: pointer;
-  .border-radius;
+  width: @btn-xs-size;
+  height: @btn-xs-size;
+  &.icon::after {
+    width: @btn-xs-size;
+    height: @btn-xs-size;
+  }
+}
+// Custom button style
+.btn {
+  display: block;
+  border: 0;
+  opacity: 0.5;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 4px 15px;
+  color: @btn-text-color;
+  text-transform: uppercase;
+  .border-radius(@btn-border-radius);
+
   .icon{
     font-size: 4em;
-    vertical-align: middle;
     margin-right: 15px;
     display: inline-block;
+    vertical-align: middle;
   }
+
   &:hover,
   &.active,
   &:focus{
     opacity: 1;
-    .box-shadow(0, 2px, 2px, 0.4);
+    color: @btn-text-color;
     transition: 0.5s  opacity;
+    .box-shadow(0, 2px, 2px, 0.4);
   }
 }
 

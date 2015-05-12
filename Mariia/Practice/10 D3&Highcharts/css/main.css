@@ -40,7 +40,7 @@ body{
 
 .icon {
     display: inline-block;
-    background: url(../img/new5.png) no-repeat;
+    background: url(../img/sprite.png) no-repeat;
 }
 
 .header-content {

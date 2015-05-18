@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 800px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrap {
+    height: 100%;
+    margin: 0;
+    padding: 0 0 40px 0;
+    background-color: #333;
+    font-family: "Georgia", sans-serif;
+    text-align: center;
+    border: 15px solid #222;
+    border-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+.ray {
+    -webkit-filter: grayscale(100%) brightness(1) contrast(140%);
+    filter: grayscale(100%) brightness(1) contrast(140%);
+}
+
+.gallery {
+    min-height: 300px;
+}
+.gallery:before {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.gallery a {
+    color: transparent;
+}
+img {
+    transition: all .3s ease;
+    border-radius: 100%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 20px solid transparent;
+    -webkit-filter: grayscale(100%);
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px){
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+p {
+    color: white;
+    font-size: 18px;
+}
+
+.selected {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .8px;
+    color: #666;
+    font-weight: bold;
+}
+
+a {
+    color: #777;
+}
+
+small {
+    text-align: center;
+    display: block;
+}
+
+h1 {
+    color: white;
+}
+
+.content {
+    text-align: left;
+    line-height: 1.5;
+    max-width: 750px;
+    padding: 0 20px;
+    margin: 0 auto;
+    max-height: 150px;
+}
+
+.content p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.current {
+    -webkit-filter: grayscale(0) brightness(1.2);
+    filter: grayscale(0) brightness(1.2) ;
+}
+
+.current:hover {
+    -webkit-filter: grayscale(0) brightness(1.4);
+    filter: grayscale(0) brightness(1.4);
+}
+
+img:hover {
+    cursor: pointer;
+    -webkit-filter: grayscale(100%) brightness(1.4);
+    filter: grayscale(100%) brightness(1.4);
+}
+
+.highlight {
+    text-transform: capitalize;
+    font-style: normal;
+    font-size: 56px;
+    line-height: .8;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: block;
+    color: white;
+}

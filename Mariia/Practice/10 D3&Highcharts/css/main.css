@@ -273,6 +273,10 @@ body{
     position: relative;
 }
 
+.holder {
+    overflow: hidden;
+}
+
 .top-nav-list {
     padding: .6em;
     position: relative;
@@ -281,7 +285,9 @@ body{
 
 .top-nav-list li {
     width: 12.25em;
+    min-width: 12.25em;
     height: 3.875em;
+    margin-right: 1em;
 }
 
 .top-nav-list a {
@@ -400,6 +406,7 @@ body{
     padding: 0 0.5em 0 3em;
     color:#626566;
     align-items: center;
+    z-index: 1;
 }
 
 .nav-btn:hover {
@@ -515,7 +522,7 @@ body{
     margin-bottom: 0;
 }
 
-/* iPad media*/
+/* iPad - width media*/
 
 @media only screen and (max-width : 768px) {
     .wrapper {

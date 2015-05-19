@@ -273,7 +273,8 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-
+span,
+div,
 button,
 input,
 optgroup,

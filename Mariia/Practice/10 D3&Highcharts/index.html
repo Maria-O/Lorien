@@ -12,21 +12,21 @@
 <body>
 <main class="wrapper flex-holder-column">
     <header class="header flex-holder-row">
-        <button type="button" class="menu-btn highlighted" id="menu-btn">
+        <span class="menu-btn highlighted" id="menu-btn">
             <span class="fontawesome-reorder active font-icon" data-text="reorder"></span>
-        </button>
-        <div class="header-content flex-holder-row">
+        </span>
+        <div class="header-content flex-holder-row flex-holder-space-between">
             <a href="#" title="Company logo">
-                <h1 class="logo icon">Kantar Media</h1>
+                <h1 class="logo-icon icon">Kantar Media</h1>
             </a>
             <div class="flex-holder-row">
                 <div class="header-holder-item search-holder flex-holder-row">
                     <span class="fontawesome-search active font-icon" data-text="search"></span>
                     <input type="search" placeholder="SEARCH" class="field"/>
-                    <button type="button" class="find-btn">Find</button>
+                    <span class="find-btn">Find</span>
                 </div>
                 <div class="select-wrapper flex-holder-row header-holder-item">
-                    <span class="icon user"></span>
+                    <span class="icon user-icon"></span>
                     <select class="field select">
                         <option class="option">qwerty1</option>
                         <option class="option">qwerty2</option>
@@ -35,139 +35,141 @@
             </div>
         </div>
     </header>
-    <section class="wide-flex flex-holder-row content-holder">
+    <section class="flex-holder-wide flex-holder-row content-holder">
         <aside class="aside-nav flex-holder-column hidden" id="aside-nav">
             <ul class="aside-nav-list">
                 <li class="active highlighted">
-                    <a href="#" title="Home" class="aside-btn flex-holder-column">
-                        <span class="home icon"></span>
+                    <a href="#" title="Home" class="aside-menu-item flex-holder-column flex-holder-centered">
+                        <span class="home-icon icon"></span>
                         <span class="name">Home</span>
                     </a>
                 </li>
                 <li class="highlighted">
-                    <a href="#" title="Explore Data" class="aside-btn flex-holder-column">
-                        <span class="explore-data icon"></span>
+                    <a href="#" title="Explore Data" class="aside-menu-item flex-holder-column flex-holder-centered">
+                        <span class="explore-data-icon icon"></span>
                         <span class="name">Explore Data</span>
                     </a>
                 </li>
                 <li class="highlighted">
-                    <a href="#" title="Dashboards" class="aside-btn flex-holder-column">
-                        <span class="dashboards icon"></span>
+                    <a href="#" title="Dashboards" class="aside-menu-item flex-holder-column flex-holder-centered">
+                        <span class="dashboards-icon icon"></span>
                         <span class="name">Dashboards</span>
                     </a>
                 </li>
                 <li class="highlighted">
-                    <a href="#" title="Schedule" class="aside-btn flex-holder-column">
-                        <span class="schedule  icon"></span>
+                    <a href="#" title="Schedule" class="aside-menu-item flex-holder-column flex-holder-centered">
+                        <span class="schedule-icon  icon"></span>
                         <span class="name">Schedule</span>
                     </a>
                 </li>
                 <li class="highlighted">
-                    <a href="#" title="User objects" class="aside-btn flex-holder-column">
-                        <span class="user-objects icon"></span>
+                    <a href="#" title="User objects" class="aside-menu-item flex-holder-column flex-holder-centered">
+                        <span class="user-objects-icon icon"></span>
                         <span class="name">User objects</span>
                     </a>
                 </li>
                 <li class="highlighted">
-                    <a href="#" title="Help" class="aside-btn flex-holder-column">
-                        <span class="help icon"></span>
+                    <a href="#" title="Help" class="aside-menu-item flex-holder-column flex-holder-centered">
+                        <span class="help-icon icon"></span>
                         <span class="name">Help</span>
                     </a>
                 </li>
             </ul>
         </aside>
-        <div class="flex-holder-column wide-flex">
+        <div class="flex-holder-column flex-holder-wide">
             <div class="top-nav flex-holder-row">
-                <ul class="top-nav-list flex-holder-row wide-flex">
-                    <li class="drill-down-item">
-                        <a href="#" title="Drill down" class="drill-down active btn">
-                            <span class="icon dashboard"></span>
-                            <span class="btn-text">Drill down</span>
-                        </a>
-                    </li>
-                    <li class="default-item">
-                        <a href="#" title="Default" class="default btn">
-                            <span class="icon dashboard"></span>
-                            <span class="btn-text">Default</span>
-                        </a>
-                    </li>
-                    <li class="comparing-item">
-                        <a href="#" title="Comparing" class="comparing btn">
-                            <span class="icon dashboard"></span>
-                            <span class="btn-text">Comparing#2</span>
-                        </a>
-                    </li>
-                    <li class="errors-item">
-                        <a href="#" title="Errors" class="errors btn">
-                            <span class="icon dashboard"></span>
-                            <span class="btn-text">Errors</span>
-                        </a>
-                    </li>
-                    <li class="long-dashboard-item">
-                        <a href="#" title="Long dashboard" class="long-dashboard btn">
-                            <span class="icon dashboard"></span>
-                            <span class="btn-text">Long dashboard</span>
-                        </a>
-                    </li>
-                </ul>
-                <button type="button" class="nav-btn flex-holder-row">
-                    <span class="fontawesome-chevron-right active font-icon" data-text="chevron-right"></span>
-                </button>
+                <div class="holder flex-holder-row flex-holder-wide">
+                    <ul class="top-nav-list flex-holder-space-between flex-holder-row flex-holder-wide">
+                        <li class="drill-down-item">
+                            <a href="#" title="Drill down" class="drill-down active btn">
+                                <span class="icon dashboard-icon"></span>
+                                <span class="btn-text">Drill down</span>
+                            </a>
+                        </li>
+                        <li class="default-item">
+                            <a href="#" title="Default" class="default btn">
+                                <span class="icon dashboard-icon"></span>
+                                <span class="btn-text">Default</span>
+                            </a>
+                        </li>
+                        <li class="comparing-item">
+                            <a href="#" title="Comparing" class="comparing btn">
+                                <span class="icon dashboard-icon"></span>
+                                <span class="btn-text">Comparing#2</span>
+                            </a>
+                        </li>
+                        <li class="errors-item">
+                            <a href="#" title="Errors" class="errors btn">
+                                <span class="icon dashboard-icon"></span>
+                                <span class="btn-text">Errors</span>
+                            </a>
+                        </li>
+                        <li class="long-dashboard-item">
+                            <a href="#" title="Long dashboard" class="long-dashboard btn">
+                                <span class="icon dashboard-icon"></span>
+                                <span class="btn-text">Long dashboard</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="nav-btn flex-holder-row">
+                        <span class="fontawesome-chevron-right active font-icon" data-text="chevron-right"></span>
+                    </span>
+                </div>
                 <ul class="flex-holder-column">
                     <li class="control-item highlighted">
-                        <button type="button" class="btn highlighted wide-flex">
+                        <span class="btn highlighted flex-holder-wide flex-holder-centered">
                             <span class="fontawesome-plus active font-icon" data-text="plus"></span>
-                        </button>
+                        </span>
                     </li>
                     <li class="control-item highlighted">
-                        <button type="button" class="btn highlighted wide-flex">
-                            <span class="view-btn icon"></span>
-                        </button>
+                        <span class="btn highlighted flex-holder-wide flex-holder-centered">
+                            <span class="view-btn-icon icon"></span>
+                        </span>
                     </li>
                 </ul>
             </div>
-            <section class="flex-holder-column wide-flex content">
-                <header class="content-header flex-holder-row">
+            <section class="flex-holder-column flex-holder-wide content">
+                <header class="content-header flex-holder-row flex-holder-space-between">
                     <h1 class="title">
-                        <span class="icon dashboard"></span>
+                        <span class="icon dashboard-icon"></span>
                         Drill down
                     </h1>
                     <ul class="flex-holder-row">
                         <li class="control-item  highlighted">
-                            <button type="button" class="btn highlighted wide-flex">
+                            <span class="btn highlighted flex-holder-wide flex-holder-centered">
                                 <span class="fontawesome-plus active font-icon" data-text="plus"></span>
-                            </button>
+                            </span>
                         </li>
                         <li class="control-item highlighted">
-                            <button type="button" class="btn highlighted wide-flex">
+                            <span class="btn highlighted flex-holder-wide flex-holder-centered">
                                 <span class="entypo-info-circled active font-icon" data-text="info-circled"></span>
-                            </button>
+                            </span>
                         </li>
                         <li class="control-item highlighted">
-                            <button type="button" class="btn highlighted wide-flex">
+                            <span class="btn highlighted flex-holder-wide flex-holder-centered">
                                 <span class="fontawesome-refresh active font-icon" data-text="refresh"></span>
-                            </button>
+                            </span>
                         </li>
                     </ul>
                 </header>
-                <section class="highchart graphics flex-holder-row wide-flex">
+                <section class="highchart graphics flex-holder-row flex-holder-wide">
                     <div id="container1" class="graphic"></div>
                     <div id="container2" class="graphic"></div>
                     <div id="container3" class="graphic"></div>
                     <div id="container4" class="graphic flex-holder-column">
-                        <div class="flex-holder-row graph-title">
+                        <div class="flex-holder-row graph-title flex-holder-space-between">
                             <h3 class="title">Zoomable</h3>
                             <span class="fontawesome-reorder active" data-text="reorder"></span>
                         </div>
                     </div>
                     <div id="container5" class="graphic flex-holder-column">
-                        <div class="flex-holder-row graph-title">
+                        <div class="flex-holder-row graph-title flex-holder-space-between">
                             <h3 class="title">Transition</h3>
                             <span class="fontawesome-reorder active" data-text="reorder"></span>
                         </div>
                     </div>
                     <div id="container6" class="graphic flex-holder-column">
-                        <div class="flex-holder-row graph-title">
+                        <div class="flex-holder-row graph-title flex-holder-space-between">
                             <h3 class="title">Diverging</h3>
                             <span class="fontawesome-reorder active" data-text="reorder"></span>
                         </div>

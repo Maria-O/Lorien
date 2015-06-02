@@ -1,0 +1,23 @@
+{
+  "name": "JustFlow",
+  "version": "0.0.0",
+  "authors": [
+    "Oksana Spolnyk <Oksana_Spolnyk@epam.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "skrollr": "~0.6.29",
+    "jquery": "~2.1.4",
+    "less": "~2.5.1",
+    "scrollr": "~0.6.29"
+  }
+}

@@ -1,0 +1,73 @@
+label {
+  display: none;
+}
+#message {
+  resize: none;
+  border: 0;
+  border-bottom: 1px solid #c6c7c7;
+  outline: none;
+  display: block;
+  background: none;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  height: 2em;
+}
+.address {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+}
+.address .email {
+  color: #696969;
+}
+.address .email:hover {
+  color: #5c5c5c;
+}
+#send-message {
+  width: 100%;
+}
+#send-message #name,
+#send-message #contact-message,
+#send-message #email {
+  border: 0;
+  background: rgba(255, 255, 255, 0.55);
+  display: block;
+  font-size: 14px;
+  padding: 1em;
+  margin: 1em 0;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+}
+#send-message #name::-webkit-input-placeholder,
+#send-message #contact-message::-webkit-input-placeholder,
+#send-message #email::-webkit-input-placeholder {
+  text-transform: uppercase;
+  text-align: center;
+}
+#send-message #name:focus::-webkit-input-placeholder,
+#send-message #contact-message:focus::-webkit-input-placeholder,
+#send-message #email:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+#send-message #name::-moz-placeholder,
+#send-message #contact-message::-moz-placeholder,
+#send-message #email::-moz-placeholder {
+  text-transform: uppercase;
+  text-align: center;
+}
+#send-message #name:focus::-moz-placeholder,
+#send-message #contact-message:focus::-moz-placeholder,
+#send-message #email:focus::-moz-placeholder {
+  color: transparent;
+}
+#send-message .lg-btn {
+  width: 100%;
+  padding: 1.2em 1em;
+  font-size: 1.2em;
+}

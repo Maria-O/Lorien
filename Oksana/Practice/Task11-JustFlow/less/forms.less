@@ -1,0 +1,76 @@
+@import "variables.less";
+@import "mixins.less";
+
+// Hide all labels
+// -------------------------
+label {
+  display: none;
+}
+
+// Message textarea in footer
+// -------------------------
+#message{
+  resize: none;
+  border: 0;
+  border-bottom: @form-border;
+  outline: none;
+  display: block;
+  background: none;
+  font-size: @form-font-size;
+  margin: 0 auto;
+  margin-bottom: @form-margin;
+  height: @form-height;
+}
+
+// Email link
+// -------------------------
+.address{
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  .transform(translate(-50%, 0%));
+  .email {
+    color: @email-color;
+    &:hover{
+      color: darken(@email-color, 5%);
+    }
+  }
+}
+
+// Form on contacts page
+// -------------------------
+#send-message{
+  width: 100%;
+  #name,
+  #contact-message,
+  #email{
+    border: 0;
+    background: @form-input-bg;
+    display: block;
+    font-size: @form-font-size;
+    padding: 1em;
+    margin: 1em 0;
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+    &::-webkit-input-placeholder{
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &:focus::-webkit-input-placeholder{
+      color: transparent;
+    }
+    &::-moz-placeholder {
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &:focus::-moz-placeholder{
+      color: transparent;
+    }
+  }
+  .lg-btn{
+    width: 100%;
+    padding: 1.2em 1em;
+    font-size: 1.2em;
+  }
+}

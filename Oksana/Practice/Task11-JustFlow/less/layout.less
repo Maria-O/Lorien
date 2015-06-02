@@ -1,0 +1,341 @@
+@import "variables.less";
+@import "mixins.less";
+@import "grid.less";
+
+.centered-wrapper {
+  position: relative;
+}
+// Site header
+// -------------------------
+#site-header{
+  .column(12);
+  background: @header-bg;
+  background-size: cover;
+  position: relative;
+  padding: @header-padding;
+  &.blog{
+    background: @blog-header-bg;
+    background-size: cover;
+    min-height: 50vh;
+  }
+  #logo{
+    background: @logo-img;
+    background-size: cover;
+    max-width: @logo-width;
+    width: 100%;
+    min-height: @logo-height;
+    text-indent: -99999px;
+    display: block;
+    margin: 0 auto;
+    @media @iphone5, @iphone6, @desktop768 {
+      background: @mobile-logo no-repeat;
+      background-size: cover;
+      min-height: @mobile-logo-height;
+      max-width: @mobile-logo-width;
+    }
+  }
+  .abstract-box {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.4em;
+    width: @abstract-width;
+    margin: 0 auto;
+    padding: @abstract-padding;
+    p {
+      text-align: center;
+    }
+  }
+}
+
+// Side menu
+// -------------------------
+.side-menu{
+  position: absolute;
+  .main-nav{
+//    background: @menu-bg;
+    opacity: 1;
+    padding-top: 60px;
+    padding-left: 10px;
+    z-index: 2;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: @side-menu-width;
+    .menu-item {
+      display: block;
+      text-transform: uppercase;
+      color: @menu-font-color;
+      line-height: @menu-line-height;
+      font-size: @menu-font-size;
+    }
+    .transition(all 1s ease-in-out);
+  }
+  .hide-main-nav {
+    left: -@side-menu-width;
+    opacity: 0;
+    .transition(all 1s ease-in-out);
+  }
+  &.grey{
+    .menu-item{
+      color: @menu-grey;
+    }
+  }
+}
+
+
+.page-content{
+  // Containers styles
+  // -------------------------
+  .phylosophy-container,
+  .rank-container,
+  .foster-container,
+  .contact-us-container {
+    .column(12);
+    position: relative;
+  }
+
+  // Phylosophy-container styles
+  // -------------------------
+  .phylosophy-container {
+    .white-block{
+      .column(6);
+      @media @iphone5, @iphone6, @desktop768 {
+        .column(12);
+      }
+    }
+  }
+
+  // Rank-container styles
+  // -------------------------
+  .rank-container {
+    background: @white-opacity-block;
+    .wave-block {
+      .column(6);
+    }
+    .white-block,
+    .rank-block {
+      .column(3);
+      //      @media @desktop768 {
+      //        .column(6);
+      //      }
+    }
+
+    @media @iphone5, @iphone6 {
+      .white-block,
+      .rank-block {
+        .column(12);
+      }
+
+      .white-block {
+        .transform(translate(0, 100%));
+      }
+
+      .rank-block {
+        .transform(translate(0, -100%));
+        z-index: 0;
+        .img{
+          top: -90px;
+        }
+      }
+    }
+  }
+
+  // Foster-container styles
+  // -------------------------
+  .foster-container{
+    background: @white-opacity-block;
+    .white-block{
+      .column(3);
+      @media @desktop768 {
+        .column(6);
+      }
+    }
+    .foster-block{
+      .column(3);
+    }
+    .twitter-block{
+      .column(6);
+      background: @twitter-bg;
+      color: @twitter-text-color;
+      padding: 2em;
+      font-family: @font-family-semi-bold-italic;
+      font-size: 1.3em;
+      .twitter-icon{
+        margin: 0 auto;
+      }
+    }
+  }
+  // Contact-container styles
+  // -------------------------
+  .contact-us-container{
+    background: @social-bg;
+    background-size: cover;
+    position: relative;
+    .white-block{
+      .column(3);
+      text-align: center;
+    }
+    .social-block{
+      .column(9);
+      position: relative;
+      @media @iphone5, @iphone6, @desktop768 {
+        .column(12);
+      }
+    }
+  }
+
+  // Portfolio blocks
+  // -------------------------
+  .portfolio-container{
+    position: relative;
+    .column(12);
+    .block{
+      .column(6);
+      @media @iphone5, @iphone6, @desktop768 {
+        .column(12);
+      }
+    }
+  }
+
+  // Full-width
+  // -------------------------
+  .block.full-width{
+    .column(12);
+  }
+
+  // Blog styles
+  // -------------------------
+  .post-image{
+    position: relative;
+  }
+
+  .post-header{
+    .column(12);
+    z-index: 5;
+    .header-wrapper{
+      .column(3);
+      .transform(translate(0%, 55%));
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .post-image {
+    .column(10);
+    .img {
+      width: 100%;
+      min-width: inherit;
+      position: relative;
+    }
+  }
+  .post-title {
+    font-weight: normal;
+    font-size: @post-title-size;
+    color: @post-title-color;
+    text-transform: uppercase;
+  }
+  .post-description{
+    .column(10);
+    padding: 1em;
+    .description-title{
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: @post-description-caption-size;
+    }
+  }
+
+  // Left centered articles
+  // -------------------------
+  .left-centered{
+    .header-wrapper{
+      .column(3);
+      .push(8);
+    }
+    .grey-option-icon{
+      position: absolute;
+      right: -70px;
+      bottom: 5px;
+      top: auto;
+    }
+    .lg-btn{
+      float: right;
+    }
+  }
+
+  // Right centered articles
+  // -------------------------
+  .right-centered{
+    .header-wrapper{
+      .push(1);
+    }
+    .post-image{
+      .push(2);
+    }
+    .grey-option-icon{
+      position: absolute;
+      left: -70px;
+      bottom: 5px;
+      top: auto;
+    }
+    .lg-btn{
+      float: left;
+    }
+    .post-description{
+      .push(2);
+    }
+  }
+
+  @media @iphone5, @iphone6{
+    .left-centered,
+    .right-centered{
+      .post-header,
+      .post-image,
+      .post-description,
+      .post-header .header-wrapper{
+        .column(12);
+      }
+      //    .post-header{
+      //      .transform(translate(0%, 55%));
+      //    }
+      .post-image{
+        height: 50vh;
+        overflow: hidden;
+        .img{
+          width: auto;
+        }
+      }
+      .post-description {
+        padding: 3em;
+      }
+      .description-title{
+        font-size: @post-title-size;
+        color: @post-title-color;
+      }
+    }
+  }
+}
+
+// Contact page
+// -------------------------
+.page-content.contacts {
+  background: @contacts-bg;
+  background-size: cover;
+  .column(12);
+  height: 100vh;
+  .centered-wrapper{
+    width: 50%;
+  }
+  .contacts-container.block{
+    height: auto;
+    position: initial;
+  }
+  @media @iphone5, @iphone6{
+    .centered-wrapper{
+      width: 90%;
+      position: relative;
+      .transform(translate(-50%, 0%));
+    }
+  }
+}

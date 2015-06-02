@@ -1,0 +1,132 @@
+@import "variables.less";
+@import "mixins.less";
+
+// Menu button
+// -------------------------
+.menu-icon{
+  left: -11px;
+  top: -24px;
+  z-index: 3;
+  position: absolute;
+}
+
+// Download button
+// -------------------------
+.download-icon{
+  margin: 0 auto;
+}
+
+// Social
+// -------------------------
+.social-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  .transform(translate(-50%, -50%));
+  border: 2px solid @btn-grey;
+  background: none;
+  color: darken(@btn-grey, 30%);
+  &:hover{
+    border: 2px solid @btn-grey;
+    color: @btn-white;
+    text-decoration: none;
+  }
+}
+
+// More button
+// -------------------------
+.arrow-right-icon{
+  position: absolute;
+  right: 0;
+  top: -26px;
+}
+
+// Options button
+// -------------------------
+.white-option-icon,
+.grey-option-icon{
+  &.bottom{
+    bottom: 0;
+  }
+  &.left{
+    left:0;
+  }
+  &.top{
+    top:0;
+  }
+  &.right{
+    right: 0;
+  }
+}
+
+// Option rounded button
+// -------------------------
+.grey-option-icon.rounded:hover::after{
+  background-position: -60px -180px;
+  border: 1px solid @btn-light-grey;
+}
+// Light grey button
+// -------------------------
+.light-grey-btn{
+  border: 2px solid @btn-light-grey;
+  background: @btn-grey-opacity;
+  color: darken(@btn-light-grey, 30%);
+  &:hover{
+    border: 2px solid darken(@btn-light-grey, 10%);
+    background: darken(@btn-grey-opacity, 10%);
+    color: darken(@btn-light-grey, 60%);
+  }
+}
+
+// Grey button
+// -------------------------
+.grey-btn{
+  border: 2px solid @btn-grey;
+  background: none;
+  color: darken(@btn-grey, 30%);
+  &:hover{
+    border: 2px solid @btn-grey;
+    background: @btn-grey;
+    color: @btn-white;
+  }
+}
+
+// White button
+// -------------------------
+.white-btn{
+  border: 1px solid @btn-white;
+  background: none;
+  color: @btn-white;
+  &:hover{
+    color: darken(@btn-white, 40%);
+    background: @btn-grey-opacity;
+  }
+}
+
+// Large button
+// -------------------------
+.lg-btn{
+  width: @btn-width;
+  text-align: center;
+  display: block;
+  padding: @btn-padding;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 auto;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+// XLarge button
+// -------------------------
+.xlg-btn {
+  border-width: 0 0 2px 0;
+  text-transform: uppercase;
+  font-size: @btn-font-size-xlg;
+  padding: 0 1em;
+  text-align: center;
+  &:hover{
+    border-width: 0 0 2px 0;
+  }
+}

@@ -1,0 +1,77 @@
+@import "variables.less";
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+// Reset the box-sizing
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+// Body reset
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  background-color: @body-bg;
+//  min-width: 768px;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+// Links
+
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: underline;
+  }
+
+  &:focus {
+
+  }
+}
+
+
+// Images
+
+img {
+  vertical-align: middle;
+}
+
+
+
+// Paragraphs
+p {
+  margin: 10px 0;
+  text-align: justify;
+}

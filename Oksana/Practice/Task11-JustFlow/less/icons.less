@@ -1,0 +1,54 @@
+@import "variables.less";
+.icon {
+  text-indent: -99999px;
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+.icon::after, .logo::after, .menu-btn::after {
+  content: "";
+  font-size: 0;
+  display: block;
+  background: @sprites;
+  width: 60px;
+  height: 60px;
+}
+
+.menu-icon::after{
+  background-position: 0 0;
+}
+.menu-icon:hover::after{
+  background-position: 0 -60px;
+}
+.download-icon::after{
+  background-position: -60px 0;
+}
+.download-icon:hover::after{
+  background-position: -60px -60px;
+}
+.twitter-icon::after{
+  background-position: -120px 0;
+}
+.blue-arrow-icon::after{
+  background-position: -180px 0;
+}
+.white-arrow-icon::after{
+  background-position: -240px 0;
+}
+.white-option-icon::after{
+  background-position: -60px -120px;
+}
+.white-option-icon:hover::after{
+  background-position: -60px -180px;
+}
+.grey-option-icon::after{
+  background-position: -60px -180px;
+}
+.grey-option-icon:hover::after{
+  background-position: -60px -120px;
+}
+.arrow-right-icon::after{
+  background-position: 0 -180px;
+}
+
+

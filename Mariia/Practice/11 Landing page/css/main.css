@@ -1,0 +1,351 @@
+/*body, html{
+	height: 100%;
+}*/
+
+body {
+	font-family: 'Lato Light', Arial, Helvetica, sans-serif;
+	color: #3c3c3c;
+}
+
+/*Common styles*/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.section {
+	padding: 10em 0;
+}
+
+.section:last-child {
+	padding-bottom: 0;
+}
+
+.holder {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.line {
+	float: left;
+	border-top: 2px solid #3c3c3c;
+	width: 27%;
+}
+
+.section-header {
+	float: left;
+	text-transform: uppercase;
+	font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
+	font-size: 2.125em;
+	position: relative;
+  	top: -0.5em;
+  	width: 46%;
+  	text-align: center;
+}
+
+.divided-header {
+	margin-bottom: 5.75em;
+}
+
+.common-holder {
+	max-width: 56.25em;
+	width: 47%;
+	border: 2px solid #3c3c3c ;
+	border-top: 0;
+	padding-bottom: 5.6em;
+}
+
+.common-holder .divided-header {
+	margin-bottom: 3.4em;
+}
+
+
+.inner-holder {
+	clear: both;
+	padding: 0 19%;
+	line-height: 1.5em;
+	margin-bottom: 6.8em;
+}
+
+.inner-holder:last-child {
+	margin-bottom: 0;
+}
+
+.inner-icon {
+	margin-bottom: 0.3em;
+  	font-size: 6em;
+  	display: inline-block;
+}
+
+.paragraph {
+	margin-bottom: 2em;
+}
+
+.paragraph:last-child {
+	margin-bottom: 0;
+}
+
+.inner-title {
+	font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	margin-bottom: 2em;
+
+}
+
+/*First section*/
+.wrapper {
+	/*height: 100%;*/
+}
+
+.main {
+	font-family: 'Lato Regular', Arial, Helvetica, sans-serif;
+	height: 100vh;
+	background: url(../img/background.png) no-repeat right fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	text-transform: uppercase;
+  	font-size: 0.93em;
+  	color:#fff;
+}
+
+
+.main .holder {
+	/*padding-top: 17.5em;*/
+	padding-top: 26vh;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	width: 65px;
+	height: 70px;
+}
+
+.logo-icon {
+	background: url(../img/logo.svg) no-repeat;
+}
+
+.logo-link {
+	margin-bottom: 4.5em;
+	text-indent: -9999px;
+}
+
+.heading {
+	font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
+	font-size: 3.63em;
+	letter-spacing: 0.2em;
+	line-height: 1.25em;
+	margin: 0 auto 0.4em;
+}
+
+.main-paragraph {
+	line-height: 2em;
+	margin-bottom: 16em;
+}
+
+/*About us section*/
+
+.about-us {
+	color: #3c3c3c;
+}
+
+
+/* Services section */
+
+.services {
+	background: url(../img/services.png) no-repeat right fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	color: #fff;
+}
+
+.services .line, .services .common-holder {
+	border-color: #fff;
+}
+
+.what-we-do {
+	color: #3c3c3c;
+	font-size: 0.875em;
+}
+
+.what-we-do .inner-holder {
+	  padding: 0 19% ;
+}
+
+
+/*Buttons list */
+
+.our-works-list {
+	font-size: 2.125em;
+	color:#fff;
+	font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
+  	text-transform: uppercase;
+  	overflow: hidden;
+
+}
+
+.list-item {
+	width: 28.2%;
+	height: 7em;
+	float: left;
+	margin: 0 0.8% 0.8% 0;
+	opacity: 0.6;
+	transition: opacity 0.5s ease;
+    background-size: cover;
+}
+
+.list-item:hover {
+	opacity:1;
+}
+
+
+
+.wide {
+	width: 42%;
+}
+
+.edge {
+	margin-right:  0;
+}
+
+.last-row {
+	margin-bottom: 0;
+}
+
+.topworkz {
+	background: url(../img/topworkz.png) no-repeat;
+}
+
+.joint {
+	background: url(../img/joint.png) no-repeat;
+}
+
+.market {
+	background: url(../img/market.png) no-repeat;
+}
+
+
+.worktop {
+	background: url(../img/worktop.png) no-repeat;
+}
+
+
+.lable {
+	background: url(../img/lable.png) no-repeat;
+}
+
+.kyiv {
+	background: url(../img/kyiv.png) no-repeat;
+}
+
+.link {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.link:hover .link-text {
+	text-decoration: underline;
+}
+
+
+.our-works-list .link {
+	position: relative;
+}
+
+.our-works-list .link-text {
+	position: absolute;
+	bottom: 1.4em;
+	left:1.4em;
+}
+/*Contact us*/
+
+.contact-us {
+	color: #3c3c3c;
+}
+
+.contact-btn {
+	font-family: 'Lato Regular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	background: #3c3c3c;
+	color:#fff;
+	display: inline-block;
+	width: 80%;
+	transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+	background: rgb(195, 201, 210);
+	color:#3c3c3c;
+}
+.contact-btn .paragraph {
+	margin-bottom: 2.5em;
+}
+
+.contact-us .common-holder{
+	padding-bottom: 3em;
+}
+
+.contact-us .link {
+	text-align: center;
+	padding: 1.4em 0; 
+}
+
+
+/*Footer*/
+
+.footer {
+	font-size: 0.875em;
+	color: #3c3c3c;
+	text-align: center;
+	padding: 4.5em;
+}
+
+
+.dark-logo {
+    width:2.2em;
+    margin-right: 1em;
+}
+
+.copy-right {
+    display: inline-block;
+    vertical-align: super;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .common-holder {
+        width: 86%;
+    }
+
+    .list-item {
+        width: 60%;
+        margin: 0 auto 0.2em;
+        float: none;
+        background-size: cover ;
+    }
+
+    .list-item.wide {
+        width: 60%;
+    }
+}
+
+/*
+
+icons 
+mobile
+footer
+spaces between
+responsive images
+*/

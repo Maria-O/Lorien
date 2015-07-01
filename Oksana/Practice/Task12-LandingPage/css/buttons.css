@@ -1,0 +1,20 @@
+.button {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  display: inline-block;
+  margin: 1em 0.3em;
+  text-align: center;
+  padding: 0.7em 0;
+}
+.button--large {
+  width: 400px;
+}
+.button--grey {
+  background: #3c3c3c;
+}
+.button--grey:hover {
+  background: #090909;
+  color: #ffffff;
+  text-decoration: none;
+}

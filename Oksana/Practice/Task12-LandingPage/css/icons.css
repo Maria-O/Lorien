@@ -1,0 +1,27 @@
+.icon {
+  font-family: 'icomoon', sans-serif;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-design:before {
+  content: "\e600";
+}
+.icon-development:before {
+  content: "\e601";
+}
+.icon-logo:before {
+  content: "\e602";
+}
+.icon-managment:before {
+  content: "\e603";
+}
+.icon-mouse:before {
+  content: "\e604";
+}

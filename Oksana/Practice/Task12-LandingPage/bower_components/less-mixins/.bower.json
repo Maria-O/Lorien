@@ -1,0 +1,25 @@
+{
+  "name": "less-mixins",
+  "version": "0.2.0",
+  "main": "mixins.less",
+  "author": "Hans Christian Reinl",
+  "ignore": [
+    "node_modules",
+    "partials",
+    "tests",
+    ".gitignore",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "homepage": "https://github.com/drublic/less-mixins",
+  "_release": "0.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.0",
+    "commit": "d73ed851ad26d962f0ef98df04b35df171a705db"
+  },
+  "_source": "git://github.com/drublic/less-mixins.git",
+  "_target": "~0.2.0",
+  "_originalSource": "less-mixins",
+  "_direct": true
+}

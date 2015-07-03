@@ -1,0 +1,70 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Global values
+// --------------------------------------------------
+// Grays
+// -------------------------
+@white: #fff;
+@gray-dark: #3c3c3c;
+@gray: #3c3c3c;
+@gray-light: lighten(#000, 60%);
+@gray-lighter: lighten(#000, 93.5%);
+
+// Scaffolding
+// -------------------------
+@body-bg: @white;
+@text-color: @gray-dark;
+
+// Links
+// -------------------------
+@link-color: @white;
+@link-hover-color: darken(@link-color, 15%);
+
+// Icons
+// -------------------------
+@icon-design: "\e600";
+@icon-development: "\e601";
+@icon-logo: "\e602";
+@icon-managment: "\e603";
+@icon-mouse: "\e604";
+
+// Typography
+// -------------------------
+@font-family-base: 'Lato Regular', Arial, Helvetica, sans-serif;
+@font-family-bold: 'Lato Bold', Arial, Helvetica, sans-serif;
+@font-family-light: 'Lato Light', Arial, Helvetica, sans-serif;
+@font-size-base: 10px;
+@line-height-base: 1.428571429; // 20/14
+@line-height-computed: floor(@font-size-base * @line-height-base); // ~20px
+@font-size-large: 16px;
+@line-height-large: 1.5; // 24/16
+@line-height-large-computed: floor(@font-size-large * @line-height-large); // ~24px
+@font-size-xlarge: 32px;
+@line-height-xlarge: 1.1875; // 38/32
+@line-height-xlarge-computed: floor(@font-size-xlarge * @line-height-xlarge); // ~38px
+
+// Header
+// -------------------------
+@header-font-color: @white;
+@header-min-height-desktop: 1070px;
+@header-min-height-mobile: 640px;
+
+// Section
+// -------------------------
+@section-border-color: @gray;
+@section-border-width: 2px;
+
+// Buttons
+// -------------------------
+@btn-width-large: 400px;
+@btn-bg: @gray;
+@btn-font-color: @white;
+
+// Media queries
+// -------------------------
+@width-1024: ~'only screen and (max-width : 1024px)';
+@width-768: ~'only screen and (max-width : 768px)';
+@width-640: ~'only screen and (max-width : 640px)';
+@width-360: ~'only screen and (max-width : 360px)';

@@ -1,0 +1,24 @@
+@import "variables";
+//
+// Buttons
+// --------------------------------------------------
+.button {
+  color: @btn-font-color;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  display: inline-block;
+  margin: 1em 0.3em;
+  text-align: center;
+  padding: 0.7em 0;
+  &--large {
+    width: @btn-width-large;
+  }
+  &--grey {
+    background: @gray;
+    &:hover{
+      background: darken(@gray, 20%);
+      color: @btn-font-color;
+      text-decoration: none;
+    }
+  }
+}

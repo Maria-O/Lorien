@@ -1,0 +1,464 @@
+/**
+ * @description
+ * Generates keyframe animations
+ *
+ * @author drublic
+ *
+ * @link caniuse
+ * @link spec
+ *
+ * @param values
+ * @returns
+ *   -webkit-border-radius: <values>;
+ *           border-radius: <values>;
+ *
+ * @example
+ *   .selector {
+ *     ._animation(jump 1s ease-out);
+ *   }
+ */
+/**
+* @description
+* Generates `appearance` for a given element
+*
+* @author romamatusevich
+*
+* @link MDN https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-appearance
+* @link css-tricks http://css-tricks.com/almanac/properties/a/appearance/
+* @link spec http://www.w3.org/TR/2004/CR-css3-ui-20040511/#appearance
+*
+* @param value
+* @returns
+* -webkit-appearance: <value>;
+* -moz-appearance: <value>;
+* appearance: <value>;
+*
+* @example
+*   .selector {
+*       ._appearance(button);
+*   }
+*/
+/**
+ * @description
+ * Generates cross-browser-compatible `border-radius` for a given element
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/border-radius
+ * @link spec http://www.w3.org/TR/css3-background/#corners
+ *
+ * @param values
+ * @returns
+ *   -webkit-border-radius: <values>;
+ *           border-radius: <values>;
+ *
+ * @example
+ *   .selector {
+ *     ._border-radius(20px 10px);
+ *   }
+ */
+/**
+ * @description
+ * Generates cross-browser-compatible `box-shadow` for a given element
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/css-boxshadow
+ * @link spec http://www.w3.org/TR/css3-background/#the-box-shadow
+ *
+ * @param values
+ * @returns
+ *   -webkit-box-shadow: <values>;
+ *           box-shadow: <values>;
+ *
+ * @example
+ *   .selector {
+ *     ._box-shadow(5px 5px 10px 5px #aaa);
+ *   }
+ */
+/**
+ * @description
+ * Generates cross-browser-compatible `box-sizing` output for a given element.
+ *
+ * @author drublic
+ *
+ * @link caniuse
+ * @link spec
+ *
+ * @param type
+ * @returns
+ *   -webkit-box-sizing: <type>;
+ *      -moz-box-sizing: <type>;
+ *           box-sizing: <type>;
+ *
+ * @example
+ *   .selector {
+ *     ._box-sizing;
+ *   }
+ */
+/**
+ * @description
+ * Generates a linear gradient for a given element with a fallback color.
+ *
+ * @author drublic
+ *
+ * @link caniuse
+ * @link spec
+ *
+ * @dependency helper-gradient-angle
+ * @param direction {top|left}
+ * @param fallback {color}
+ * @param from {color}
+ * @param to {color}
+ * @default 'to bottom', #ccc, #ccc, #aaa
+ *
+ * @returns
+ *   background-color: <fallback>;
+ *   background-image: -webkit-linear-gradient(<direction - converted>, <from>, <to>);
+ *   background-image:    -moz-linear-gradient(<direction - converted>, <from>, <to>);
+ *   background-image:     -ms-linear-gradient(<direction - converted>, <from>, <to>);
+ *   background-image:      -o-linear-gradient(<direction - converted>, <from>, <to>);
+ *   background-image:         linear-gradient(<direction>, <from>, <to>);
+ *
+ * @example
+ *   .selector {
+ *     ._linear-gradient(top, #ccc, #ddd, #bbb);
+ *   }
+ */
+/**
+ * @description
+ * Generates `placeholder` content for a given element
+ *
+ * @author romamatusevich
+ *
+ * @link MDN https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-placeholder
+ * @link css-tricks http://css-tricks.com/snippets/css/style-placeholder-text/
+ *
+ * @returns
+ *    &::-webkit-input-placeholder {
+ *        color: <color>;
+ *    }
+ *    &::-moz-placeholder {
+ *        color: <color>;
+ *    }
+ *    &:-ms-input-placeholder {
+ *        color: <color>;
+ *    }
+ *
+ * @example
+ *   .selector {
+ *     ._placeholder(#ccc);
+ *   }
+ */
+/**
+ * @description
+ * This mixin will enable using the CSS3 value `rem`, which lets you define
+ * property-sizes based on the root-element's font-size.
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/rem
+ * @link spec http://www.w3.org/TR/css3-values/#relative0
+ *
+ * @param property
+ * @param value
+ * @param default-font-size {int} optional
+ * @returns
+ *   <property>: (<value> * <default-font-size>)px;
+ *   <property>: <value>;
+ *
+ * @example
+ *   .selector {
+ *     ._rem(font-size, 1.3);
+ *   }
+ *
+ * Note: Depending on the font-size of the root-element `rem` calculates a
+ * property of a current element. The fallback solution excepts a
+ * `default-font-size`-argument which is 16px by default.
+ */
+/**
+ * @description
+ * Sass-mixin for CSS property `tab-size`, generates cross-browser-compatible
+ * `tab-size` output.
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/css3-tabsize
+ * @link spec http://dev.w3.org/csswg/css-text/#tab-size1
+ *
+ * @param value int optional
+ * @default 4
+ * @returns
+ *   -moz-tab-size: <value>;
+ *     -o-tab-size: <value>;
+ *        tab-size: <value>;
+ *
+ * @example
+ *   .selector {
+ *     ._tab-size(4);
+ *    }
+ */
+/**
+ * @description
+ * Generates cross-browser-compatible `transform` for a given element
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/transforms2d http://caniuse.com/transforms3d
+ * @link spec
+ *
+ * @param values
+ * @returns
+ *   -webkit-transform: <values>;
+ *      -moz-transform: <values>;
+ *        -o-transform: <values>;
+ *       -ms-transform: <values>;
+ *           transform: <values>;
+ *
+ * @example
+ *   .selector {
+ *     ._transform(rotate(1deg));
+ *   }
+ */
+/**
+ * @description
+ * Generates cross-browser-compatible `transition` output for a given element.
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/css-transitions
+ * @link spec
+ *
+ * @param values
+ * @returns
+ *   -webkit-transition: <values>;
+ *      -moz-transition: <values>;
+ *        -o-transition: <values>;
+ *           transition: <values>;
+ *
+ * @example
+ *   .selector {
+ *     ._transition(background 0.3s ease-in);
+ *   }
+ */
+/**
+ * @description
+ * Disables selection of content of a given element
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/user-select-none
+ *
+ * @param value none|auto optional
+ * @default none
+ * @returns
+ *   -webkit-user-select: <value>;
+ *      -moz-user-select: <value>;
+ *       -ms-user-select: <value>;
+ *           user-select: <value>;
+ *
+ * @example
+ *   .selector {
+ *     .x-user-select;
+ *   }
+ */
+.header {
+  color: #ffffff;
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-transform: translate(0%, 30%);
+  -o-transform: translate(0%, 30%);
+  -ms-transform: translate(0%, 30%);
+  transform: translate(0%, 30%);
+}
+@media only screen and (max-width : 768px) {
+  .header {
+    width: auto;
+    -webkit-transform: translate(0%, 20%);
+    -o-transform: translate(0%, 20%);
+    -ms-transform: translate(0%, 20%);
+    transform: translate(0%, 20%);
+  }
+}
+@media only screen and (max-width : 1024px) {
+  .header {
+    width: auto;
+    -webkit-transform: translate(0%, 5%);
+    -o-transform: translate(0%, 5%);
+    -ms-transform: translate(0%, 5%);
+    transform: translate(0%, 5%);
+  }
+}
+.header--wrapper {
+  background: url("../img/header-background.jpg") no-repeat;
+  background-size: cover;
+  padding: 1em 0;
+  min-height: 1070px;
+}
+@media only screen and (max-width : 768px) {
+  .header--wrapper {
+    min-height: 640px;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width : 1024px) {
+  .header--wrapper {
+    min-height: 400px;
+    background-size: contain;
+  }
+}
+.header__logo {
+  font-size: 7em;
+}
+.header__mouse {
+  font-size: 5em;
+}
+.header .header-caption {
+  margin: 7em 0 25em 0;
+}
+.header .header-caption__title {
+  text-transform: uppercase;
+  font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
+  font-size: 5.4em;
+}
+.header .header-caption__subtitle {
+  font-size: 1.5em;
+  line-height: 2em;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.section {
+  overflow: auto;
+  padding: 5em 0;
+}
+.section__services--bg {
+  background: url("../img/services-background.jpg") no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width : 768px) {
+  .section__services--bg {
+    background-position: -590px 0;
+  }
+}
+.block {
+  width: 48%;
+  margin: 0 auto;
+  padding: 4em 0;
+}
+@media only screen and (max-width : 768px), only screen and (max-width : 1024px) {
+  .block {
+    width: 90%;
+  }
+}
+.block__title {
+  font-size: 3.4em;
+  text-transform: uppercase;
+  font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: -24px;
+  position: relative;
+}
+.block__title::before,
+.block__title::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #3c3c3c;
+  width: 30%;
+  position: absolute;
+  top: 22px;
+}
+.block__title::before {
+  left: 0;
+}
+.block__title::after {
+  right: 0;
+}
+.block__description {
+  border: 2px solid #3c3c3c;
+  border-top: 0;
+  padding: 2em 6em;
+  text-align: center;
+}
+.block__description__text {
+  font-size: 1.6em;
+  line-height: 1.6em;
+  font-family: 'Lato Light', Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 0 4em;
+}
+@media only screen and (max-width : 768px) {
+  .block__description__text {
+    padding: 0;
+  }
+}
+.list__item {
+  text-align: center;
+  margin: 10em 0;
+}
+.list__item__icon {
+  font-size: 9.5em;
+}
+.list__item__title {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 1.4em 0;
+  font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
+}
+.list__item__description {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  font-family: 'Lato Light', Arial, Helvetica, sans-serif;
+}
+.gallery__row {
+  display: table;
+  width: 100%;
+  margin: 0.5em 0;
+}
+.gallery__item {
+  display: table-cell;
+  position: relative;
+}
+@media only screen and (max-width : 768px) {
+  .gallery__item {
+    display: block;
+    margin: 0.5em 0;
+  }
+}
+.gallery__item:nth-child(2) {
+  padding: 0 0.5em;
+}
+@media only screen and (max-width : 768px) {
+  .gallery__item:nth-child(2) {
+    padding: 0;
+  }
+}
+.gallery__item__caption {
+  font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
+  font-size: 3.4em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  bottom: 1em;
+  left: 1.2em;
+}
+.gallery__item__image {
+  width: 100%;
+  cursor: pointer;
+}
+.gallery__item__image:hover {
+  opacity: 0.7;
+}
+.footer {
+  text-align: center;
+  padding: 2em 0;
+}
+.copy {
+  font-size: 1.4em;
+  color: #3c3c3c;
+}
+.copy__icon {
+  font-size: 1.5em;
+  vertical-align: sub;
+  margin: 0 0.2em;
+}

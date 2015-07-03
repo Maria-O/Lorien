@@ -1,0 +1,207 @@
+@import "variables";
+@import "../bower_components/less-mixins/mixins.less";
+//
+// Layout
+// --------------------------------------------------
+
+// Main styles
+// -------------------------
+html, body{}
+
+// Page wrapper
+// -------------------------
+.page-wrapper {
+}
+
+// Header
+// -------------------------
+.header {
+  color: @header-font-color;
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  ._transform(translate(0%, 30%));
+  @media @width-768 {
+    width: auto;
+    ._transform(translate(0%, 20%));
+  }
+  @media @width-1024 {
+    width: auto;
+    ._transform(translate(0%, 5%));
+  }
+  &--wrapper {
+    background: url("../img/header-background.jpg") no-repeat;
+    background-size: cover;
+    padding: 1em 0;
+    min-height: @header-min-height-desktop;
+    @media @width-768 {
+      min-height: @header-min-height-mobile;
+      background-size: cover;
+    }
+    @media @width-1024 {
+      min-height: 400px;
+      background-size: contain;
+    }
+  }
+  &__logo {
+    font-size: 7em;
+  }
+  &__mouse {
+    font-size: 5em;
+  }
+  .header-caption {
+    margin: 7em 0 25em 0;
+    &__title {
+      text-transform: uppercase;
+      font-family: @font-family-bold;
+      font-size: 5.4em;
+    }
+    &__subtitle {
+      font-size: 1.5em;
+      line-height: 2em;
+      text-transform: uppercase;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Section
+// -------------------------
+.section {
+  overflow: auto;
+  padding: 5em 0;
+  &__services--bg {
+    background: url("../img/services-background.jpg") no-repeat;
+    background-size: cover;
+    @media @width-768 {
+      background-position: -590px 0;
+    }
+  }
+}
+.block {
+  width: 48%;
+  margin: 0 auto;
+  padding: 4em 0;
+  @media @width-768, @width-1024  {
+    width: 90%;
+  }
+  &__title {
+    font-size: 3.4em;
+    text-transform: uppercase;
+    font-family: @font-family-bold;
+    text-align: center;
+    margin-bottom: -24px;
+    position: relative;
+    // START: Border styles
+    &::before, &::after {
+      content: '';
+      display: block;
+      border-bottom: @section-border-width solid @section-border-color;
+      width: 30%;
+      position: absolute;
+      top: 22px;
+    }
+    &::before {
+      left: 0;
+    }
+    &::after {
+      right: 0;
+    }
+    // END: Border styles
+  }
+  &__description {
+    border: @section-border-width solid @section-border-color;
+    border-top: 0;
+    padding: 2em 6em;
+    text-align: center;
+    &__text {
+      font-size: 1.6em;
+      line-height: 1.6em;
+      font-family: @font-family-light;
+      text-align: center;
+      padding: 0 4em;
+      @media @width-768 {
+        padding: 0;
+      }
+    }
+  }
+}
+
+// List
+// -------------------------
+.list {
+  &__item {
+    text-align: center;
+    margin: 10em 0;
+    &__icon {
+      font-size: 9.5em;
+    }
+    &__title {
+      text-transform: uppercase;
+      font-size: 2em;
+      margin: 1.4em 0;
+      font-family: @font-family-bold;
+    }
+    &__description {
+      font-size: 1.4em;
+      line-height: 1.6em;
+      font-family: @font-family-light;
+    }
+  }
+}
+
+// Gallery
+// -------------------------
+.gallery {
+  &__row {
+    display: table;
+    width: 100%;
+    margin: 0.5em 0;
+  }
+  &__item{
+    display: table-cell;
+    position: relative;
+    @media @width-768 {
+      display: block;
+      margin: 0.5em 0;
+    }
+    &:nth-child(2){
+      padding: 0 0.5em;
+      @media @width-768 {
+        padding: 0;
+      }
+    }
+    &__caption {
+      font-family: @font-family-bold;
+      font-size: 3.4em;
+      text-transform: uppercase;
+      color: @white;
+      position: absolute;
+      bottom: 1em;
+      left: 1.2em;
+    }
+    &__image {
+      width: 100%;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+// Footer
+// -------------------------
+.footer{
+  text-align: center;
+  padding: 2em 0;
+}
+.copy {
+  font-size: 1.4em;
+  color: @text-color;
+  &__icon {
+    font-size: 1.5em;
+    vertical-align: sub;
+    margin: 0 0.2em;
+  }
+}

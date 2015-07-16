@@ -1,7 +1,3 @@
-/*body, html{
-	height: 100%;
-}*/
-
 body {
 	font-family: 'Lato Light', Arial, Helvetica, sans-serif;
 	color: #3c3c3c;
@@ -16,26 +12,21 @@ body {
 	clear: both;
 	visibility: hidden;
 }
-
 .section {
 	padding: 10em 0;
 }
-
 .section:last-child {
 	padding-bottom: 0;
 }
-
 .holder {
 	margin: 0 auto;
 	text-align: center;
 }
-
 .line {
 	float: left;
 	border-top: 2px solid #3c3c3c;
 	width: 27%;
 }
-
 .section-header {
 	float: left;
 	text-transform: uppercase;
@@ -46,11 +37,9 @@ body {
   	width: 46%;
   	text-align: center;
 }
-
 .divided-header {
 	margin-bottom: 5.75em;
 }
-
 .common-holder {
 	max-width: 56.25em;
 	width: 47%;
@@ -58,37 +47,29 @@ body {
 	border-top: 0;
 	padding-bottom: 5.6em;
 }
-
 .common-holder .divided-header {
 	margin-bottom: 3.4em;
 }
-
-
 .inner-holder {
 	clear: both;
 	padding: 0 19%;
 	line-height: 1.5em;
 	margin-bottom: 6.8em;
 }
-
 .inner-holder:last-child {
 	margin-bottom: 0;
 }
-
 .inner-icon {
 	margin-bottom: 0.3em;
   	font-size: 6em;
   	display: inline-block;
 }
-
 .paragraph {
 	margin-bottom: 2em;
 }
-
 .paragraph:last-child {
 	margin-bottom: 0;
 }
-
 .inner-title {
 	font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
 	font-size: 1.25em;
@@ -99,9 +80,6 @@ body {
 }
 
 /*First section*/
-.wrapper {
-	/*height: 100%;*/
-}
 
 .main {
 	font-family: 'Lato Regular', Arial, Helvetica, sans-serif;
@@ -115,29 +93,22 @@ body {
   	font-size: 0.93em;
   	color:#fff;
 }
-
-
 .main .holder {
-	/*padding-top: 17.5em;*/
 	padding-top: 26vh;
 }
-
 .logo {
 	display: block;
 	margin: 0 auto;
 	width: 65px;
 	height: 70px;
 }
-
 .logo-icon {
 	background: url(../img/logo.svg) no-repeat;
 }
-
 .logo-link {
 	margin-bottom: 4.5em;
 	text-indent: -9999px;
 }
-
 .heading {
 	font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
 	font-size: 3.63em;
@@ -145,7 +116,6 @@ body {
 	line-height: 1.25em;
 	margin: 0 auto 0.4em;
 }
-
 .main-paragraph {
 	line-height: 2em;
 	margin-bottom: 16em;
@@ -157,7 +127,6 @@ body {
 	color: #3c3c3c;
 }
 
-
 /* Services section */
 
 .services {
@@ -168,32 +137,28 @@ body {
   	background-size: cover;
 	color: #fff;
 }
-
 .services .line, .services .common-holder {
 	border-color: #fff;
 }
-
 .what-we-do {
 	color: #3c3c3c;
 	font-size: 0.875em;
 }
-
 .what-we-do .inner-holder {
 	  padding: 0 19% ;
 }
 
-
 /*Buttons list */
 
-.our-works-list {
-	font-size: 2.125em;
-	color:#fff;
-	font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
-  	text-transform: uppercase;
-  	overflow: hidden;
-
+.our-works {
+    font-size: 2.125em;
+    color:#fff;
+    font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
-
+.our-works-list {
+  	overflow: hidden;
+}
 .list-item {
 	width: 28.2%;
 	height: 7em;
@@ -201,79 +166,60 @@ body {
 	margin: 0 0.8% 0.8% 0;
 	opacity: 0.6;
 	transition: opacity 0.5s ease;
-    background-size: cover;
+    background-size: 100% 100%;
 }
-
 .list-item:hover {
 	opacity:1;
 }
-
-
-
 .wide {
 	width: 42%;
 }
-
 .edge {
 	margin-right:  0;
 }
-
 .last-row {
 	margin-bottom: 0;
 }
-
 .topworkz {
-	background: url(../img/topworkz.png) no-repeat;
+	background-image: url(../img/topworkz.png);
 }
-
 .joint {
-	background: url(../img/joint.png) no-repeat;
+    background-image: url(../img/joint.png);
 }
-
 .market {
-	background: url(../img/market.png) no-repeat;
+    background-image: url(../img/market.png);
 }
-
-
 .worktop {
-	background: url(../img/worktop.png) no-repeat;
+    background-image: url(../img/worktop.png);
 }
-
-
 .lable {
-	background: url(../img/lable.png) no-repeat;
+    background-image: url(../img/lable.png);
 }
-
 .kyiv {
-	background: url(../img/kyiv.png) no-repeat;
+    background-image: url(../img/kyiv.png);
 }
-
 .link {
 	display: inline-block;
 	width: 100%;
 	height: 100%;
 }
-
 .link:hover .link-text {
 	text-decoration: underline;
 }
-
-
 .our-works-list .link {
 	position: relative;
 }
-
 .our-works-list .link-text {
 	position: absolute;
 	bottom: 1.4em;
 	left:1.4em;
 }
+
 /*Contact us*/
 
 .contact-us {
 	color: #3c3c3c;
 }
-
 .contact-btn {
 	font-family: 'Lato Regular', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
@@ -283,7 +229,6 @@ body {
 	width: 80%;
 	transition: background 0.3s ease, color 0.3s ease;
 }
-
 .contact-btn:hover {
 	background: rgb(195, 201, 210);
 	color:#3c3c3c;
@@ -291,16 +236,13 @@ body {
 .contact-btn .paragraph {
 	margin-bottom: 2.5em;
 }
-
 .contact-us .common-holder{
 	padding-bottom: 3em;
 }
-
 .contact-us .link {
 	text-align: center;
 	padding: 1.4em 0; 
 }
-
 
 /*Footer*/
 
@@ -310,42 +252,30 @@ body {
 	text-align: center;
 	padding: 4.5em;
 }
-
-
 .dark-logo {
     width:2.2em;
     margin-right: 1em;
 }
-
 .copy-right {
     display: inline-block;
     vertical-align: super;
 }
-
-
-
 @media screen and (max-width: 1024px) {
     .common-holder {
         width: 86%;
     }
-
     .list-item {
         width: 60%;
         margin: 0 auto 0.2em;
         float: none;
         background-size: cover ;
     }
-
     .list-item.wide {
         width: 60%;
     }
 }
-
-/*
-
-icons 
-mobile
-footer
-spaces between
-responsive images
-*/
+@media screen and (max-width: 768px) {
+    .list-item, .list-item.wide {
+        width: 100%;
+    }
+}

@@ -1,0 +1,8 @@
+@import "../bourbon/_bourbon";
+
+@include font-face("Lato", "../fonts/lato/Lato-Medium");
+@include font-face("Lato", "../fonts/lato/Lato-Bold", bold);
+@include font-face("Lato", "../fonts/lato/Lato-Light", light);
+
+@include font-face("icomoon", "../fonts/icons/icomoon", $file-formats: eot svg ttf woff);
+

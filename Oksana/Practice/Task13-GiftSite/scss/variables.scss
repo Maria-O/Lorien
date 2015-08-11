@@ -1,0 +1,47 @@
+$max-page-width: 1180px;
+
+/*Colors*/
+// -------------------------
+$blue: #05aecc;
+$dark-blue: #00a1be;
+$red: #f0626e;
+$light-gray: #f6f6f6;
+$white: #fff;
+
+$body-bg: #fff;
+
+/* Typography */
+// -------------------------
+$font-family-base: Lato, Arial, sans-serif;
+$heading-font: Aparajita, Arial, sans-serif;
+$font-size-base: 16px;
+$line-height-base: 16px;
+$text-color: #434343;
+
+/* Links */
+// -------------------------
+$link-color: #434343;
+$link-hover-color: $red;
+
+/* Headings */
+// -------------------------
+$heading-red: $red;
+/* Menu */
+// -------------------------
+$menu-hovered-bg: #fff;
+$menu-font-color: #fff;
+$menu-sub-bg: rgba(255,255,255,0.95);
+$menu-sub-shadow:  0 0 10px rgba(0,0,0,0.5);
+$menu-border: 1px solid #cacaca;
+
+// Icons
+// -------------------------
+$icon-reverse: "\e600";
+$icon-search: "\e601";
+$icon-gift: "\e602";
+$icon-filled-arrow-right: "\e603";
+$icon-cart: "\e604";
+$icon-arrow-right: "\e605";
+$icon-arrow-left: "\e606";
+
+/* Buttons */

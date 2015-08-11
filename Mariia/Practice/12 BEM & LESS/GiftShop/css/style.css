@@ -1,0 +1,400 @@
+/* Variables */
+/* General */
+body,
+html {
+  height: 100%;
+  font-family: 'Lato Regular', Arial Unicode MS, Arial, clean, sans-serif;
+  color: #434343;
+}
+.wrapper {
+  width: 81.25%;
+  min-width: 800px;
+  margin: 0 auto;
+  height: 100%;
+}
+.sprite {
+  background: url('../images/sprite.png');
+  display: inline-block;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.icon-whilost {
+  background: url('../images/sprite.png');
+  display: inline-block;
+  width: 23px;
+  height: 25px;
+  background-position: -186px -28px;
+}
+.icon-cart {
+  background: url('../images/sprite.png');
+  display: inline-block;
+  width: 28px;
+  height: 24px;
+  background-position: -266px -29px;
+}
+/*Header*/
+.header {
+  overflow: hidden;
+  margin-bottom: 13px;
+}
+/* Logo */
+.logo {
+  float: left;
+  margin-top: 14px;
+  position: relative;
+  background-color: #fff;
+}
+.logo .logo__copyright {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 12px 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+.logo__img {
+  background: url('../images/sprite.png');
+  width: 153px;
+  height: 108px;
+  text-indent: -9999px;
+  display: inline-block;
+}
+/* Top navigation */
+.shared-nav {
+  text-align: right;
+}
+.shared-nav .top-nav__item {
+  display: inline-block;
+  padding: 13px 15px;
+}
+.shared-nav .top-nav__item:hover {
+  color: #05aecc;
+}
+.shared-nav .top-nav__item:last-child {
+  padding-right: 0;
+}
+/* My account */
+.my-account {
+  text-align: right;
+  background: #f6f6f6 ;
+  color: #fff;
+}
+.my-account .my-account__item {
+  display: inline-block;
+  height: 5em;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: top;
+  line-height: 5em;
+}
+.my-account .my-account__item:last-child {
+  margin-right: 0 ;
+}
+.my-account .my-account__item:nth-child(1),
+.my-account .my-account__item:nth-child(2) {
+  width: 7.25em;
+}
+.my-account .my-account__item:nth-child(3),
+.my-account .my-account__item:nth-child(4) {
+  width: 8.875em;
+  word-spacing: 0.5em;
+}
+.my-account .my-account__item:nth-child(odd) {
+  background: #05aecc;
+}
+.my-account .my-account__item:nth-child(odd):hover {
+  background: rgba(5, 174, 204, 0.5);
+}
+.my-account .my-account__item:nth-child(even) {
+  background: #f0626e;
+}
+.my-account .my-account__item:nth-child(even):hover {
+  background: rgba(240, 98, 110, 0.5);
+}
+.my-account .my-account__item .icon {
+  vertical-align: middle;
+}
+.my-account .my-account__item .my-account__link {
+  display: inline-block;
+  width: 100%;
+}
+/* Page Navigation*/
+.page-nav {
+  background: #05aecc;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1em;
+}
+.page-nav .page-nav__item {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+.page-nav .page-nav__item:hover {
+  color: #f0626e;
+  background: #fff;
+}
+.page-nav .page-nav__link {
+  display: inline-block;
+  padding: 2em 1.6em;
+}
+/* Drop down Menu*/
+.h-and-l-dropdown__sub-menu-holder {
+  position: absolute;
+  color: #454545;
+  background: rgba(255, 255, 255, 0.85);
+  top: 100%;
+  -webkit-box-shadow: 0px -1px 14px -2px #323232;
+  -moz-box-shadow: 0px -1px 14px -2px #323232;
+  box-shadow: 0px -1px 14px -2px #323232;
+  padding: 12px 21px;
+  width: 13.8em;
+  text-align: left;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.5s opacity ease;
+}
+.h-and-l-dropdown:hover .h-and-l-dropdown__sub-menu-holder {
+  z-index: 1;
+  opacity: 1;
+}
+.page-nav__item__sub-menu {
+  margin-bottom: 12px;
+}
+.sub-menu__item {
+  overflow: hidden;
+  border-bottom: 1px solid #cacaca ;
+  padding: 12px 0;
+}
+.sub-menu__item:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.sub-menu__item__holder {
+  display: inline-block;
+}
+.sub-menu__item__img {
+  float: left;
+  margin-right: 12px;
+}
+.sub-menu__item__text-container {
+  width: 8.3em;
+  float: right;
+}
+.sub-menu__item__title {
+  color: #f0626e;
+  text-transform: capitalize;
+  margin-bottom: 7px;
+  letter-spacing: 0.07em;
+  line-height: 0.7em;
+}
+.sub-menu__item__text {
+  font-size: 0.875em;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+.sub-menu__item__button {
+  font-size: 0.75em;
+  color: #fff;
+  background: #05aecc;
+  padding: 6px 28px;
+  display: inline-block;
+  transition: 0.1s background-color ease;
+}
+.sub-menu__item__button:hover {
+  background-color: #f0626e;
+}
+.page-nav__item__sub-menu__see-more {
+  color: #f0626e;
+  cursor: pointer;
+}
+.page-nav__item__sub-menu__see-more:hover {
+  color: #05aecc;
+}
+/* Images Content Section */
+.wear-section {
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.wrapper-link {
+  height: 100%;
+  transition: 0.5s background-color ease;
+  cursor: pointer;
+}
+/*Mens wear*/
+.mens-wear {
+  width: 57%;
+  height: 570px;
+  position: relative;
+  float: left;
+  background: url(../images/mens.png) no-repeat right;
+  background-size: cover;
+}
+.mens-wear .section-info {
+  margin-bottom: 2px;
+}
+.content-holder {
+  width: 52%;
+  position: absolute;
+  bottom: 12px;
+  text-transform: uppercase;
+  transition: 0.3s opacity ease;
+}
+.section-info {
+  background-color: rgba(73, 60, 86, 0.8);
+  color: #fff;
+  font-size: 0.8em;
+  font-family: 'Miriad Pro Regular', Georgia, "Times New Roman", Times, serif;
+  padding: 19px 5.4%;
+  width: 89.2%;
+}
+.section-info__title {
+  color: #f0626e;
+  font-size: 4.55em;
+  font-family: 'Aparajita Bold', Georgia, "Times New Roman", Times, serif;
+}
+.mens-wear__key-phrase {
+  display: inline-block;
+  padding: 14px;
+  color: #fff;
+  font-size: 1.25em;
+  background: #f0626e;
+  font-family: 'Aparajita Bold', Georgia, "Times New Roman", Times, serif;
+}
+/* Womens wear */
+.womens-wear {
+  width: 42.5%;
+  height: 320px;
+  background: url(../images/womens.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  float: right;
+  margin-bottom: 5px;
+}
+.womens-wear .section-info__title {
+  font-size: 2.5em;
+}
+/* Kids wear */
+.kids-wear {
+  width: 42.5%;
+  height: 245px;
+  background-image: url(../images/kids.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  float: right;
+}
+.kids-wear .section-info__title {
+  font-size: 2.5em;
+}
+/*Shop block*/
+.shop-block {
+  opacity: 0;
+  background: #05aecc;
+  color: #fff;
+  width: 18.25em;
+  position: absolute;
+  bottom: 1.75em;
+  transition: 0.3s opacity ease;
+  right: 0;
+  text-align: right;
+  overflow: hidden;
+  height: 3.44em;
+  line-height: 3.44em;
+  vertical-align: middle;
+}
+.shop-block .shop-block__item,
+.shop-block .shop-block__title {
+  display: inline-block;
+}
+.shop-block .shop-block__item {
+  vertical-align: top;
+}
+.shop-block .shop-block__title {
+  padding: 0 4%;
+  float: left;
+}
+.shop-block .icon {
+  vertical-align: sub;
+}
+.shop-block__item--whilost {
+  background: #059db8;
+  padding: 0 5%;
+}
+.shop-block__item--cart {
+  background: #f0626e;
+  padding: 0 4%;
+}
+.shop-block__item--price {
+  padding: 0 4%;
+  background: #373737;
+}
+.wrapper-link:hover {
+  background-color: rgba(20, 34, 81, 0.5);
+}
+.wrapper-link:hover .shop-block {
+  opacity: 1;
+}
+.wrapper-link:hover .content-holder {
+  opacity: 0;
+}
+/*Search bar*/
+.search-bar-section {
+  height: 170px;
+  width: 57%;
+  background: #f0626e;
+  margin-bottom: 5px;
+  display: table;
+}
+.search-bar-section .search-bar-holder {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.search-bar-holder__search {
+  width: 65.7%;
+  height: 4.5em;
+  line-height: 4.5em;
+  text-indent: 1.5em;
+  border: 0;
+  margin-right: 20px;
+}
+.search__button {
+  background: url('../images/sprite.png');
+  display: inline-block;
+  width: 53px;
+  height: 53px;
+  background-position: -173px -93px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/*Crafts*/
+.crafts {
+  width: 57%;
+  height: 336px;
+  background: url(../images/crafts.png) no-repeat right;
+  background-size: cover;
+  position: relative;
+}
+.crafts .shop-block {
+  opacity: 1;
+  bottom: 0;
+  background-color: rgba(20, 34, 81, 0.9);
+  text-transform: uppercase;
+}
+.crafts .shop-block__item {
+  position: relative;
+}
+.crafts .hover-info {
+  position: absolute;
+  top: -30px;
+  height: 27px;
+  border: 1px solid #f0626e;
+  border-radius: 0.5em;
+  background: #fff;
+}

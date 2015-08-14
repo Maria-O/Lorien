@@ -1,0 +1,40 @@
+@import "variables";
+@import "../bourbon/_bourbon";
+//
+// Icons
+// --------------------------------------------------
+
+.icon {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--reverse:after {
+  content: "\e600";
+}
+.icon--search:after {
+  content: "\e601";
+}
+.icon--gift:after {
+  content: "\e602";
+}
+.icon--filled-arrow-right:after {
+  content: "\e603";
+}
+.icon--cart:after {
+  content: "\e604";
+}
+.icon--arrow-right:after {
+  content: "\e605";
+}
+.icon--arrow-left:after {
+  content: "\e606";
+}

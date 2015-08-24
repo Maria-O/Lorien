@@ -2,7 +2,10 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="msapplication-tap-highlight" content="no"/>
     <title>Gift Shop</title>
+
     <link href="bower_components/normalize.css/normalize.css" rel="stylesheet" type="text/css"/>
     <link href="scss/main.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -10,6 +13,7 @@
 <main class="page">
     <header id="header">
         <div class="top-bar">
+            <!--Top navigation start-->
             <nav class="header-menu">
                 <a href="#" class="header-menu__item">Sell</a>
                 <a href="#" class="header-menu__item">Registry</a>
@@ -18,9 +22,11 @@
                 <a href="#" class="header-menu__item">Mobile</a>
                 <a href="#" class="header-menu__item">Gift Catds</a>
             </nav>
+            <!--Top navigation end-->
         </div>
-        <div class="header__bar -light-gray -clearfix">
+        <div class="header__bar -light-gray">
             <a href="" class="logo"><img src="img/logo.jpg" alt="Gift shop" class="logo__img"/></a>
+            <!--My account block start-->
             <ul class="my-account" role="menu">
                 <li class="my-account__item" role="menuitem">
                     <a href="#" class="my-account__link -blue">
@@ -34,8 +40,8 @@
                 </li>
                 <li class="my-account__item" role="menuitem">
                     <a href="#" class="my-account__link -blue">
-                       Whishlist
-                       <span class="icon icon--gift"></span>
+                        Whishlist
+                        <span class="icon icon--gift"></span>
                     </a>
                 </li>
                 <li class="my-account__item" role="menuitem">
@@ -44,9 +50,21 @@
                         <span class="icon icon--cart"></span>
                     </a>
                 </li>
+                <li class="my-account__item my-account__item--mobile" role="menuitem">
+                    <a href="#" class="my-account__link -blue">
+                        Menu
+                    </a>
+                </li>
+                <li class="my-account__item my-account__item--mobile" role="menuitem">
+                    <a href="#" class="my-account__link -red">
+                        My account
+                    </a>
+                </li>
             </ul>
+            <!--My account block end-->
         </div>
         <div class="header__bar -blue">
+            <!--Main navigation start-->
             <ul class="main-nav" role="menu">
                 <li class="main-nav__item" role="menuitem">
                     <a href="#" class="main-nav__link">
@@ -57,28 +75,35 @@
                     <a href="#" class="main-nav__link">
                         Home & Living
                     </a>
+
                     <div class="main-nav__dropdown">
                         <ul class="dropdown">
                             <li class="dropdown__item">
                                 <img src="img/submenu.jpg" alt="Item Name" class="dropdown__img"/>
+
                                 <div class="dropdown__text">
                                     <h5>Item Name Here</h5>
+
                                     <p>Lorem Ipsum is simply dummy text of the</p>
                                     <a href="#" class="btn btn--m -blue">More Detail</a>
                                 </div>
                             </li>
                             <li class="dropdown__item">
                                 <img src="img/submenu.jpg" alt="Item Name" class="dropdown__img"/>
+
                                 <div class="dropdown__text">
                                     <h5>Item Name Here</h5>
+
                                     <p>Lorem Ipsum is simply dummy text of the</p>
                                     <a href="#" class="btn btn--m -blue">More Detail</a>
                                 </div>
                             </li>
                             <li class="dropdown__item">
                                 <img src="img/submenu.jpg" alt="Item Name" class="dropdown__img"/>
+
                                 <div class="dropdown__text">
                                     <h5>Item Name Here</h5>
+
                                     <p>Lorem Ipsum is simply dummy text of the</p>
                                     <a href="#" class="btn btn--m -blue">More Detail</a>
                                 </div>
@@ -109,7 +134,7 @@
                 </li>
                 <li class="main-nav__item" role="menuitem">
                     <a href="#" class="main-nav__link">
-                       Vintage
+                        Vintage
                     </a>
                 </li>
                 <li class="main-nav__item" role="menuitem">
@@ -123,199 +148,539 @@
                     </a>
                 </li>
             </ul>
+            <!--Main navigation end-->
         </div>
     </header>
-    <div id="mainContent">
+    <div id="content">
         <section class="banner">
-            <div class="slider -clearfix">
+            <div class="banner__row -clearfix">
                 <div class="column column--60 -left">
-                    <div class="slider__item visual">
-                        <img src="img/slider/img01.jpg" alt="Men's wear" class="visual__img"/>
-                        <div class="visual__description -align-left -align-bottom">
-                            <div class="description description--translucent">
-                                <h3 class="description__heading description__heading--large">Men's wear</h3>
+                    <div class="media -height-570">
+                        <img src="img/slider/img01.jpg" alt="Men's wear" class="media__img"/>
+                        <div class="media__description description">
+                            <div class="description__text">
+                                <h3 class="description__heading description__heading--l">Men's wear</h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry. Lorem
                                 </p>
                             </div>
-                            <div class="description -red">
-                                <h4  class="description__heading description__heading--small description__heading--white-text">
+                            <div class="description__text -red">
+                                <h4 class="description__heading description__heading--s  description__heading--white">
                                     Lorem ipsum is simply dummy text
                                 </h4>
                             </div>
                         </div>
+                        <ul class="buy-group">
+                            <li class="buy-group__item -blue">
+                                <a href="#" class="buy-group__link">Men's wear</a>
+                            </li>
+                            <li class="buy-group__item  -dark-blue">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--gift"></span>
+                                    <span class="tooltip__title">Add to wishlist</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -red">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--cart"></span>
+                                    <span class="tooltip__title">Add to cart</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -grey price">
+                                <span class="price__dol">$99.</span>
+                                <span class="price__cent">00</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="column column--40 -right">
-                    <div class="b-slider__item visual">
-                        <img src="img/slider/img02.jpg" alt="Women's wear" class="visual__img"/>
-                        <div class="visual__description -align-left -align-bottom">
-                            <div class="description description--translucent">
-                                <h3 class="description__heading description__heading--middle">Women's wear</h3>
+                    <div class="media -height-320">
+                        <img src="img/slider/img02.jpg" alt="Women's wear" class="media__img"/>
+                        <div class="media__description description">
+                            <div class="description__text">
+                                <h3 class="description__heading description__heading--m">Women's wear</h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text
                                     of the printing and typesetting
                                 </p>
                             </div>
                         </div>
+                        <ul class="buy-group">
+                            <li class="buy-group__item -blue">
+                                <a href="#" class="buy-group__link">Women's wear</a>
+                            </li>
+                            <li class="buy-group__item  -dark-blue">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--gift"></span>
+                                    <span class="tooltip__title">Add to wishlist</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -red">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--cart"></span>
+                                    <span class="tooltip__title">Add to cart</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -grey price">
+                                <span class="price__dol">$59.</span>
+                                <span class="price__cent">99</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="slider__item visual">
-                        <img src="img/slider/img03.jpg" alt="Baby's wear" class="visual__img"/>
-                        <div class="visual__description -align-right -align-bottom">
-                            <div class="description description--translucent description--full">
-                                <ul class="buy-group">
-                                    <li class="buy-group__item -blue">
-                                        <a href="#" class="buy-group__link">Baby Shop</a>
-                                    </li>
-                                    <li class="buy-group__item  -dark-blue">
-                                        <a href="#" class="buy-group__link icon icon--gift" title="Add to wishlist"></a>
-                                    </li>
-                                    <li class="buy-group__item -red">
-                                        <a href="#" class=" buy-group__link icon icon--cart" title="Add to cart"></a>
-                                    </li>
-                                    <li class="buy-group__item -black">
-                                        <span>$99.00</span>
-                                    </li>
-                                </ul>
+                    <div class="media -height-245">
+                        <img src="img/slider/img03.jpg" alt="Baby's wear" class="media__img"/>
+                        <div  class="media__description description">
+                            <div class="description__text">
+                                <h3 class="description__heading description__heading--m">Baby's wear</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text
+                                    of the printing and typesetting
+                                </p>
                             </div>
                         </div>
+                        <ul class="buy-group">
+                            <li class="buy-group__item -blue">
+                                <a href="#" class="buy-group__link">Baby's shop</a>
+                            </li>
+                            <li class="buy-group__item  -dark-blue">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--gift"></span>
+                                    <span class="tooltip__title">Add to wishlist</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -red">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--cart"></span>
+                                    <span class="tooltip__title">Add to cart</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -grey price">
+                                <span class="price__dol">$59.</span>
+                                <span class="price__cent">99</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="advert -clearfix">
+            <div class="banner__row -clearfix">
                 <div class="column column--60 -left">
-                    <div class="search">
+                    <div class="search -height-170">
                         <form id="searchForm">
-                            <input type="search" id="search" placeholder="Search you product here">
-                            <label for="search" class="search_icon icon--search">Search</label>
+                            <div class="search__input">
+                                <input type="search" id="search" placeholder="( e.g.: Silver diamond ring )"/>
+                                <label for="search" class="search__label">Search you product here</label>
+                            </div>
+                            <button type="submit" class="search__btn">
+                                <span class="icon icon--search"></span>
+                            </button>
                         </form>
                     </div>
-                    <div class="visual">
-                        <img src="img/slider/img04.jpg" alt="Crafts" class="visual__img"/>
-                        <div class="visual__description -left">
-                            <div class="description description--translucent">
-                                <ul class="buy-group">
-                                    <li class="buy-group__category">
-                                        <a href="#">Crafts</a>
-                                    </li>
-                                    <li class="buy-group__wishlist">
-                                        <a href="#" class="icon--wishlist">Add to wishlist</a>
-                                    </li>
-                                    <li class="buy-group__cart">
-                                        <a href="#" class="icon--cart">Add to cart</a>
-                                    </li>
-                                    <li class="buy-group__price">
-                                        <span>$99.00</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="media media--without-fade -height-338">
+                        <img src="img/slider/img04.jpg" alt="Crafts" class="media__img"/>
+                        <ul class="buy-group -align-bottom">
+                            <li class="buy-group__item -transparent">
+                                <a href="#" class="buy-group__link">Crafts</a>
+                            </li>
+                            <li class="buy-group__item  -dark-blue">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--gift"></span>
+                                    <span class="tooltip__title">Add to wishlist</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -red">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--cart"></span>
+                                    <span class="tooltip__title">Add to cart</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -grey price">
+                                <span class="price__dol">$59.</span>
+                                <span class="price__cent">99</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="column column--40 -right">
-                    <div class="visual">
-                        <img src="img/slider/img05.jpg" alt="Jewelry" class="visual__img"/>
-                        <div class="visual__description">
-                            <div class="description description--translucent description--turned">
-                                <h3>Jewelry</h3>
-                                <a href="#" title="Open Jewelry category" class="btn--red btn--curved">Open Jewelry</a>
-                            </div>
+                    <div class="media media--without-fade -height-513">
+                        <img src="img/slider/img05.jpg" alt="Jewelry" class="media__img"/>
+                        <div class="badge -align-right -align-bottom">
+                            <h3 class="badge__heading">Jewelry</h3>
+                            <a href="#" title="Open Jewelry category" class="badge__btn -red">
+                                <span class="icon icon--filled-arrow-right"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--<section class="section">-->
-            <!--<span class="section__title">New Products</span>-->
-            <!--<div class="slider">-->
-                <!--<div class="slider__controls">-->
-                    <!--<span class="b-slider__prev icon--prev btn--hover-blue">Previous</span>-->
-                    <!--<span class="b-slider__next icon--next btn--hover-blue">Previous</span>-->
-                <!--</div>-->
-                <!--<ul class="l-slider--list">-->
-                    <!--<li class="b-slider__item b-visual">-->
-                        <!--<img src="img/new_products/img01.jpg" alt="Red purse" class="b-visual__img"/>-->
-                        <!--<div class="b-visual__description -hidden">-->
-                            <!--<div class="b-description b-description--translucent">-->
-                                <!--<ul class="buy-group">-->
-                                    <!--<li class="buy-group__category buy-group--blue">-->
-                                        <!--<a href="#">Baby Shop</a>-->
-                                    <!--</li>-->
-                                    <!--<li class="buy-group__wishlist">-->
-                                        <!--<a href="#" class="icon--wishlist">Add to wishlist</a>-->
-                                    <!--</li>-->
-                                    <!--<li class="buy-group__cart">-->
-                                        <!--<a href="#" class="icon--cart">Add to cart</a>-->
-                                    <!--</li>-->
-                                    <!--<li class="buy-group__price">-->
-                                        <!--<span>$99.00</span>-->
-                                    <!--</li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li class="b-slider__item b-visual">-->
-                        <!--<img src="img/new_products/img02.jpg" alt="Pearls" class="b-visual__img"/>-->
-                        <!--<div class="b-visual__description -hidden">-->
-                            <!--<div class="b-description b-description--translucent">-->
-                                <!--<ul class="buy-group">-->
-                                    <!--<li class="buy-group__category buy-group--blue">-->
-                                        <!--<a href="#">Baby Shop</a>-->
-                                    <!--</li>-->
-                                    <!--<li class="buy-group__wishlist">-->
-                                        <!--<a href="#" class="icon--wishlist">Add to wishlist</a>-->
-                                    <!--</li>-->
-                                    <!--<li class="buy-group__cart">-->
-                                        <!--<a href="#" class="icon--cart">Add to cart</a>-->
-                                    <!--</li>-->
-                                    <!--<li class="buy-group__price">-->
-                                        <!--<span>$99.00</span>-->
-                                    <!--</li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li class="b-slider__item b-visual">-->
-                        <!--<img src="img/new_products/img03.jpg" alt="Clock" class="b-visual__img"/>-->
-                        <!--<div class="b-visual__description -hidden">-->
-                            <!--<div class="b-description b-description--translucent">-->
-                                <!--<ul class="buy-group">-->
-                                    <!--<li class="buy-group__category buy-group--blue">-->
-                                        <!--<a href="#">Baby Shop</a>-->
-                                    <!--</li>-->
-                                    <!--<li class="buy-group__wishlist">-->
-                                        <!--<a href="#" class="icon--wishlist">Add to wishlist</a>-->
-                                    <!--</li>-->
-                                    <!--<li class="buy-group__cart">-->
-                                        <!--<a href="#" class="icon--cart">Add to cart</a>-->
-                                    <!--</li>-->
-                                    <!--<li class="buy-group__price">-->
-                                        <!--<span>$99.00</span>-->
-                                    <!--</li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</section>-->
-        <!--<section class="b-section">-->
-            <!--<span class="b-section__title">Featured Products</span>-->
-            <!--<div class="b-slider">-->
-                <!--<div class="b-slider__controls">-->
-                    <!--<span class="b-slider__prev icon--prev btn--hover-red">Previous</span>-->
-                    <!--<span class="b-slider__next icon--next btn--hover-red">Previous</span>-->
-                <!--</div>-->
-                <!--<ul class="l-slider--list">-->
-                    <!--<li class="b-slider__item">-->
-
-                    <!--</li>-->
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</section>-->
-
+        <section class="section">
+            <div class="section__title">
+                <span class="section__text">New Products</span>
+            </div>
+            <div class="slider">
+                <div class="slider__controls">
+                    <span class="slider__prev slider__prev--blue icon icon--arrow-left"></span>
+                    <span class="slider__next slider__next--blue icon icon--arrow-right"></span>
+                </div>
+                <ul class="slider__list grid--3">
+                    <li class="column media">
+                        <img src="img/new_products/img03.jpg" alt="Red purse" class="media__img"/>
+                        <ul class="buy-group -centered">
+                            <li class="buy-group__item -blue">
+                                <a href="#" class="buy-group__link">Crafts</a>
+                            </li>
+                            <li class="buy-group__item  -dark-blue">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--gift"></span>
+                                    <span class="tooltip__title">Add to wishlist</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -red">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--cart"></span>
+                                    <span class="tooltip__title">Add to cart</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -grey price">
+                                <span class="price__dol">$59.</span>
+                                <span class="price__cent">99</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="column media">
+                        <img src="img/new_products/img02.jpg" alt="Red purse" class="media__img"/>
+                        <ul class="buy-group -centered">
+                            <li class="buy-group__item -blue">
+                                <a href="#" class="buy-group__link">Crafts</a>
+                            </li>
+                            <li class="buy-group__item  -dark-blue">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--gift"></span>
+                                    <span class="tooltip__title">Add to wishlist</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -red">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--cart"></span>
+                                    <span class="tooltip__title">Add to cart</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -grey price">
+                                <span class="price__dol">$59.</span>
+                                <span class="price__cent">99</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="column media">
+                        <img src="img/new_products/img01.jpg" alt="Red purse" class="media__img"/>
+                        <ul class="buy-group -centered">
+                            <li class="buy-group__item -blue">
+                                <a href="#" class="buy-group__link">Crafts</a>
+                            </li>
+                            <li class="buy-group__item  -dark-blue">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--gift"></span>
+                                    <span class="tooltip__title">Add to wishlist</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -red">
+                                <a href="#" class="buy-group__link tooltip">
+                                    <span class="link__icon icon icon--cart"></span>
+                                    <span class="tooltip__title">Add to cart</span>
+                                </a>
+                            </li>
+                            <li class="buy-group__item -grey price">
+                                <span class="price__dol">$59.</span>
+                                <span class="price__cent">99</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__title">
+                <span class="section__text">Featured Products</span>
+            </div>
+            <div class="slider">
+                <div class="slider__controls">
+                    <span class="slider__prev slider__prev--red icon icon--arrow-left"></span>
+                    <span class="slider__next slider__next--red icon icon--arrow-right"></span>
+                </div>
+                <ul class="slider__list grid--4">
+                    <li class="column product product--red">
+                        <img src="img/featured_products/img06.jpg" alt="Red purse" class="product__img"/>
+                        <span class="product__discount">20% OFF</span>
+                        <div class="product__details">
+                            <div class="product__description">
+                                <h3 class="product__title">Product Title here</h3>
+                                <h4 class="product__short-desc">Product subtitle</h4>
+                            </div>
+                            <ul class="buy-group buy-group--light">
+                                <li class="buy-group__item">
+                                    <a href="#" class="buy-group__link">
+                                        <span class="link__icon icon icon--reverse"></span>
+                                    </a>
+                                </li>
+                                <li class="buy-group__item">
+                                    <a href="#" class="buy-group__link">
+                                        <span class="link__icon icon icon--gift"></span>
+                                    </a>
+                                </li>
+                                <li class="buy-group__item">
+                                    <a href="#" class="buy-group__link">
+                                        <span class="link__icon icon icon--cart"></span>
+                                    </a>
+                                </li>
+                                <li class="buy-group__item price product__price">
+                                    <span class="price__dol">$59.</span>
+                                    <span class="price__cent">99</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="column product product--red">
+                        <img src="img/featured_products/img05.jpg" alt="Red purse" class="product__img"/>
+                        <div class="product__details">
+                            <div class="product__description">
+                                <h3 class="product__title">Product Title here</h3>
+                                <h4 class="product__short-desc">Product subtitle</h4>
+                            </div>
+                            <ul class="buy-group buy-group--light">
+                                <li class="buy-group__item">
+                                    <a href="#" class="buy-group__link">
+                                        <span class="link__icon icon icon--reverse"></span>
+                                    </a>
+                                </li>
+                                <li class="buy-group__item">
+                                    <a href="#" class="buy-group__link">
+                                        <span class="link__icon icon icon--gift"></span>
+                                    </a>
+                                </li>
+                                <li class="buy-group__item">
+                                    <a href="#" class="buy-group__link">
+                                        <span class="link__icon icon icon--cart"></span>
+                                    </a>
+                                </li>
+                                <li class="buy-group__item price product__price">
+                                    <span class="price__dol">$59.</span>
+                                    <span class="price__cent">99</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="column product product--blue">
+                        <img src="img/featured_products/img04.jpg" alt="Red purse" class="product__img"/>
+                        <span class="product__discount">New</span>
+                        <div class="product__details">
+                            <div class="product__description">
+                                <h3 class="product__title">Product Title here</h3>
+                                <h4 class="product__short-desc">Product subtitle</h4>
+                            </div>
+                            <ul class="buy-group buy-group--light">
+                                <li class="buy-group__item">
+                                    <a href="#" class="buy-group__link">
+                                        <span class="link__icon icon icon--reverse"></span>
+                                    </a>
+                                </li>
+                                <li class="buy-group__item">
+                                    <a href="#" class="buy-group__link">
+                                        <span class="link__icon icon icon--gift"></span>
+                                    </a>
+                                </li>
+                                <li class="buy-group__item">
+                                    <a href="#" class="buy-group__link">
+                                        <span class="link__icon icon icon--cart"></span>
+                                    </a>
+                                </li>
+                                <li class="buy-group__item price product__price">
+                                    <span class="price__dol">$59.</span>
+                                    <span class="price__cent">99</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="column product product--red">
+                        <img src="img/featured_products/img03.jpg" alt="Red purse" class="product__img"/>
+                        <div class="product__details">
+                            <div class="product__description">
+                                <h3 class="product__title">Product Title here</h3>
+                                <h4 class="product__short-desc">Product subtitle</h4>
+                            </div>
+                            <ul class="buy-group buy-group--light">
+                                <li class="buy-group__item">
+                                    <a href="#" class="buy-group__link">
+                                        <span class="link__icon icon icon--reverse"></span>
+                                    </a>
+                                </li>
+                                <li class="buy-group__item">
+                                    <a href="#" class="buy-group__link">
+                                        <span class="link__icon icon icon--gift"></span>
+                                    </a>
+                                </li>
+                                <li class="buy-group__item">
+                                    <a href="#" class="buy-group__link">
+                                        <span class="link__icon icon icon--cart"></span>
+                                    </a>
+                                </li>
+                                <li class="buy-group__item price product__price">
+                                    <span class="price__dol">$59.</span>
+                                    <span class="price__cent">99</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__title">
+                <span class="section__text">Who we are</span>
+            </div>
+            <div class="section__content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <ul class="services grid--3">
+                <li class="services__item column -grey">
+                    <a href="#" class="services__link">
+                        <span class="services__icon services__icon--choose"></span>
+                        <span class="services__name">Choose product</span>
+                    </a>
+                </li>
+                <li class=" services__item column -blue">
+                    <a href="#" class="services__link">
+                        <span class="services__icon services__icon--register"></span>
+                        <span class="services__name">Register/ Login</span>
+                    </a>
+                </li>
+                <li class="services__item column -red">
+                    <a href="#" class="services__link">
+                        <span class="services__icon services__icon--checkout"></span>
+                        <span class="services__name">Checkout</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="section__buttons">
+                <a href="#" class="btn btn--xl -blue">Register Now</a>
+            </div>
+        </section>
     </div>
+    <footer id="footer">
+        <ul class="footer-menu grid--3-1">
+            <li class="column">
+                <h5 class="footer-menu__category">Shopping with us</h5>
+                <ul>
+                    <li class="footer-menu__item">
+                        <a href="#">why shop with us?</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">how it works</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">delivery</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">returns</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">where's my order</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">contact & help</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">wedding list</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">wish list</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">gift vouchers</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="column">
+                <h5 class="footer-menu__category">About us</h5>
+                <ul>
+                    <li class="footer-menu__item">
+                        <a href="#">our story</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">custom contact</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">awards</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">press centre</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">work with us</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">terms & conditions</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">privacy & cookies</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="column">
+                <h5 class="footer-menu__category">Selling with us</h5>
+                <ul>
+                    <li class="footer-menu__item">
+                        <a href="#">why join?</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">faqs</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">apply to sell with us</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">affiliates</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="column">
+                <h5 class="footer-menu__category">Signup newsletter</h5>
+                <form id="signupForm" class="signup">
+                    <input class="signup__input" type="email" placeholder="e.g.: abc@domain.com"/>
+                    <label class="-hidden">Email</label>
+                    <input class="signup__btn btn btn--l -blue" type="submit" value="Subscribe now">
+                </form>
+                <h5 class="footer-menu__category">Keep in touch</h5>
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__icon social__icon--rss" title="RSS">RSS</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__icon social__icon--facebook" title="Facebook">Facebook</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__icon social__icon--twitter" title="Twitter">Twitter</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__icon social__icon--flickr" title="Flickr">Flickr</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__icon social__icon--google" title="Goggle">Google</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <section class="copy">
+            <span class="copy__text">Copyright © 2014 Gift Shop,  All right reserved</span>
+            <span class="copy__author">Designed by <span class="copy__name">Amysxain</span></span>
+        </section>
+    </footer>
 </main>
 </body>
 </html>

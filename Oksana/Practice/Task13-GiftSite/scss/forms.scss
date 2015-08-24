@@ -1,0 +1,77 @@
+@import "../bourbon/_bourbon";
+@import 'variables.scss';
+
+/* FORMS */
+// -------------------------
+
+// Search block
+// -------------------------
+.search {
+  padding: 2em 2.5em;
+  background: $red;
+  position: relative;
+  #searchForm {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 95%;
+  }
+  &__input{
+    display: inline-block;
+    width: 80%;
+    position: relative;
+  }
+  &__label {
+    position: absolute;
+    padding: $search-input-padding;
+    left: 0;
+    top:0;
+  }
+  #search {
+    padding: $search-input-padding;
+    width: 100%;
+    padding-left: 200px;
+    box-sizing: border-box;
+    &:focus{
+      padding: $search-input-padding;
+      &+label {
+        visibility: hidden;
+      }
+    }
+  }
+  &__btn{
+    font-size: 4em;
+    color: $white;
+    vertical-align: middle;
+    margin-left: 0.1em;
+  }
+  @media #{$media-medium} {
+    display: none;
+  }
+}
+
+// Signup form
+// -------------------------
+.signup {
+  &__input {
+    width: 100%;
+    border: $signup-input-border;
+    font-size: $signup-font;
+    line-height: $signup-line-height;
+    padding: 0 0.5em;
+    @include placeholder {
+      text-align: center;
+    }
+    @media #{$media-small} {
+      display: none;
+
+    }
+  }
+  &__btn {
+    width: 100%;
+    line-height: $signup-line-height;
+  }
+  @media #{$media-medium} {
+    font-size: 1.3em;
+  }
+}

@@ -1,16 +1,28 @@
-$max-page-width: 1180px;
 
-/*Colors*/
+/* VARIABLES */
+// -------------------------
+
+// Common variables
+// -------------------------
+$max-page-width: 1180px;
+$my-account-height: 90px;
+$my-account-height-m: 80px;
+$banner-margin: 0.3em;
+
+// Colors
 // -------------------------
 $blue: #05aecc;
 $dark-blue: #00a1be;
 $red: #f0626e;
+$dark-red: #d03341;
 $light-gray: #f6f6f6;
 $white: #fff;
-
+$dark-grey: #323232;
+$grey: #b9b9b9;
+$transparent: rgba(54, 42, 79, 0.8);
 $body-bg: #fff;
 
-/* Typography */
+// Typography
 // -------------------------
 $font-family-base: Lato, Arial, sans-serif;
 $heading-font: Aparajita, Arial, sans-serif;
@@ -18,15 +30,16 @@ $font-size-base: 16px;
 $line-height-base: 16px;
 $text-color: #434343;
 
-/* Links */
+// Links
 // -------------------------
 $link-color: #434343;
 $link-hover-color: $red;
 
-/* Headings */
+// Headings
 // -------------------------
 $heading-red: $red;
-/* Menu */
+
+// Menu
 // -------------------------
 $menu-hovered-bg: #fff;
 $menu-font-color: #fff;
@@ -43,5 +56,119 @@ $icon-filled-arrow-right: "\e603";
 $icon-cart: "\e604";
 $icon-arrow-right: "\e605";
 $icon-arrow-left: "\e606";
+$social-icon-sprite: url('../img/social-sprite.png');
+$social-icon-width: 50px;
+$social-icon-height: 50px;
+$social-twitter-bg: #45b0e3;
+$social-rss-bg: #f8bc2e;
+$social-flickr-bg: $white;
+$social-google-bg: #1872bf;
+$social-facebook-bg: #39599f;
 
-/* Buttons */
+// Buttons
+// -------------------------
+$btn-padding: 0.2em 1.5em;
+$btn-xl-padding: 0.4em 1.5em;
+$btn-m-font: 0.7em;
+$btn-m-width: 116px;
+$btn-l-padding: 1em 0.3em;
+$btn-xl-width: 370px;
+$btn-xl-font: 2em;
+
+// Forms
+// -------------------------
+$search-input-padding: 32px 22px;
+
+// Media block
+// -------------------------
+$media-bg: rgba(54, 42, 79, 0.8);
+$media-bottom-space: 20px;
+
+// Buy group
+// -------------------------
+$buy-group-width: 295px;
+$buy-group-width-m: 360px;
+$buy-group-link-padding: 0.8em 0.5em;
+$buy-group-icon-size: 1.8em;
+$buy-group-light-bg: $white;
+$buy-group-light-bg-hovered: $light-gray;
+$buy-group-light-font: 1.5em;
+$buy-group-light-border: 1px solid $grey;
+
+// Tooltip
+// -------------------------
+$tooltip-font: 0.9em $font-family-base;
+$tooltip-bg: $white;
+$tooltip-color: $dark-grey;
+$tooltip-width: 110px;
+$tooltip-border: 1px solid $red;
+$tooltip-border-radius: 5px;
+$tooltip-padding: 0.5em;
+$tooltip-triangle-left: 42px;
+
+// Price
+// -------------------------
+$price-font: 1.5em;
+$price-cent-font: 0.8em;
+
+// Badge
+// -------------------------
+$badge-width: 100px;
+$badge-height: 400px;
+$badge-padding-s: 0.2em 130px 0.2em 0.2em;
+$badge-padding-m: 0.4em 0.5em;
+$badge-bg: $transparent;
+$badge-font: 4em;
+$badge-height-s: 88px;
+$badge-height-m: 100px;
+
+// Slider
+// -------------------------
+$slider-controls-padding: 0.5em 0.4em;
+$slider-controls-font: 2em;
+
+// Section block
+// -------------------------
+$section-title-size: 30px;
+$section-title-color: $blue;
+$gray-border: 1px solid $grey;
+$red-border: 1px solid $red;
+
+// Product details
+// -------------------------
+$product-border: 1px solid $grey;
+$product-height: 370px;
+$product-height-m: 400px;
+$product-discount-padding: 0.6em 0.4em;
+$product-discount-width: 80px;
+$product-description-padding: 0.6em;
+$product-title-font: 1.2em $font-family-base;
+
+// Services block
+// -------------------------
+$services-list-height: 232px;
+$services-list-width: 374px;
+$services-font-size: 2em;
+$services-color: $white;
+$services-name-width: 120px;
+$services-icon-width: 156px;
+$services-icon-height: 160px;
+$services-icons: url('../img/sprites/services-sprite.png') no-repeat 0 0;
+
+// Footer block
+// -------------------------
+$footer-category-font: 1.5em;
+$footer-category-font-m: 1.2em;
+$footer-border-style: 1px solid $grey;
+$footer-category-padding: 1.5em 0 0.8em;
+$footer-menu-padding: 0.6em 0;
+$footer-padding: 0.5em 0 2.5em;
+
+$signup-input-border: 1px solid $light-gray;
+$signup-font: 1em;
+$signup-line-height: 3em;
+
+// Media queries
+// -------------------------
+$media-medium: 'screen and (max-width: 1024px)';
+$media-small: 'screen and (max-width: 855px)';

@@ -1,11 +1,10 @@
 @import 'variables.scss';
-//
-// Scaffolding
+
+/* SCAFFOLDING */
 // --------------------------------------------------
 
 
 // Reset the box-sizing
-
 *,
 *:before,
 *:after {
@@ -14,7 +13,6 @@
 
 
 // Body reset
-
 html {
   font-size: 62.5%;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -38,9 +36,34 @@ textarea {
   line-height: inherit;
 }
 
+// Buttons reset
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button; /* for input */
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+figure{
+  margin: 0;
+}
 
 // Links
-
 a {
   color: $link-color;
   text-decoration: none;
@@ -48,12 +71,13 @@ a {
   &:hover,
   &:focus {
     color: $link-hover-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
   font-weight: normal;
+  line-height: 1em;
   font-family: $heading-font;
 }
 
@@ -63,13 +87,12 @@ ul {
   padding: 0;
 }
 // Images
-
 img {
   vertical-align: middle;
 }
 
 // Paragraphs
 p {
-//  margin: 10px 0;
+  margin: 0;
   line-height: normal;
 }

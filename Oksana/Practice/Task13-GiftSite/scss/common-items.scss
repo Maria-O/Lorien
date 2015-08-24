@@ -1,0 +1,513 @@
+@import "../bourbon/_bourbon";
+@import 'variables.scss';
+
+/* COMMON ITEMS */
+// TODO: In future if functionality be extended better to create separate files for each block
+// -------------------------
+// Include: banner, media block, description, badge, buy group,
+// price, tooltip, section, slider, product, services, social
+
+// Banner
+// -------------------------
+.banner {
+  &__row {
+    margin-bottom: $banner-margin;
+  }
+  .column {
+    &.-left {
+      padding-right: $banner-margin;
+      @media #{$media-medium} {
+        padding-right: 0;
+      }
+    }
+    & .media:nth-child(2){
+     margin-top: $banner-margin;
+    }
+  }
+
+}
+
+// Media block
+// -------------------------
+.media {
+  position: relative;
+  overflow: hidden;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    background: $media-bg;
+  }
+  .buy-group{
+    visibility: hidden;
+    position: absolute;
+    width: $buy-group-width;
+    bottom: $media-bottom-space;
+    opacity: 0;
+    right: 0;
+    @media #{$media-small} {
+      width: $buy-group-width-m;
+    }
+  }
+  &__img{
+    min-width: 100%;
+    min-height: 100%;
+    float: left;
+  }
+  &__description {
+    color: $white;
+  }
+  // Hovered media
+  &:hover,
+  &:focus {
+    .buy-group {
+      visibility: visible;
+      opacity: 1;
+      @include transition(all 0.5s ease-in-out);
+    }
+  }
+  &:not(.media--without-fade):hover,
+  &:not(.media--without-fade):focus {
+    &::before {
+      opacity: 1;
+      @include transition(all 0.5s ease-in-out);
+    }
+    .description:not(.description--fixed){
+      display: none;
+    }
+  }
+
+  @media #{$media-medium} {
+    margin: 0.2em 0;
+    &--without-fade{
+      display: none;
+    }
+  }
+}
+
+// Description
+// -------------------------
+.description {
+  text-transform: uppercase;
+  width: 60%;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  &__text {
+    padding: 0.8em 1em;
+    background: rgba(54, 42, 79, 0.8);
+    margin-bottom: 0.2em;
+    &.-red{
+      background: $red;
+    }
+    @media #{$media-small} {
+      margin: 0;
+    }
+  }
+  &__heading {
+    color: $red;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    line-height: 1em;
+    &--l {
+      font-size: 3.5em;
+    }
+    &--m {
+      font-size: 2.1em;
+    }
+    &--s {
+      font-size: 1.2em;
+    }
+    &--white {
+      color: $white;
+    }
+    @media #{$media-small} {
+      color: $white
+    }
+  }
+  @media #{$media-small} {
+    width: 100%;
+    bottom: 0;
+    &__heading {
+      font-size: 3em;
+    }
+     &__text:nth-child(2), p {
+       display: none;
+     }
+  }
+}
+
+// Badge
+// -------------------------
+// TODO: Fix badge
+.badge {
+  color: $white;
+  position: absolute;
+  width: $badge-width;
+  height: $badge-height;
+  &__heading {
+    text-transform: uppercase;
+    font-size: $badge-font;
+    background: $badge-bg;
+    padding: $badge-padding-s;
+    height: $badge-height-s;
+    position: absolute;
+   @include transform(rotate(-90deg) translate(-46%, -151%));
+  }
+  &__btn {
+    color: $white;
+    font-size: 3em;
+    padding: $badge-padding-m;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    top: 40px;
+    &::after{
+      content:'';
+      @include triangle(0.25em, darken($red, 5%), up-right);
+      position: absolute;
+      bottom: -0.25em;
+      left: 0;
+    }
+    &:hover {
+      color: $white;
+    }
+  }
+  @media #{$media-medium} {
+    display: none;
+  }
+}
+
+// Buy group
+// -------------------------
+.buy-group{
+  width: 100%;
+  color: $white;
+  display: table;
+  &.-align-bottom{
+    bottom: 0;
+  }
+  &.-centered {
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+  }
+  &__item{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: $buy-group-link-padding;
+    // Color modifiers
+    &.-blue:hover {
+      background: $dark-blue;
+    }
+    &.-red:hover {
+      background: $dark-red;
+    }
+    &.-dark-blue:hover {
+      background: $blue;
+    }
+    &.-transparent{
+      background: $transparent;
+      text-transform: uppercase;
+      font-size: 1.2em;
+    }
+  }
+  &__link{
+    color: $white;
+    display: block;
+    position: relative;
+    &:hover{
+      color: $white;
+      text-decoration: none;
+    }
+    & .icon {
+      font-size: $buy-group-icon-size;
+    }
+  }
+  @media #{$media-medium} {
+    font-size: 1.2em;
+    &:not(&--light){
+      top: 50%;
+      left: 50%;
+      @include transform(translate(-50%, -50%));
+    }
+  }
+
+  // Theme modifiers
+  &--light{
+    background: $buy-group-light-bg;
+    border-top: $buy-group-light-border;
+    color: $grey;
+    width: 100%;
+  }
+  &--light &__item:not(:last-child) {
+    border-right: $buy-group-light-border;
+    &:hover {
+      background: $buy-group-light-bg-hovered;
+    }
+  }
+  &--light .icon{
+    color: $grey;
+    font-size: $buy-group-light-font;
+  }
+}
+
+// Price
+// -------------------------
+.price {
+  &__dol {
+    font-size: $price-font;
+  }
+  &__cent {
+    font-size: $price-cent-font;
+    vertical-align: super;
+  }
+}
+
+// Tooltip styles
+// -------------------------
+.tooltip {
+  &__title {
+    display: none;
+  }
+  &:hover &__title{
+      display: block;
+      position: absolute;
+      font: $tooltip-font;
+      padding: $tooltip-padding;
+      text-transform: lowercase;
+      left: -80%;
+      top: -150%;
+      color: $tooltip-color;
+      width: $tooltip-width;
+      background: $tooltip-bg;
+      border: $tooltip-border;
+      @include border-top-radius($tooltip-border-radius);
+      @include border-bottom-radius($tooltip-border-radius);
+      @include border-left-radius($tooltip-border-radius);
+      @include border-right-radius($tooltip-border-radius);
+      &::after {
+        content: '';
+        position: absolute;
+        left: $tooltip-triangle-left;
+        bottom: -25%;
+        @include triangle(1.5em, $white, down);
+      }
+      @media #{$media-small} {
+        display: none;
+      }
+  }
+}
+
+// Section
+// -------------------------
+.section {
+  overflow: hidden;
+  margin: 1.5em 0;
+  &__title {
+    font-size: $section-title-size;
+    color: $section-title-color;
+    border-bottom: $gray-border;
+    margin-bottom: 1em;
+  }
+  &__text{
+    display: inline-block;
+    position: relative;
+    border-bottom: $red-border;
+    padding: 0.8em 0;
+    margin: 0 1em -1px;
+  }
+  &__content {
+    text-align: justify;
+    padding: 0 1em;
+    @media #{$media-small} {
+      padding: 1em;
+    }
+  }
+  &__buttons {
+    margin: 0 auto;
+    text-align: center;
+    @media #{$media-small} {
+      padding: 0 1em;
+    }
+  }
+}
+
+// Slider
+// -------------------------
+.slider {
+ position: relative;
+ &__controls{
+    position: absolute;
+    top: -5.9em;
+    right: 0;
+   @media #{$media-small} {
+     display: none;
+   }
+ }
+ &__next,
+ &__prev {
+    background: $dark-grey;
+    color: $white;
+    padding: $slider-controls-padding;
+    display: inline-block;
+    font-size: $slider-controls-font;
+    cursor: pointer;
+    &--blue{
+       &:hover {
+         background: $blue;
+       }
+    }
+    &--red{
+       &:hover {
+         background: $red;
+       }
+    }
+  }
+  @media #{$media-small} {
+    .grid--3 .column,
+    .grid--4 .column,{
+      width: 100%;
+    }
+    .column:not(:first-child){
+      display: none;
+    }
+  }
+}
+
+// Product details
+// -------------------------
+.product {
+  position: relative;
+  overflow: hidden;
+  border: $product-border;
+  height: $product-height;
+  &__details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $white;
+  }
+  &__discount{
+    position: absolute;
+    width: $product-discount-width;
+    text-align: center;
+    top: 1em;
+    left: 0;
+    padding: $product-discount-padding;
+  }
+  &__description {
+    padding: $product-description-padding;
+  }
+  &__title {
+    font: $product-title-font;
+  }
+  &__short-desc {
+    font-size: 0.9em;
+    color: $red;
+    font-family: $font-family-base;
+  }
+  &__img {
+    width: 100%;
+  }
+  // Red mod
+  &--red &__discount,
+  &--red &__price{
+    background: $red;
+    color: $white;
+  }
+  // Blue mod
+  &--blue &__discount,
+  &--blue &__price{
+    background: $blue;
+    color: $white;
+  }
+  @media #{$media-medium} {
+    height: $product-height-m;
+    &__img {
+      margin-top: -150px;
+    }
+  }
+  @media #{$media-medium} {
+    &__title {
+      font-size: 2em;
+    }
+    &__short-desc {
+      font-size: 1em;
+    }
+    &__description {
+      padding: 1em $product-description-padding;
+    }
+  }
+}
+
+// Services block
+// -------------------------
+.services {
+  margin: 2em 0;
+  &__item {
+    font-size: $services-font-size;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    min-width: $services-icon-width;
+  }
+  &__link {
+    color: $services-color;
+    display: block;
+    padding: 1em 0;
+    line-height: 1em;
+    &:hover {
+      background: $grey;
+      color: $dark-grey;
+    }
+  }
+  &__name {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    max-width: $services-name-width;
+    @media #{$media-medium} {
+      display: none;
+    }
+  }
+  &__icon {
+    &--choose,
+    &--register,
+    &--checkout {
+      display: inline-block;
+      vertical-align: middle;
+      width: $services-icon-width;
+      height: $services-icon-height;
+      background: $services-icons;
+    }
+    &--register {
+      background-position: -160px 0;
+    }
+    &--checkout {
+      background-position: -320px 0;
+    }
+  }
+  @media #{$media-small} {
+    display: none;
+  }
+}
+
+// Social block
+// -------------------------
+.social {
+  &__item {
+    display: inline-block;
+  }
+  @media #{$media-small} {
+    display: none;
+  }
+}

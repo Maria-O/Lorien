@@ -1,0 +1,24 @@
+/*Colors*/
+/* Typography */
+/* Links */
+/* Headings */
+/* Menu */
+/* Buttons */
+/* Forms */
+/* Section */
+/*Services */
+/* Button */
+.btn {
+  color: #fff;
+  display: inline-block; }
+  .btn--m {
+    font-size: 12px;
+    padding: 0.2em 1.5em; }
+  .btn--xl {
+    min-width: 370px;
+    font-size: 1em;
+    width: 60%; }
+  .btn:hover {
+    color: #fff; }
+
+/*# sourceMappingURL=buttons.css.map */

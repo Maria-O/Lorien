@@ -1,7 +1,7 @@
 @import "variables";
 @import "../bourbon/_bourbon";
-//
-// Icons
+
+/* ICONS */
 // --------------------------------------------------
 
 .icon {
@@ -37,4 +37,70 @@
 }
 .icon--arrow-left:after {
   content: "\e606";
+}
+
+// Social icons
+// --------------------------------------------------
+.social__icon {
+  background: $social-icon-sprite;
+  position: relative;
+  display: block;
+  text-indent: -9999px;
+  width: $social-icon-width;
+  height: $social-icon-height;
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  &--rss {
+    background-position: -3px 0;
+    &:after{
+      background: $social-rss-bg;
+    }
+    &:hover:after {
+      background: darken($social-rss-bg, 10%);
+    }
+  }
+  &--facebook {
+    background-position: -50px 0;
+    &:after{
+      background: $social-facebook-bg;
+    }
+    &:hover:after {
+      background: darken($social-facebook-bg, 10%);
+    }
+  }
+  &--twitter {
+    background-position: -100px 0;
+    &:after{
+      background: $social-twitter-bg;
+    }
+    &:hover:after {
+      background: darken($social-twitter-bg, 10%);
+    }
+  }
+  &--flickr {
+    background-position: -150px 0;
+    border: 1px solid $grey;
+    &:after{
+      background: $social-flickr-bg;
+    }
+    &:hover:after {
+      background: darken($social-flickr-bg, 10%);
+    }
+  }
+  &--google {
+    background-position: -200px 0;
+    &:after{
+      background: $social-google-bg;
+    }
+    &:hover:after {
+      background: darken($social-google-bg, 10%);
+    }
+  }
 }

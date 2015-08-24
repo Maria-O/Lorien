@@ -1,0 +1,46 @@
+@import "../bourbon/_bourbon";
+@import 'variables.scss';
+
+/* BUTTONS */
+// -------------------------
+.btn,
+input.btn {
+  display: inline-block;
+  text-align: center;
+  line-height: normal;
+  padding: $btn-padding;
+  color: $menu-font-color;
+  &--m{
+    font-size: $btn-m-font;
+    min-width: $btn-m-width;
+  }
+  &--l {
+    padding: $btn-l-padding;
+    @media #{$media-small} {
+      width: 100%;
+      font-size: 1.4em;
+      padding: 0.5em 0;
+    }
+  }
+  &--xl {
+    min-width: $btn-xl-width;
+    padding: $btn-xl-padding;
+    font-size: $btn-xl-font;
+    width: 60%;
+    @media #{$media-small} {
+      width: 100%;
+      min-width: initial;
+    }
+  }
+  &:hover {
+    color: $menu-font-color;
+  }
+
+  &.-blue {
+    background: $blue;
+    &:hover{
+      background: $dark-blue;
+    }
+  }
+
+}

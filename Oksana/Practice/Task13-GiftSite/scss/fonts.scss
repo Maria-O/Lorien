@@ -1,5 +1,8 @@
 @import "../bourbon/_bourbon";
 
+/* FONTS */
+// --------------------------------------------------
+
 @include font-face("Lato", "../fonts/lato/Lato-Medium");
 @include font-face("Lato", "../fonts/lato/Lato-Bold", bold);
 @include font-face("Lato", "../fonts/lato/Lato-Light", light);

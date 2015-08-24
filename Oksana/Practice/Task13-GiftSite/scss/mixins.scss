@@ -1,0 +1,12 @@
+@mixin list-columns($col-amount, $col-margin: 15px) {
+  list-style: none;
+  float: left;
+
+  width: 100 / $col-amount  + '%'; /* Fallback */
+  width: -o-calc((100% - (#{$col-margin} * (#{$col-amount} - 1))) / #{$col-amount});
+  width: calc((100% - (#{$col-margin} * (#{$col-amount} - 1))) / #{$col-amount});
+
+  &:not(:nth-of-type(#{$col-amount}n)) {
+    margin-right: $col-margin;
+  }
+}

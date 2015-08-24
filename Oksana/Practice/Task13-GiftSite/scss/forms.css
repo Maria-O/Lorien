@@ -1,0 +1,54 @@
+/* VARIABLES */
+/* FORMS */
+.search {
+  padding: 2em 2.5em;
+  background: #f0626e;
+  position: relative; }
+  .search #searchForm {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 95%; }
+  .search__input {
+    display: inline-block;
+    width: 80%;
+    position: relative; }
+  .search__label {
+    position: absolute;
+    padding: 32px 22px;
+    left: 0;
+    top: 0; }
+  .search #search {
+    padding: 32px 22px;
+    width: 100%;
+    padding-left: 200px;
+    box-sizing: border-box; }
+    .search #search:focus {
+      padding: 32px 22px; }
+      .search #search:focus + label {
+        visibility: hidden; }
+  .search__btn {
+    font-size: 4em;
+    color: #fff;
+    vertical-align: middle;
+    margin-left: 0.1em; }
+
+.signup__input {
+  width: 100%;
+  border: 1px solid #f6f6f6;
+  font-size: 1em;
+  line-height: 3em;
+  padding: 0 0.5em; }
+  .signup__input::-webkit-input-placeholder {
+    text-align: center; }
+  .signup__input::-moz-placeholder {
+    text-align: center; }
+  .signup__input:-moz-placeholder {
+    text-align: center; }
+  .signup__input:-ms-input-placeholder {
+    text-align: center; }
+.signup__btn {
+  width: 100%;
+  line-height: 3em; }
+
+/*# sourceMappingURL=forms.css.map */

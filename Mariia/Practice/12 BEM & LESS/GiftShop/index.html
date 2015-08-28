@@ -46,12 +46,12 @@
             </li><!--
             --><li class = "my-account__item">
                 <a href="#" title = "Whislost" class="my-account__link">Whislost
-                    <span class="icon icon-whilost"></span>
+                    <span class="icon icon-whilost icon-whilost--white "></span>
                 </a>
             </li><!--
             --><li class = "my-account__item">
                 <a href="#" title = "Cart" class="my-account__link">Cart
-                    <span class="icon icon-cart"></span>
+                    <span class="icon icon-cart icon-cart--white"></span>
                 </a>
             </li>
         </ul>
@@ -125,88 +125,394 @@
     </nav>
     <section class="content">
         <section class = "wear-section">
-            <section class="mens-wear">
-                <div  class="wrapper-link" title="men's wear">
+            <div class="column column--left">
+                <section class="overlay mens-wear">
+                    <img class="overlay__image" src="images/mens.png" alt="Men's wear" title="Men's wear"/>
                     <div class="content-holder">
-                        <div class="section-info">
-                            <h2 class="section-info__title">Men’s Wear</h2>
-                            <p>Lorem Ipsum is simply dummy text of the<br/> printing and typesetting industry. Lorem</p>
+                            <div class="section-info">
+                                <h2 class="section-info__title">Men’s Wear</h2>
+                                <p>Lorem Ipsum is simply dummy text of the<br/> printing and typesetting industry. Lorem</p>
+                            </div>
+                            <span class="mens-wear__key-phrase">Lorem Ipsum is simply dummy text</span>
                         </div>
-                        <span class="mens-wear__key-phrase">Lorem Ipsum is simply dummy text</span>
-                    </div>
-                    <div class="shop-block">
-                        <span class="shop-block__title">Men's Shop</span><!--
-                        --><a class="shop-block__item shop-block__item--whilost" href="#" title = "Whislost">
-                        <span class="icon icon-whilost"></span>
-                    </a><!--
-                        --><a class="shop-block__item shop-block__item--cart" href="#" title = "Cart">
-                        <span class="icon icon-cart"></span>
-                    </a><!--
-                        --><span class="shop-block__item shop-block__item--price">$ 99.<sup>00</sup></span>
-                    </div>
-                </div>
-            </section>
-            <section class="womens-wear">
-                <div  class="wrapper-link" title="women's wear">
-                    <div class="content-holder">
-                        <div class="section-info">
-                            <h2 class="section-info__title">Women’s Wear</h2>
-                            <p>Lorem Ipsum is simply dummy text<br/>of the printing and typesetting</p>
-                        </div>
-                    </div>
-                    <div class="shop-block">
-                        <span class="shop-block__title">Girl's Shop</span><!--
-                        --><a class="shop-block__item shop-block__item--whilost" href="#" title = "Whislost">
-                        <span class="icon icon-whilost"></span>
-                    </a><!--
-                        --><a class="shop-block__item shop-block__item--cart" href="#" title = "Cart">
-                        <span class="icon icon-cart"></span>
-                    </a><!--
-                        --><span class="shop-block__item shop-block__item--price">$ 99.<sup>00</sup></span>
-                    </div>
-                </div>
-            </section>
-            <section class="kids-wear">
-                <div  class="wrapper-link" title="kid's wear">
-                    <div class="content-holder">
-                        <div class="section-info">
-                            <h2 class="section-info__title">Kid’s Wear</h2>
-                            <p>Lorem Ipsum is simply dummy text<br/>of the printing and typesetting</p>
-                        </div>
-                    </div>
-                    <div class="shop-block">
-                        <span class="shop-block__title">Baby Shop</span><!--
-                        --><a class="shop-block__item shop-block__item--whilost" href="#" title = "Whislost">
-                            <span class="icon icon-whilost"></span>
+                        <div class="shop-block shop-block--bottom">
+                            <span class="shop-block__title">Men's Shop</span><!--
+                            --><a class="shop-block__item shop-block__item--blue" href="#" title = "Whislost">
+                            <span class="icon icon-whilost icon-whilost--white "></span>
+                            <span class="hover-info whilost">add to whilost</span>
                         </a><!--
-                        --><a class="shop-block__item shop-block__item--cart" href="#" title = "Cart">
-                            <span class="icon icon-cart"></span>
+                            --><a class="shop-block__item shop-block__item--pink" href="#" title = "Cart">
+                            <span class="icon icon-cart icon-cart--white"></span>
+                            <span class="hover-info">add to card</span>
                         </a><!--
-                        --><span class="shop-block__item shop-block__item--price">$ 99.<sup>00</sup></span>
-                    </div>
-                </div>
-            </section>
+                            --><span class="shop-block__item shop-block__item--grey">$ 99.<sup>00</sup></span>
+                        </div>
+                    <a class="overlay--link" href="#" title="Men's Wear">Men's Wear</a>
+                </section>
+            </div>
+            <div class="column column--right">
+                <section class="womens-wear overlay">
+                    <img class="overlay__image" src="images/womens.png" alt="Women's wear" title="Women's wear"/>
+                        <div class="content-holder">
+                            <div class="section-info">
+                                <h2 class="section-info__title">Women’s Wear</h2>
+                                <p>Lorem Ipsum is simply dummy text<br/>of the printing and typesetting</p>
+                            </div>
+                        </div>
+                        <div class="shop-block shop-block--bottom">
+                            <span class="shop-block__title">Girl's Shop</span><!--
+                            --><a class="shop-block__item shop-block__item--blue" href="#" title = "Whislost">
+                            <span class="icon icon-whilost icon-whilost--white "></span>
+                            <span class="hover-info whilost">add to whilost</span>
+                        </a><!--
+                            --><a class="shop-block__item shop-block__item--pink" href="#" title = "Cart">
+                            <span class="icon icon-cart icon-cart--white"></span>
+                            <span class="hover-info">add to card</span>
+                        </a><!--
+                            --><span class="shop-block__item shop-block__item--grey">$ 99.<sup>00</sup></span>
+                        </div>
+                    <a class="overlay--link" href="#" title="Women's Wear">Women's Wear</a>
+                </section>
+                <section class="kids-wear overlay">
+                    <img class="overlay__image" src="images/kids.png" alt="Kids's wear" title="Kids's wear"/>
+                        <div class="content-holder">
+                            <div class="section-info">
+                                <h2 class="section-info__title">Kid’s Wear</h2>
+                                <p>Lorem Ipsum is simply dummy text<br/>of the printing and typesetting</p>
+                            </div>
+                        </div>
+                        <div class="shop-block shop-block--bottom">
+                            <span class="shop-block__title">Baby Shop</span><!--
+                            --><a class="shop-block__item shop-block__item--blue" href="#" title = "Whislost">
+                                <span class="icon icon-whilost icon-whilost--white"></span>
+                                <span class="hover-info whilost">add to whilost</span>
+                            </a><!--
+                            --><a class="shop-block__item shop-block__item--pink" href="#" title = "Cart">
+                                <span class="icon icon-cart icon-cart--white"></span>
+                                <span class="hover-info">add to card</span>
+                            </a><!--
+                            --><span class="shop-block__item shop-block__item--grey">$ 99.<sup>00</sup></span>
+                        </div>
+                    <a class="overlay--link" href="#" title="Kids's Wear">Kids's Wear</a>
+                </section>
+            </div>
         </section>
-        <div class = "search-bar-section">
-            <div class="search-bar-holder">
-                <input type="search" class="search-bar-holder__search" placeholder="Search your product here ( e.g.: Silver diamond ring )">
-                <span class="search__button"></span>
+        <div class="column column--left">
+            <div class = "search-bar-section">
+                <div class="search-bar-holder">
+                    <input type="search" class="search-bar-holder__search" placeholder="Search your product here ( e.g.: Silver diamond ring )">
+                    <span class="search__button"></span>
+                </div>
+            </div>
+            <div class="crafts">
+                <img class="overlay__image" src="images/crafts.png" title="Crafts" alt="Crafts"/>
+                <div class="shop-block">
+                    <span class="shop-block__title">Crafts</span><!--
+                 --><a class="shop-block__item shop-block__item--blue" href="#" title = "Whislost">
+                        <span class="icon icon-whilost icon-whilost--white "></span>
+                        <span class="hover-info whilost">add to whilost</span>
+                    </a><!--
+                 --><a class="shop-block__item shop-block__item--pink" href="#" title = "Cart">
+                        <span class="icon icon-cart icon-cart--white"></span>
+                        <span class="hover-info">add to card</span>
+                   </a><!--
+                --><span class="shop-block__item shop-block__item--grey">$ 99.<sup>00</sup></span>
+                </div>
+                <a class="overlay--link" href="#" title="Crafts">Crafts</a>
             </div>
         </div>
-        <div class="crafts">
-            <div class="shop-block">
-                <span class="shop-block__title">Crafts</span><!--
-                        --><a class="shop-block__item shop-block__item--whilost" href="#" title = "Whislost">
-                <span class="icon icon-whilost"></span>
-            </a><!--
-                        --><a class="shop-block__item shop-block__item--cart" href="#" title = "Cart">
-                <span class="icon icon-cart"></span>
-                <!--<span class="hover-info">add to card</span>-->
-            </a><!--
-                        --><span class="shop-block__item shop-block__item--price">$ 99.<sup>00</sup></span>
+        <div class="column column--right">
+            <div class="jewelry">
+                <img class="overlay__image" src="images/jewelry.png" title="jewelry" alt="jewelry"/>
+                <div class="jewelry__holder">
+                    <span class="holder__name">Jewelry</span>
+                    <div class="holder__button">
+                    <span class="circle">
+                        <span class="entypo-right-open-big active icon-font" data-text="right-open-big"></span>
+                    </span>
+                    </div>
+                </div>
+                <a class="overlay--link" href="#" title="Jewelry">Jewelry</a>
             </div>
         </div>
+        <section class="new-products">
+            <div class="section-header clearfix">
+                <span class="section-header__title ">New Products</span>
+                <div class="arrows">
+                    <span class="arrow arrow--blue">
+                        <span class="entypo-left-open-big active icon-font" data-text="right-open-big"></span>
+                    </span><!--
+                --><span class="arrow arrow--blue">
+                        <span class="entypo-right-open-big active icon-font" data-text="right-open-big"></span>
+                    </span>
+                </div>
+            </div>
+            <ul class="inline-list inline-list--3-columns">
+                <li class="overlay inline-list__item">
+                        <img class="overlay__image" src="images/wNewProduct.png" alt="Women's new product" title="Women's new product"/>
+                        <div class="shop-block shop-block--middle">
+                            <span class="shop-block__title">Girl's Shop</span><!--
+                    --><a class="shop-block__item shop-block__item--blue" href="#" title = "Whislost">
+                            <span class="icon icon-whilost icon-whilost--white "></span>
+                        </a><!--
+                    --><a class="shop-block__item shop-block__item--pink" href="#" title = "Cart">
+                            <span class="icon icon-cart icon-cart--white"></span>
+                        </a><!--
+                    --><span class="shop-block__item shop-block__item--grey">$ 99.<sup>00</sup></span>
+                        </div>
+                    <a class="overlay--link" href="#" title="New Products for women">New Products for women</a>
+                </li>
+                <li class="overlay inline-list__item">
+                    <img class="overlay__image" src="images/jNewProduct.png" alt="Women's new product" title="Women's new product"/>
+                    <div class="shop-block shop-block--middle">
+                        <span class="shop-block__title">Gift Shop</span><!--
+                    --><a class="shop-block__item shop-block__item--blue" href="#" title = "Whislost">
+                        <span class="icon icon-whilost icon-whilost--white "></span>
+                    </a><!--
+                    --><a class="shop-block__item shop-block__item--pink" href="#" title = "Cart">
+                        <span class="icon icon-cart icon-cart--white"></span>
+                    </a><!--
+                    --><span class="shop-block__item shop-block__item--grey">$ 99.<sup>00</sup></span>
+                    </div>
+                    <a class="overlay--link" href="#" title="New Products for women">New Products for women</a>
+                </li>
+                <li class=" overlay inline-list__item">
+                    <img class="overlay__image" src="images/mNewProduct.png" alt="Women's new product" title="Women's new product"/>
+                    <div class="shop-block shop-block--middle">
+                        <span class="shop-block__title">Men's Shop</span><!--
+                    --><a class="shop-block__item shop-block__item--blue" href="#" title = "Whislost">
+                        <span class="icon icon-whilost icon-whilost--white "></span>
+                    </a><!--
+                    --><a class="shop-block__item shop-block__item--pink" href="#" title = "Cart">
+                        <span class="icon icon-cart icon-cart--white"></span>
+                    </a><!--
+                    --><span class="shop-block__item shop-block__item--grey">$ 99.<sup>00</sup></span>
+                    </div>
+                    <a class="overlay--link" href="#" title="New Products for women">New Products for women</a>
+                </li>
+            </ul>
+        </section>
+        <section class="featured-products">
+            <div class="section-header clearfix">
+                <span class="section-header__title ">Featured Products</span>
+                <div class="arrows">
+                    <span class="arrow arrow--pink">
+                        <span class="entypo-left-open-big active icon-font" data-text="right-open-big"></span>
+                    </span><!--
+                --><span class="arrow arrow--pink">
+                        <span class="entypo-right-open-big active icon-font" data-text="right-open-big"></span>
+                    </span>
+                </div>
+            </div>
+            <ul class="inline-list inline-list--4-columns">
+                <li class="inline-list__item">
+                    <img class="overlay__image" src="images/fp1.png" alt="Feature product 1" title="Feature product 1"/>
+                    <span class="promo promo--off">20% off</span>
+                    <div class="product-description">
+                        <div class="description">
+                            <h3 class="description__title">Product Title here</h3>
+                            <p class="description__text description__text--pink ">Short description here</p>
+                        </div>
+                        <div class="shop-block">
+                           <a class="shop-block__item shop-block__item--short" href="#" title = "Quick View">
+                               <span class="icon icon-quick-view"></span>
+                           </a><!--
+                 --><a class="shop-block__item shop-block__item--short" href="#" title = "Cart">
+                            <span class="icon icon-cart icon-cart--grey"></span>
+                        </a><!--
+                        --><a class="shop-block__item shop-block__item--short" href="#" title = "Whislost">
+                               <span class="icon icon-whilost icon-whilost--grey"></span>
+                        </a><!--
+                --><span class="shop-block__item shop-block__item--pink shop-block__item--long">$ 99.<sup>00</sup></span>
+                        </div>
+                    </div>
+                    <a class="overlay--link" href="#" title="New Products for women">New Products for women</a>
+                </li>
+                <li class="inline-list__item">
+                    <img class="overlay__image" src="images/fp2.png" alt="Feature product 2" title="Feature product 2"/>
+                    <div class="product-description">
+                        <div class="description">
+                            <h3 class="description__title">Product Title here</h3>
+                            <p class="description__text description__text--pink">Short description here</p>
+                        </div>
+                        <div class="shop-block">
+                            <a class="shop-block__item shop-block__item--short" href="#" title = "Quick View">
+                                <span class="icon icon-quick-view"></span>
+                            </a><!--
+                 --><a class="shop-block__item shop-block__item--short" href="#" title = "Cart">
+                            <span class="icon icon-cart icon-cart--grey"></span>
+                        </a><!--
+                        --><a class="shop-block__item shop-block__item--short" href="#" title = "Whislost">
+                            <span class="icon icon-whilost icon-whilost--grey"></span>
+                        </a><!--
+                --><span class="shop-block__item shop-block__item--pink shop-block__item--long">$ 99.<sup>00</sup></span>
+                        </div>
+                    </div>
+                    <a class="overlay--link" href="#" title="New Products for women">New Products for women</a>
+                </li>
+                <li class="inline-list__item">
+                    <img class="overlay__image" src="images/fp3.png" alt="Feature product 3" title="Feature product 3"/>
+                    <span class="promo promo--new">New</span>
+                    <div class="product-description">
+                        <div class="description">
+                            <h3 class="description__title">Product Title here</h3>
+                            <p class="description__text description__text--blue">Short description here</p>
+                        </div>
+                        <div class="shop-block">
+                            <a class="shop-block__item shop-block__item--short" href="#" title = "Quick View">
+                                <span class="icon icon-quick-view"></span>
+                            </a><!--
+                 --><a class="shop-block__item shop-block__item--short" href="#" title = "Cart">
+                            <span class="icon icon-cart icon-cart--grey"></span>
+                        </a><!--
+                        --><a class="shop-block__item shop-block__item--short" href="#" title = "Whislost">
+                            <span class="icon icon-whilost icon-whilost--grey"></span>
+                        </a><!--
+                --><span class="shop-block__item shop-block__item--blue shop-block__item--long">$ 99.<sup>00</sup></span>
+                        </div>
+                    </div>
+                    <a class="overlay--link" href="#" title="New Products for women">New Products for women</a>
+                </li>
+                <li class="inline-list__item">
+                    <img class="overlay__image" src="images/fp4.png" alt="Feature product 4" title="Feature product 4"/>
+                    <div class="product-description">
+                        <div class="description">
+                            <h3 class="description__title">Product Title here</h3>
+                            <p class="description__text description__text--pink">Short description here</p>
+                        </div>
+                        <div class="shop-block">
+                            <a class="shop-block__item shop-block__item--short" href="#" title = "Quick View">
+                                <span class="icon icon-quick-view"></span>
+                            </a><!--
+                 --><a class="shop-block__item shop-block__item--short" href="#" title = "Cart">
+                            <span class="icon icon-cart icon-cart--grey"></span>
+                        </a><!--
+                        --><a class="shop-block__item shop-block__item--short" href="#" title = "Whislost">
+                            <span class="icon icon-whilost icon-whilost--grey"></span>
+                        </a><!--
+                --><span class="shop-block__item shop-block__item--pink shop-block__item--long">$ 99.<sup>00</sup></span>
+                        </div>
+                    </div>
+                    <a class="overlay--link" href="#" title="New Products for women">New Products for women</a>
+                </li>
+            </ul>
+        </section>
+        <section class="who-we-are">
+            <div class="section-header clearfix">
+                <span class="section-header__title">Who we are</span>
+            </div>
+            <p class="who-we-are__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <ul class="inline-list inline-list--3-columns">
+                <li class="inline-list__item inline-list__item--grey">
+                    <div class="description-holder">
+                        <span class="list_item description-holder__icon description-holder__icon--choose"></span>
+                        <span class="list_item description-holder__title">Chose<br/>Products</span>
+                    </div>
+                    <a class="overlay--link" href="#" title="Chose Products">Chose Products</a>
+                </li>
+                <li class="inline-list__item inline-list__item--blue">
+                    <div class="description-holder">
+                        <span class="list_item description-holder__icon description-holder__icon--register"></span>
+                        <span class="list_item description-holder__title">Register/<br/>Login</span>
+                    </div>
+                    <a class="overlay--link" href="#" title="Register/ Login">Register/Login</a>
+                </li>
+                <li class="inline-list__item inline-list__item--pink">
+                    <div class="description-holder">
+                        <span class="list_item description-holder__icon description-holder__icon--login"></span>
+                        <span class="list_item description-holder__title">Checkout</span>
+                    </div>
+                    <a class="overlay--link" href="#" title="Checkout">Checkout</a>
+                </li>
+            </ul>
+            <span class="button button--blue">Register Now</span>
+        </section>
     </section>
+    <footer class="footer">
+        <div class="footer-with-links">
+            <ul class="footer-list">
+                <li class="shopping-with-us footer-category">
+                    <h3 class="footer-category--title">shopping with us</h3>
+                    <ul class="footer-category__list">
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="why shop with us?">why shop with us?</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="how it works">how it works</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="delivery">delivery</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="returns">returns</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="where's my order">where's my order</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="contact & help">contact & help</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="wedding list">wedding list</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="wish list">wish list</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="gift vouchers">gift vouchers</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="shopping-with-us footer-category">
+                    <h3 class="footer-category--title">about us</h3>
+                    <ul class="footer-category__list">
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="our story">our story</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="customer contact">customer contact</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="awards">awards</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="press centre">press centre</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="work with us">work with us</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="terms & conditions">terms & conditions</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="wedding list">privacy & cookies</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="shopping-with-us footer-category">
+                    <h3 class="footer-category--title">selling with us</h3>
+                    <ul class="footer-category__list">
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="why join us?">why join us?</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="faqs">faqs</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="apply to sell with us">apply to sell with us</a>
+                        </li>
+                        <li class="footer-category__list-item">
+                            <a href="#" class="footer-category__link" title="affiliates">affiliates</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-with-copyright clearfix">
+            <span class="copyright">Copyright © 2014 Gift Shop,  All right reserved</span>
+            <span class="designed">Designed by Amysxain</span>
+        </div>
+    </footer>
 </main>
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 </body>

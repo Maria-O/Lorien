@@ -1,3 +1,10 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+
 @font-face {
     font-family: 'Lato Regular';
     src: url(../fonts/Lato-Regular.ttf);
